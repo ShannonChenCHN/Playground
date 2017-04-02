@@ -10,10 +10,6 @@
 
 @implementation Book
 
-+ (instancetype)alloc {
-    return [super alloc];
-}
-
 - (void)dealloc {
     [_name release];
     

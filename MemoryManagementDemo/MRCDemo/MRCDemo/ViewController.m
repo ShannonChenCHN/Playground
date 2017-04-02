@@ -74,7 +74,7 @@ extern void _objc_autoreleasePoolPrint();
         [array autorelease]; // 会加入到最内侧的 pool 中
     
         _objc_autoreleasePoolPrint(); // 调用非公开函数打印 autorelease pool 中的对象
-        NSLog(@"self: %p, array: %p, pool1: %p", self, array, pool1);
+        NSLog(@"self: %p, array: %p, pool1: %p retain count: %li", self, array, pool1, [array retainCount]);  // 引用计数居然是 -1 ?!?!!
     
         [pool1 drain];
     [pool0 drain];
