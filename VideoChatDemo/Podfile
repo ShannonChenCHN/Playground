@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'VideoChatDemo' do
+  
+  pod 'RongCloudIM/IMKit',       '2.8.1'
+  pod 'RongCloudIM/CallLib',     '2.8.1'
+  pod 'RongCloudIM/CallKit',     '2.8.1'
+  
+  pod 'GPUImage',                '0.1.7'
+ 
+ 
+  pod 'Masonry'
+  pod 'XLForm'
+  
+  pod 'PXAlertView'
+  pod 'MBProgressHUD'
+  pod 'AFNetworking'
+  
+#  pod 'YTKNetwork'
+
+
+pod 'libksygpulive/libksygpulive', :git => 'https://github.com/ksvc/KSYLive_iOS.git', :tag => 'v1.8.7’
+
+end

@@ -1,0 +1,792 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D1990DB5F4F232F4AB0FD04 /* libPods-VideoChatDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B077B30FB27ECF3A75DE930 /* libPods-VideoChatDemo.a */; };
+		584A8F901E351A0100C87DAB /* libpthread.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 584A8F8F1E351A0100C87DAB /* libpthread.tbd */; };
+		584A8F921E351A0E00C87DAB /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 584A8F911E351A0E00C87DAB /* libstdc++.tbd */; };
+		584A8F941E351A1700C87DAB /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 584A8F931E351A1700C87DAB /* libstdc++.6.0.9.tbd */; };
+		584A8F961E351A1E00C87DAB /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 584A8F951E351A1E00C87DAB /* libc++.tbd */; };
+		584A8F981E351A2A00C87DAB /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 584A8F971E351A2A00C87DAB /* libsqlite3.0.tbd */; };
+		584A8F9A1E351A3200C87DAB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 584A8F991E351A3200C87DAB /* libz.tbd */; };
+		584A8F9C1E351A3D00C87DAB /* libstdc++.6.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 584A8F9B1E351A3D00C87DAB /* libstdc++.6.tbd */; };
+		584A8F9D1E351A4C00C87DAB /* libc++.1.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 584A8F8D1E3519EC00C87DAB /* libc++.1.tbd */; };
+		584A8F9F1E351B1800C87DAB /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 584A8F9E1E351B1800C87DAB /* libicucore.tbd */; };
+		584A8FA51E35212100C87DAB /* libyuv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 584A8FA41E35212100C87DAB /* libyuv.a */; };
+		58C6AE431E1F6F5500B109AD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C6AE421E1F6F5500B109AD /* main.m */; };
+		58C6AE461E1F6F5500B109AD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C6AE451E1F6F5500B109AD /* AppDelegate.m */; };
+		58C6AE491E1F6F5500B109AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C6AE481E1F6F5500B109AD /* ViewController.m */; };
+		58C6AE4C1E1F6F5500B109AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58C6AE4A1E1F6F5500B109AD /* Main.storyboard */; };
+		58C6AE4E1E1F6F5500B109AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58C6AE4D1E1F6F5500B109AD /* Assets.xcassets */; };
+		58C6AE511E1F6F5500B109AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58C6AE4F1E1F6F5500B109AD /* LaunchScreen.storyboard */; };
+		58C6AE601E1F724800B109AD /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C6AE5D1E1F724800B109AD /* GPUImageBeautifyFilter.m */; };
+		58C6AE611E1F724800B109AD /* RCDVideoFrameObserver.mm in Sources */ = {isa = PBXBuildFile; fileRef = 58C6AE5F1E1F724800B109AD /* RCDVideoFrameObserver.mm */; };
+		58C6AE7D1E1F725B00B109AD /* MainVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C6AE6A1E1F725B00B109AD /* MainVideoView.m */; };
+		58C6AE821E1F725B00B109AD /* SubVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C6AE761E1F725B00B109AD /* SubVideoView.m */; };
+		58C6AE871E1F751B00B109AD /* VideoChatViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 58C6AE861E1F751B00B109AD /* VideoChatViewController.mm */; };
+		58C6AE8B1E1F86ED00B109AD /* MBProgressHUD+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C6AE8A1E1F86ED00B109AD /* MBProgressHUD+Extension.m */; };
+		58C6AEA31E1F8F0300B109AD /* IMManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C6AE971E1F8F0300B109AD /* IMManager.m */; };
+		58C6AEA91E1F8F7100B109AD /* VideoChatManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C6AEA81E1F8F7100B109AD /* VideoChatManager.m */; };
+		58C6AEB01E1FA45400B109AD /* videoprp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C6AEAF1E1FA45400B109AD /* videoprp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A930F11BEA4C64F03E84D69 /* Pods-VideoChatDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoChatDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoChatDemo/Pods-VideoChatDemo.release.xcconfig"; sourceTree = "<group>"; };
+		0B077B30FB27ECF3A75DE930 /* libPods-VideoChatDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VideoChatDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		584A8F8D1E3519EC00C87DAB /* libc++.1.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.1.tbd"; path = "usr/lib/libc++.1.tbd"; sourceTree = SDKROOT; };
+		584A8F8F1E351A0100C87DAB /* libpthread.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libpthread.tbd; path = usr/lib/libpthread.tbd; sourceTree = SDKROOT; };
+		584A8F911E351A0E00C87DAB /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		584A8F931E351A1700C87DAB /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		584A8F951E351A1E00C87DAB /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		584A8F971E351A2A00C87DAB /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		584A8F991E351A3200C87DAB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		584A8F9B1E351A3D00C87DAB /* libstdc++.6.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.tbd"; path = "usr/lib/libstdc++.6.tbd"; sourceTree = SDKROOT; };
+		584A8F9E1E351B1800C87DAB /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		584A8FA41E35212100C87DAB /* libyuv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libyuv.a; sourceTree = "<group>"; };
+		584A8FA61E35A36000C87DAB /* libyuv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libyuv.h; sourceTree = "<group>"; };
+		584A8FA81E35A38700C87DAB /* basic_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basic_types.h; sourceTree = "<group>"; };
+		584A8FA91E35A38700C87DAB /* compare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compare.h; sourceTree = "<group>"; };
+		584A8FAA1E35A38700C87DAB /* compare_row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = compare_row.h; sourceTree = "<group>"; };
+		584A8FAB1E35A38700C87DAB /* convert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert.h; sourceTree = "<group>"; };
+		584A8FAC1E35A38700C87DAB /* convert_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert_argb.h; sourceTree = "<group>"; };
+		584A8FAD1E35A38700C87DAB /* convert_from.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert_from.h; sourceTree = "<group>"; };
+		584A8FAE1E35A38700C87DAB /* convert_from_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convert_from_argb.h; sourceTree = "<group>"; };
+		584A8FAF1E35A38700C87DAB /* cpu_id.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cpu_id.h; sourceTree = "<group>"; };
+		584A8FB01E35A38700C87DAB /* libyuv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libyuv.h; sourceTree = "<group>"; };
+		584A8FB11E35A38700C87DAB /* mjpeg_decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mjpeg_decoder.h; sourceTree = "<group>"; };
+		584A8FB21E35A38700C87DAB /* planar_functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = planar_functions.h; sourceTree = "<group>"; };
+		584A8FB31E35A38700C87DAB /* rotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotate.h; sourceTree = "<group>"; };
+		584A8FB41E35A38700C87DAB /* rotate_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotate_argb.h; sourceTree = "<group>"; };
+		584A8FB51E35A38700C87DAB /* rotate_row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rotate_row.h; sourceTree = "<group>"; };
+		584A8FB61E35A38700C87DAB /* row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = row.h; sourceTree = "<group>"; };
+		584A8FB71E35A38700C87DAB /* scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale.h; sourceTree = "<group>"; };
+		584A8FB81E35A38700C87DAB /* scale_argb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale_argb.h; sourceTree = "<group>"; };
+		584A8FB91E35A38700C87DAB /* scale_row.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = scale_row.h; sourceTree = "<group>"; };
+		584A8FBA1E35A38700C87DAB /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		584A8FBB1E35A38700C87DAB /* video_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = video_common.h; sourceTree = "<group>"; };
+		58C6AE3E1E1F6F5500B109AD /* VideoChatDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoChatDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58C6AE421E1F6F5500B109AD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		58C6AE441E1F6F5500B109AD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		58C6AE451E1F6F5500B109AD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		58C6AE471E1F6F5500B109AD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		58C6AE481E1F6F5500B109AD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		58C6AE4B1E1F6F5500B109AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58C6AE4D1E1F6F5500B109AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58C6AE501E1F6F5500B109AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58C6AE521E1F6F5500B109AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58C6AE5C1E1F724800B109AD /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
+		58C6AE5D1E1F724800B109AD /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
+		58C6AE5E1E1F724800B109AD /* RCDVideoFrameObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCDVideoFrameObserver.h; sourceTree = "<group>"; };
+		58C6AE5F1E1F724800B109AD /* RCDVideoFrameObserver.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RCDVideoFrameObserver.mm; sourceTree = "<group>"; };
+		58C6AE691E1F725B00B109AD /* MainVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainVideoView.h; sourceTree = "<group>"; };
+		58C6AE6A1E1F725B00B109AD /* MainVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainVideoView.m; sourceTree = "<group>"; };
+		58C6AE751E1F725B00B109AD /* SubVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubVideoView.h; sourceTree = "<group>"; };
+		58C6AE761E1F725B00B109AD /* SubVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubVideoView.m; sourceTree = "<group>"; };
+		58C6AE851E1F751B00B109AD /* VideoChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoChatViewController.h; sourceTree = "<group>"; };
+		58C6AE861E1F751B00B109AD /* VideoChatViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoChatViewController.mm; sourceTree = "<group>"; };
+		58C6AE881E1F772C00B109AD /* Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macro.h; sourceTree = "<group>"; };
+		58C6AE891E1F86ED00B109AD /* MBProgressHUD+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Extension.h"; sourceTree = "<group>"; };
+		58C6AE8A1E1F86ED00B109AD /* MBProgressHUD+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Extension.m"; sourceTree = "<group>"; };
+		58C6AE961E1F8F0300B109AD /* IMManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IMManager.h; sourceTree = "<group>"; };
+		58C6AE971E1F8F0300B109AD /* IMManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IMManager.m; sourceTree = "<group>"; };
+		58C6AEA71E1F8F7100B109AD /* VideoChatManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoChatManager.h; sourceTree = "<group>"; };
+		58C6AEA81E1F8F7100B109AD /* VideoChatManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoChatManager.m; sourceTree = "<group>"; };
+		58C6AEAF1E1FA45400B109AD /* videoprp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = videoprp.framework; sourceTree = "<group>"; };
+		D07608A596F71525B880A700 /* Pods-VideoChatDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoChatDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoChatDemo/Pods-VideoChatDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58C6AE3B1E1F6F5500B109AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				584A8F9F1E351B1800C87DAB /* libicucore.tbd in Frameworks */,
+				584A8F9D1E351A4C00C87DAB /* libc++.1.tbd in Frameworks */,
+				584A8F9C1E351A3D00C87DAB /* libstdc++.6.tbd in Frameworks */,
+				584A8F9A1E351A3200C87DAB /* libz.tbd in Frameworks */,
+				584A8F981E351A2A00C87DAB /* libsqlite3.0.tbd in Frameworks */,
+				584A8F961E351A1E00C87DAB /* libc++.tbd in Frameworks */,
+				584A8F941E351A1700C87DAB /* libstdc++.6.0.9.tbd in Frameworks */,
+				584A8F921E351A0E00C87DAB /* libstdc++.tbd in Frameworks */,
+				584A8F901E351A0100C87DAB /* libpthread.tbd in Frameworks */,
+				0D1990DB5F4F232F4AB0FD04 /* libPods-VideoChatDemo.a in Frameworks */,
+				584A8FA51E35212100C87DAB /* libyuv.a in Frameworks */,
+				58C6AEB01E1FA45400B109AD /* videoprp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A667035EDF81A9E2C487E9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				584A8F9E1E351B1800C87DAB /* libicucore.tbd */,
+				584A8F9B1E351A3D00C87DAB /* libstdc++.6.tbd */,
+				584A8F991E351A3200C87DAB /* libz.tbd */,
+				584A8F971E351A2A00C87DAB /* libsqlite3.0.tbd */,
+				584A8F951E351A1E00C87DAB /* libc++.tbd */,
+				584A8F931E351A1700C87DAB /* libstdc++.6.0.9.tbd */,
+				584A8F911E351A0E00C87DAB /* libstdc++.tbd */,
+				584A8F8F1E351A0100C87DAB /* libpthread.tbd */,
+				584A8F8D1E3519EC00C87DAB /* libc++.1.tbd */,
+				0B077B30FB27ECF3A75DE930 /* libPods-VideoChatDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		584A8FA31E35212100C87DAB /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				584A8FA71E35A38700C87DAB /* libyuv */,
+				584A8FA61E35A36000C87DAB /* libyuv.h */,
+				584A8FA41E35212100C87DAB /* libyuv.a */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		584A8FA71E35A38700C87DAB /* libyuv */ = {
+			isa = PBXGroup;
+			children = (
+				584A8FA81E35A38700C87DAB /* basic_types.h */,
+				584A8FA91E35A38700C87DAB /* compare.h */,
+				584A8FAA1E35A38700C87DAB /* compare_row.h */,
+				584A8FAB1E35A38700C87DAB /* convert.h */,
+				584A8FAC1E35A38700C87DAB /* convert_argb.h */,
+				584A8FAD1E35A38700C87DAB /* convert_from.h */,
+				584A8FAE1E35A38700C87DAB /* convert_from_argb.h */,
+				584A8FAF1E35A38700C87DAB /* cpu_id.h */,
+				584A8FB01E35A38700C87DAB /* libyuv.h */,
+				584A8FB11E35A38700C87DAB /* mjpeg_decoder.h */,
+				584A8FB21E35A38700C87DAB /* planar_functions.h */,
+				584A8FB31E35A38700C87DAB /* rotate.h */,
+				584A8FB41E35A38700C87DAB /* rotate_argb.h */,
+				584A8FB51E35A38700C87DAB /* rotate_row.h */,
+				584A8FB61E35A38700C87DAB /* row.h */,
+				584A8FB71E35A38700C87DAB /* scale.h */,
+				584A8FB81E35A38700C87DAB /* scale_argb.h */,
+				584A8FB91E35A38700C87DAB /* scale_row.h */,
+				584A8FBA1E35A38700C87DAB /* version.h */,
+				584A8FBB1E35A38700C87DAB /* video_common.h */,
+			);
+			path = libyuv;
+			sourceTree = "<group>";
+		};
+		58C6AE351E1F6F5500B109AD = {
+			isa = PBXGroup;
+			children = (
+				58C6AE401E1F6F5500B109AD /* VideoChatDemo */,
+				58C6AE3F1E1F6F5500B109AD /* Products */,
+				9059C41436E73467824BF82F /* Pods */,
+				3A667035EDF81A9E2C487E9B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		58C6AE3F1E1F6F5500B109AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58C6AE3E1E1F6F5500B109AD /* VideoChatDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58C6AE401E1F6F5500B109AD /* VideoChatDemo */ = {
+			isa = PBXGroup;
+			children = (
+				58C6AE441E1F6F5500B109AD /* AppDelegate.h */,
+				58C6AE451E1F6F5500B109AD /* AppDelegate.m */,
+				58C6AE471E1F6F5500B109AD /* ViewController.h */,
+				58C6AE481E1F6F5500B109AD /* ViewController.m */,
+				58C6AE851E1F751B00B109AD /* VideoChatViewController.h */,
+				58C6AE861E1F751B00B109AD /* VideoChatViewController.mm */,
+				58C6AE891E1F86ED00B109AD /* MBProgressHUD+Extension.h */,
+				58C6AE8A1E1F86ED00B109AD /* MBProgressHUD+Extension.m */,
+				584A8FA31E35212100C87DAB /* libs */,
+				58C6AEAF1E1FA45400B109AD /* videoprp.framework */,
+				58C6AE8C1E1F8F0300B109AD /* RongCloud */,
+				58C6AE621E1F725B00B109AD /* Views */,
+				58C6AE5B1E1F724800B109AD /* VideoObserver */,
+				58C6AE4A1E1F6F5500B109AD /* Main.storyboard */,
+				58C6AE4D1E1F6F5500B109AD /* Assets.xcassets */,
+				58C6AE4F1E1F6F5500B109AD /* LaunchScreen.storyboard */,
+				58C6AE521E1F6F5500B109AD /* Info.plist */,
+				58C6AE411E1F6F5500B109AD /* Supporting Files */,
+				58C6AE881E1F772C00B109AD /* Macro.h */,
+			);
+			path = VideoChatDemo;
+			sourceTree = "<group>";
+		};
+		58C6AE411E1F6F5500B109AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				58C6AE421E1F6F5500B109AD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58C6AE5B1E1F724800B109AD /* VideoObserver */ = {
+			isa = PBXGroup;
+			children = (
+				58C6AE5C1E1F724800B109AD /* GPUImageBeautifyFilter.h */,
+				58C6AE5D1E1F724800B109AD /* GPUImageBeautifyFilter.m */,
+				58C6AE5E1E1F724800B109AD /* RCDVideoFrameObserver.h */,
+				58C6AE5F1E1F724800B109AD /* RCDVideoFrameObserver.mm */,
+			);
+			path = VideoObserver;
+			sourceTree = "<group>";
+		};
+		58C6AE621E1F725B00B109AD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				58C6AE681E1F725B00B109AD /* MainVideo */,
+				58C6AE741E1F725B00B109AD /* SubVideo */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		58C6AE681E1F725B00B109AD /* MainVideo */ = {
+			isa = PBXGroup;
+			children = (
+				58C6AE691E1F725B00B109AD /* MainVideoView.h */,
+				58C6AE6A1E1F725B00B109AD /* MainVideoView.m */,
+			);
+			path = MainVideo;
+			sourceTree = "<group>";
+		};
+		58C6AE741E1F725B00B109AD /* SubVideo */ = {
+			isa = PBXGroup;
+			children = (
+				58C6AE751E1F725B00B109AD /* SubVideoView.h */,
+				58C6AE761E1F725B00B109AD /* SubVideoView.m */,
+			);
+			path = SubVideo;
+			sourceTree = "<group>";
+		};
+		58C6AE8C1E1F8F0300B109AD /* RongCloud */ = {
+			isa = PBXGroup;
+			children = (
+				58C6AE951E1F8F0300B109AD /* IM */,
+				58C6AE981E1F8F0300B109AD /* VideoChat */,
+			);
+			path = RongCloud;
+			sourceTree = "<group>";
+		};
+		58C6AE951E1F8F0300B109AD /* IM */ = {
+			isa = PBXGroup;
+			children = (
+				58C6AE961E1F8F0300B109AD /* IMManager.h */,
+				58C6AE971E1F8F0300B109AD /* IMManager.m */,
+			);
+			path = IM;
+			sourceTree = "<group>";
+		};
+		58C6AE981E1F8F0300B109AD /* VideoChat */ = {
+			isa = PBXGroup;
+			children = (
+				58C6AEA71E1F8F7100B109AD /* VideoChatManager.h */,
+				58C6AEA81E1F8F7100B109AD /* VideoChatManager.m */,
+			);
+			path = VideoChat;
+			sourceTree = "<group>";
+		};
+		9059C41436E73467824BF82F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D07608A596F71525B880A700 /* Pods-VideoChatDemo.debug.xcconfig */,
+				0A930F11BEA4C64F03E84D69 /* Pods-VideoChatDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58C6AE3D1E1F6F5500B109AD /* VideoChatDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58C6AE551E1F6F5500B109AD /* Build configuration list for PBXNativeTarget "VideoChatDemo" */;
+			buildPhases = (
+				36C28E8090BB5863C0E742FF /* [CP] Check Pods Manifest.lock */,
+				58C6AE3A1E1F6F5500B109AD /* Sources */,
+				58C6AE3B1E1F6F5500B109AD /* Frameworks */,
+				58C6AE3C1E1F6F5500B109AD /* Resources */,
+				6658278AF59DE310DA4D27E5 /* [CP] Embed Pods Frameworks */,
+				A7F686189C50A89BFD691AF6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VideoChatDemo;
+			productName = VideoChatDemo;
+			productReference = 58C6AE3E1E1F6F5500B109AD /* VideoChatDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58C6AE361E1F6F5500B109AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = ShannonChen;
+				TargetAttributes = {
+					58C6AE3D1E1F6F5500B109AD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = L32PN8QKLZ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 58C6AE391E1F6F5500B109AD /* Build configuration list for PBXProject "VideoChatDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58C6AE351E1F6F5500B109AD;
+			productRefGroup = 58C6AE3F1E1F6F5500B109AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58C6AE3D1E1F6F5500B109AD /* VideoChatDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58C6AE3C1E1F6F5500B109AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58C6AE511E1F6F5500B109AD /* LaunchScreen.storyboard in Resources */,
+				58C6AE4E1E1F6F5500B109AD /* Assets.xcassets in Resources */,
+				58C6AE4C1E1F6F5500B109AD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36C28E8090BB5863C0E742FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6658278AF59DE310DA4D27E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoChatDemo/Pods-VideoChatDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7F686189C50A89BFD691AF6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoChatDemo/Pods-VideoChatDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58C6AE3A1E1F6F5500B109AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58C6AE8B1E1F86ED00B109AD /* MBProgressHUD+Extension.m in Sources */,
+				58C6AE601E1F724800B109AD /* GPUImageBeautifyFilter.m in Sources */,
+				58C6AE491E1F6F5500B109AD /* ViewController.m in Sources */,
+				58C6AE611E1F724800B109AD /* RCDVideoFrameObserver.mm in Sources */,
+				58C6AE821E1F725B00B109AD /* SubVideoView.m in Sources */,
+				58C6AE461E1F6F5500B109AD /* AppDelegate.m in Sources */,
+				58C6AE871E1F751B00B109AD /* VideoChatViewController.mm in Sources */,
+				58C6AEA31E1F8F0300B109AD /* IMManager.m in Sources */,
+				58C6AE431E1F6F5500B109AD /* main.m in Sources */,
+				58C6AE7D1E1F725B00B109AD /* MainVideoView.m in Sources */,
+				58C6AEA91E1F8F7100B109AD /* VideoChatManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		58C6AE4A1E1F6F5500B109AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58C6AE4B1E1F6F5500B109AD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58C6AE4F1E1F6F5500B109AD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58C6AE501E1F6F5500B109AD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58C6AE531E1F6F5500B109AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		58C6AE541E1F6F5500B109AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58C6AE561E1F6F5500B109AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D07608A596F71525B880A700 /* Pods-VideoChatDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = L32PN8QKLZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VideoChatDemo",
+					"$(PROJECT_DIR)/VideoChatDemo/libs",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/GPUImage\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/PXAlertView\"",
+					"\"${PODS_ROOT}/Headers/Public/RongCloudIM\"",
+					"\"${PODS_ROOT}/Headers/Public/XLForm\"",
+					"\"${PODS_ROOT}/Headers/Public/YTKNetwork\"",
+					"$(PROJECT_DIR)/VideoChatDemo/libs",
+				);
+				INFOPLIST_FILE = VideoChatDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VideoChatDemo",
+					"$(PROJECT_DIR)/VideoChatDemo/libs",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"GPUImage\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"Masonry\"",
+					"-l\"PXAlertView\"",
+					"-l\"XLForm\"",
+					"-l\"c++\"",
+					"-l\"c++abi\"",
+					"-l\"opencore-amrnb\"",
+					"-l\"sqlite3\"",
+					"-l\"stdc++\"",
+					"-l\"xml2\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AgoraRtcEngineKit\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreAudio\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MapKit\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"RongCallKit\"",
+					"-framework",
+					"\"RongCallLib\"",
+					"-framework",
+					"\"RongIMKit\"",
+					"-framework",
+					"\"RongIMLib\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"VideoToolbox\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shannon.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		58C6AE571E1F6F5500B109AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A930F11BEA4C64F03E84D69 /* Pods-VideoChatDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = L32PN8QKLZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VideoChatDemo",
+					"$(PROJECT_DIR)/VideoChatDemo/libs",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/GPUImage\"",
+					"\"${PODS_ROOT}/Headers/Public/MBProgressHUD\"",
+					"\"${PODS_ROOT}/Headers/Public/Masonry\"",
+					"\"${PODS_ROOT}/Headers/Public/PXAlertView\"",
+					"\"${PODS_ROOT}/Headers/Public/RongCloudIM\"",
+					"\"${PODS_ROOT}/Headers/Public/XLForm\"",
+					"\"${PODS_ROOT}/Headers/Public/YTKNetwork\"",
+					"$(PROJECT_DIR)/VideoChatDemo/libs",
+				);
+				INFOPLIST_FILE = VideoChatDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VideoChatDemo",
+					"$(PROJECT_DIR)/VideoChatDemo/libyuv.a",
+					"$(PROJECT_DIR)/VideoChatDemo/libs",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworking\"",
+					"-l\"GPUImage\"",
+					"-l\"MBProgressHUD\"",
+					"-l\"Masonry\"",
+					"-l\"PXAlertView\"",
+					"-l\"XLForm\"",
+					"-l\"c++\"",
+					"-l\"c++abi\"",
+					"-l\"opencore-amrnb\"",
+					"-l\"sqlite3\"",
+					"-l\"stdc++\"",
+					"-l\"xml2\"",
+					"-l\"z\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"AgoraRtcEngineKit\"",
+					"-framework",
+					"\"AssetsLibrary\"",
+					"-framework",
+					"\"AudioToolbox\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreAudio\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"CoreLocation\"",
+					"-framework",
+					"\"CoreMedia\"",
+					"-framework",
+					"\"CoreMotion\"",
+					"-framework",
+					"\"CoreTelephony\"",
+					"-framework",
+					"\"CoreVideo\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"ImageIO\"",
+					"-framework",
+					"\"MapKit\"",
+					"-framework",
+					"\"MobileCoreServices\"",
+					"-framework",
+					"\"OpenGLES\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"RongCallKit\"",
+					"-framework",
+					"\"RongCallLib\"",
+					"-framework",
+					"\"RongIMKit\"",
+					"-framework",
+					"\"RongIMLib\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-framework",
+					"\"UIKit\"",
+					"-framework",
+					"\"VideoToolbox\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.shannon.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58C6AE391E1F6F5500B109AD /* Build configuration list for PBXProject "VideoChatDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58C6AE531E1F6F5500B109AD /* Debug */,
+				58C6AE541E1F6F5500B109AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58C6AE551E1F6F5500B109AD /* Build configuration list for PBXNativeTarget "VideoChatDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58C6AE561E1F6F5500B109AD /* Debug */,
+				58C6AE571E1F6F5500B109AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 58C6AE361E1F6F5500B109AD /* Project object */;
+}
