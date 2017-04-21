@@ -12,4 +12,6 @@
 
 @property (strong, nonatomic) NSString *name;
 
+
+- (void)resetName;
 @end

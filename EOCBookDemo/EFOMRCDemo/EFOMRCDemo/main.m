@@ -29,8 +29,11 @@ int main(int argc, const char * argv[]) {
         
         
         Book *aBook = [[Book alloc] init];
-        aBook.name = @"Effective Objective-C 2.0";
-        aBook.name = aBook.name;
+        NSString *string = @"Effective Objective-C 2.0";
+        aBook.name = string;
+        [string release];
+        string = nil;
+        [aBook resetName];
         NSLog(@"book name: %@", aBook.name);
         
     }

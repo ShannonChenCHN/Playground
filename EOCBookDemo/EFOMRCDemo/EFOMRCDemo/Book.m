@@ -11,11 +11,16 @@
 @implementation Book
 
 - (void)setName:(NSString *)name {
+    NSLog(@"%p, %p", _name, name);
     [_name release];
     [name retain];
     _name = name;
 }
 
+- (void)resetName {
+    
+    self.name = _name;
+}
 
 @end
 
