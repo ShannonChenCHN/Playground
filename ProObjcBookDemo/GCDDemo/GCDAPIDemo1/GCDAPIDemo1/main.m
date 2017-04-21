@@ -18,7 +18,7 @@ void executeGeneralIntroduction() {
     
     for (int i = 0; i < 20; i++) {
         dispatch_async(concurrentQueue, ^{
-            
+    
             NSLog(@"线程 %@ 执行任务 %d", [NSThread currentThread], i);
         });
     }
