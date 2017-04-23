@@ -17,16 +17,16 @@
 ### 工作学习总结
 - 博客：[TechNotes](https://github.com/ShannonChenCHN/iOSLevelingUp/tree/master/TechNotes)
 - 个人作品：
-   - [Gitter](https://github.com/ShannonChenCHN/Gitter)：完全自己实现，没有一行代码是使用第三方库的
-   - [SCGoJD](https://github.com/ShannonChenCHN/SCGoJD)：iOS 入门时做的早期作品，65颗星
-   - [SCKit](https://github.com/ShannonChenCHN/SCKit)：工作中总结出来的代码库，基本上每个库都有对应的博客
+  - [Gitter](https://github.com/ShannonChenCHN/Gitter)：完全自己实现，没有一行代码是使用第三方库的
+  - [SCGoJD](https://github.com/ShannonChenCHN/SCGoJD)：iOS 入门时做的早期作品，65颗星                 
+  - [SCKit](https://github.com/ShannonChenCHN/SCKit)：工作中总结出来的代码库，基本上每个库都有[对应的博客](https://github.com/ShannonChenCHN/SCKit/issues/16)     
 - 读过的文档:View Programming Guide for iOS等，[阅读笔记见 Github](https://github.com/ShannonChenCHN/iOSLevelingUp/tree/master/ReadingArticles/AppleDocumentation)
 - 读过的经典开源代码：AFNetworking、SDWebImage等，[阅读笔记见 Github](https://github.com/ShannonChenCHN/iOSLevelingUp/tree/master/ReadingSourceCode)
 - 读过的技术书: Objective-C 高级编程等，[阅读笔记见 Github](https://github.com/ShannonChenCHN/iOSLevelingUp/tree/master/ReadingBooks)
 - 关于 Swift：
-   - 读完了 The Swift Programming Language 3.1，并练习了书中所有[例子](https://github.com/ShannonChenCHN/ASwiftTour/tree/master/Playgrounds/TheSwiftProgrammingLanguage)，做了[总结笔记](https://github.com/ShannonChenCHN/ASwiftTour)
-   - 用 Swift 写过几个[小项目](https://github.com/ShannonChenCHN/ASwiftTour)
-   - 部分[开源控件](https://github.com/ShannonChenCHN/SCKit/issues/15)分别用 Swift 和 Objective-C 都实现了一遍
+  - 读完了 The Swift Programming Language 3.1，并练习了书中所有[例子](https://github.com/ShannonChenCHN/ASwiftTour/tree/master/Playgrounds/TheSwiftProgrammingLanguage)，做了[总结笔记](https://github.com/ShannonChenCHN/ASwiftTour)  
+  - 用 Swift 写过几个[小项目](https://github.com/ShannonChenCHN/ASwiftTour)  
+  - 部分[开源控件](https://github.com/ShannonChenCHN/SCKit/issues/15)分别用 Swift 和 Objective-C 都实现了一遍  
 - 使用 Github 进行自我管理和个人规划
 
 ### 工作经历
@@ -85,7 +85,6 @@
 - 语言：
   - C（熟练）
   - Objective-C（熟练）
-  - Swift（掌握）
-  - JavaScript/HTML/CSS(了解)
-  - JavaScript/HTML/CSS(了解)
+  - Swift（掌握）
+  - JavaScript/HTML/CSS(了解)
 - 版本管理：SVN、Git
