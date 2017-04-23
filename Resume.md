@@ -10,12 +10,14 @@
  - 陈祥龙 / 男 / 1992.10 / 湖南 
  - 本科 / 中北大学 / 飞行器制造工程专业 
  - 工作年限：3 年（2014 年 06 月毕业）    
- - 个人博客：[http://www.jianshu.com/u/4ef5e287fc91](http://www.jianshu.com/u/4ef5e287fc91)
- - Github：[https://github.com/ShannonChenCHN](https://github.com/ShannonChenCHN)
- 
  - 应聘职位：iOS 开发工程师
-
+ - Github：[https://github.com/ShannonChenCHN](https://github.com/ShannonChenCHN)
 ---
+
+### 工作学习总结
+- Github 开源项目：[ShannonChenCHN](https://github.com/ShannonChenCHN)
+- 博客：[TechNotes](https://github.com/ShannonChenCHN/iOSLevelingUp/tree/master/TechNotes)
+
 
 ### 工作经历
 
@@ -23,7 +25,7 @@
 #### 上海悦会信息科技有限公司 （ 2016年08月 ~ 2017年03月 ）
 ###### 职位：iOS 开发工程师
 
-**项目：YHouse （4人团队、）**
+**项目：YHouse （4人团队、美食玩乐预订+社交）**
 
 **项目：OnlyU （单人开发、视频聊天+IM+社区）**
 
