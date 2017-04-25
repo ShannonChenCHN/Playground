@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		581F03C21EAEEC75004292F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 581F03C11EAEEC75004292F7 /* main.m */; };
+		581F03C51EAEEC75004292F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 581F03C41EAEEC75004292F7 /* AppDelegate.m */; };
+		581F03C81EAEEC75004292F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 581F03C71EAEEC75004292F7 /* ViewController.m */; };
+		581F03CB1EAEEC75004292F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581F03C91EAEEC75004292F7 /* Main.storyboard */; };
+		581F03CD1EAEEC75004292F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 581F03CC1EAEEC75004292F7 /* Assets.xcassets */; };
+		581F03D01EAEEC75004292F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 581F03CE1EAEEC75004292F7 /* LaunchScreen.storyboard */; };
+		581F03DA1EAF1A8D004292F7 /* ImageListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 581F03D91EAF1A8D004292F7 /* ImageListViewController.m */; };
+		581F03DE1EAF1E07004292F7 /* ImageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 581F03DC1EAF1E07004292F7 /* ImageTableViewCell.m */; };
+		581F03E51EAF21E0004292F7 /* ImageCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 581F03E41EAF21E0004292F7 /* ImageCellModel.m */; };
+		704909BD52578B301F5F2B47 /* libPods-DelaySizedImageInTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BF9B0B6CC1B2617A9A552EF /* libPods-DelaySizedImageInTableView.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0271BCD2AA29BBE59EAC7EA1 /* Pods-DelaySizedImageInTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelaySizedImageInTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DelaySizedImageInTableView/Pods-DelaySizedImageInTableView.debug.xcconfig"; sourceTree = "<group>"; };
+		581F03BD1EAEEC75004292F7 /* DelaySizedImageInTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelaySizedImageInTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		581F03C11EAEEC75004292F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		581F03C31EAEEC75004292F7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		581F03C41EAEEC75004292F7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		581F03C61EAEEC75004292F7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		581F03C71EAEEC75004292F7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		581F03CA1EAEEC75004292F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		581F03CC1EAEEC75004292F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		581F03CF1EAEEC75004292F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		581F03D11EAEEC75004292F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		581F03D81EAF1A8D004292F7 /* ImageListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageListViewController.h; sourceTree = "<group>"; };
+		581F03D91EAF1A8D004292F7 /* ImageListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageListViewController.m; sourceTree = "<group>"; };
+		581F03DB1EAF1E07004292F7 /* ImageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTableViewCell.h; sourceTree = "<group>"; };
+		581F03DC1EAF1E07004292F7 /* ImageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTableViewCell.m; sourceTree = "<group>"; };
+		581F03E31EAF21E0004292F7 /* ImageCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCellModel.h; sourceTree = "<group>"; };
+		581F03E41EAF21E0004292F7 /* ImageCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCellModel.m; sourceTree = "<group>"; };
+		8BF9B0B6CC1B2617A9A552EF /* libPods-DelaySizedImageInTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DelaySizedImageInTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAEF36FC142AD36207C8E2DD /* Pods-DelaySizedImageInTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelaySizedImageInTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-DelaySizedImageInTableView/Pods-DelaySizedImageInTableView.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		581F03BA1EAEEC75004292F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				704909BD52578B301F5F2B47 /* libPods-DelaySizedImageInTableView.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		519BD062C63031518891AA17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0271BCD2AA29BBE59EAC7EA1 /* Pods-DelaySizedImageInTableView.debug.xcconfig */,
+				EAEF36FC142AD36207C8E2DD /* Pods-DelaySizedImageInTableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		581F03B41EAEEC74004292F7 = {
+			isa = PBXGroup;
+			children = (
+				581F03BF1EAEEC75004292F7 /* DelaySizedImageInTableView */,
+				581F03BE1EAEEC75004292F7 /* Products */,
+				519BD062C63031518891AA17 /* Pods */,
+				E7F2A6BA74CE695C46BB6BBD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		581F03BE1EAEEC75004292F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				581F03BD1EAEEC75004292F7 /* DelaySizedImageInTableView.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		581F03BF1EAEEC75004292F7 /* DelaySizedImageInTableView */ = {
+			isa = PBXGroup;
+			children = (
+				581F03C31EAEEC75004292F7 /* AppDelegate.h */,
+				581F03C41EAEEC75004292F7 /* AppDelegate.m */,
+				581F03C61EAEEC75004292F7 /* ViewController.h */,
+				581F03C71EAEEC75004292F7 /* ViewController.m */,
+				581F03D81EAF1A8D004292F7 /* ImageListViewController.h */,
+				581F03D91EAF1A8D004292F7 /* ImageListViewController.m */,
+				581F03DB1EAF1E07004292F7 /* ImageTableViewCell.h */,
+				581F03DC1EAF1E07004292F7 /* ImageTableViewCell.m */,
+				581F03E31EAF21E0004292F7 /* ImageCellModel.h */,
+				581F03E41EAF21E0004292F7 /* ImageCellModel.m */,
+				581F03C91EAEEC75004292F7 /* Main.storyboard */,
+				581F03CC1EAEEC75004292F7 /* Assets.xcassets */,
+				581F03CE1EAEEC75004292F7 /* LaunchScreen.storyboard */,
+				581F03D11EAEEC75004292F7 /* Info.plist */,
+				581F03C01EAEEC75004292F7 /* Supporting Files */,
+			);
+			path = DelaySizedImageInTableView;
+			sourceTree = "<group>";
+		};
+		581F03C01EAEEC75004292F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				581F03C11EAEEC75004292F7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7F2A6BA74CE695C46BB6BBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8BF9B0B6CC1B2617A9A552EF /* libPods-DelaySizedImageInTableView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		581F03BC1EAEEC75004292F7 /* DelaySizedImageInTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 581F03D41EAEEC75004292F7 /* Build configuration list for PBXNativeTarget "DelaySizedImageInTableView" */;
+			buildPhases = (
+				B2F87FE6BA02A3B6496717E5 /* [CP] Check Pods Manifest.lock */,
+				581F03B91EAEEC75004292F7 /* Sources */,
+				581F03BA1EAEEC75004292F7 /* Frameworks */,
+				581F03BB1EAEEC75004292F7 /* Resources */,
+				D3B24D6F9E26917AC5DFCA22 /* [CP] Embed Pods Frameworks */,
+				76CDBC37FE3FC4CEE070D115 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DelaySizedImageInTableView;
+			productName = DelaySizedImageInTableView;
+			productReference = 581F03BD1EAEEC75004292F7 /* DelaySizedImageInTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		581F03B51EAEEC74004292F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = ShannonChen;
+				TargetAttributes = {
+					581F03BC1EAEEC75004292F7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L32PN8QKLZ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 581F03B81EAEEC74004292F7 /* Build configuration list for PBXProject "DelaySizedImageInTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 581F03B41EAEEC74004292F7;
+			productRefGroup = 581F03BE1EAEEC75004292F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				581F03BC1EAEEC75004292F7 /* DelaySizedImageInTableView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		581F03BB1EAEEC75004292F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				581F03D01EAEEC75004292F7 /* LaunchScreen.storyboard in Resources */,
+				581F03CD1EAEEC75004292F7 /* Assets.xcassets in Resources */,
+				581F03CB1EAEEC75004292F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		76CDBC37FE3FC4CEE070D115 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DelaySizedImageInTableView/Pods-DelaySizedImageInTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2F87FE6BA02A3B6496717E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D3B24D6F9E26917AC5DFCA22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DelaySizedImageInTableView/Pods-DelaySizedImageInTableView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		581F03B91EAEEC75004292F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				581F03C81EAEEC75004292F7 /* ViewController.m in Sources */,
+				581F03E51EAF21E0004292F7 /* ImageCellModel.m in Sources */,
+				581F03C51EAEEC75004292F7 /* AppDelegate.m in Sources */,
+				581F03DE1EAF1E07004292F7 /* ImageTableViewCell.m in Sources */,
+				581F03DA1EAF1A8D004292F7 /* ImageListViewController.m in Sources */,
+				581F03C21EAEEC75004292F7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		581F03C91EAEEC75004292F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				581F03CA1EAEEC75004292F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		581F03CE1EAEEC75004292F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				581F03CF1EAEEC75004292F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		581F03D21EAEEC75004292F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		581F03D31EAEEC75004292F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		581F03D51EAEEC75004292F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0271BCD2AA29BBE59EAC7EA1 /* Pods-DelaySizedImageInTableView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L32PN8QKLZ;
+				INFOPLIST_FILE = DelaySizedImageInTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ShannonChen.DelaySizedImageInTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		581F03D61EAEEC75004292F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EAEF36FC142AD36207C8E2DD /* Pods-DelaySizedImageInTableView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L32PN8QKLZ;
+				INFOPLIST_FILE = DelaySizedImageInTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ShannonChen.DelaySizedImageInTableView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		581F03B81EAEEC74004292F7 /* Build configuration list for PBXProject "DelaySizedImageInTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				581F03D21EAEEC75004292F7 /* Debug */,
+				581F03D31EAEEC75004292F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		581F03D41EAEEC75004292F7 /* Build configuration list for PBXNativeTarget "DelaySizedImageInTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				581F03D51EAEEC75004292F7 /* Debug */,
+				581F03D61EAEEC75004292F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 581F03B51EAEEC74004292F7 /* Project object */;
+}
