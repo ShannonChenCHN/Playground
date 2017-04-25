@@ -10,20 +10,32 @@
  - 陈祥龙 / 男 / 1992.10 / 湖南 
  - 本科 / 中北大学 / 飞行器制造工程专业 
  - 工作年限：3 年（2014 年 06 月毕业）    
- - 个人博客：[http://www.jianshu.com/u/4ef5e287fc91](http://www.jianshu.com/u/4ef5e287fc91)
- - Github：[https://github.com/ShannonChenCHN](https://github.com/ShannonChenCHN)
- 
  - 应聘职位：iOS 开发工程师
-
+ - Github：[https://github.com/ShannonChenCHN](https://github.com/ShannonChenCHN)
 ---
+
+### 工作学习总结
+- 博客：[TechNotes](https://github.com/ShannonChenCHN/iOSLevelingUp/tree/master/TechNotes)
+- 个人作品：
+  - [Gitter](https://github.com/ShannonChenCHN/Gitter)：完全自己实现，不使用任何第三方库
+  - [SCGoJD](https://github.com/ShannonChenCHN/SCGoJD)：iOS 入门时做的早期作品，65颗星                 
+  - [SCKit](https://github.com/ShannonChenCHN/SCKit)：工作中总结出来的代码库，基本上每个库都有[对应的博客](https://github.com/ShannonChenCHN/SCKit/issues/16)     
+- 读过的文档：View Programming Guide for iOS等，[阅读笔记见 Github](https://github.com/ShannonChenCHN/iOSLevelingUp/tree/master/ReadingArticles/AppleDocumentation)
+- 读过的经典开源代码：AFNetworking、SDWebImage、Mantle等，[阅读笔记见 Github](https://github.com/ShannonChenCHN/iOSLevelingUp/tree/master/ReadingSourceCode)
+- 读过的技术书：Objective-C 高级编程、Effective Objective-C 2.0等，[阅读笔记见 Github](https://github.com/ShannonChenCHN/iOSLevelingUp/tree/master/ReadingBooks)
+- 关于 Swift：
+  - 读完了 The Swift Programming Language 3.1，并练习了书中所有[例子](https://github.com/ShannonChenCHN/ASwiftTour/tree/master/Playgrounds/TheSwiftProgrammingLanguage)，做了[总结笔记](https://github.com/ShannonChenCHN/ASwiftTour)  
+  - 用 Swift 写过几个[小项目](https://github.com/ShannonChenCHN/ASwiftTour)  
+  - 部分[开源控件](https://github.com/ShannonChenCHN/SCKit/issues/15)分别用 Swift 和 Objective-C 都实现了一遍  
+- 使用 Github 进行自我管理和个人规划
 
 ### 工作经历
 
 
-#### 上海悦会信息科技有限公司 （ 2016年08月 ~ 2017年03月 ）
+#### 上海悦会信息科技有限公司 （ 2016年08月 ~ 2017年05月 ）
 ###### 职位：iOS 开发工程师
 
-**项目：YHouse （4人团队、）**
+**项目：YHouse （4人团队、美食玩乐预订+社交）**
 
 **项目：OnlyU （单人开发、视频聊天+IM+社区）**
 
@@ -65,7 +77,7 @@
 
 #### 中航工业江西洪都航空工业集团有限责任公司 （ 2014年07月 ~ 2015年09月 ）
 
-######职位：飞机装配工艺工程师
+###### 职位：飞机装配工艺工程师
 ---
 
 ### 技能清单
@@ -73,6 +85,6 @@
 - 语言：
   - C（熟练）
   - Objective-C（熟练）
-  - Swift（入门）
+  - Swift（掌握）
   - JavaScript/HTML/CSS(了解)
 - 版本管理：SVN、Git
