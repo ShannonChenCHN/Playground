@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		581F03EB1EB080ED004292F7 /* SCSnapshotWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 581F03EA1EB080ED004292F7 /* SCSnapshotWebView.m */; };
+		581F03F31EB09238004292F7 /* SCWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 581F03F11EB09238004292F7 /* SCWebViewController.m */; };
+		581F03F41EB09238004292F7 /* SCWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 581F03F21EB09238004292F7 /* SCWebViewController.xib */; };
+		581F03F81EB0B90E004292F7 /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 581F03F71EB0B90E004292F7 /* UIView+Layout.m */; };
+		581F03FA1EB0BA51004292F7 /* SCPreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 581F03F91EB0BA51004292F7 /* SCPreviewViewController.xib */; };
 		585113CF1E7EBF950053AFBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 585113CE1E7EBF950053AFBB /* main.m */; };
 		585113D21E7EBF950053AFBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 585113D11E7EBF950053AFBB /* AppDelegate.m */; };
 		585113D51E7EBF950053AFBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 585113D41E7EBF950053AFBB /* ViewController.m */; };
@@ -20,7 +25,6 @@
 		585113F51E7EC33D0053AFBB /* SCSnapshotImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 585113F41E7EC33D0053AFBB /* SCSnapshotImageDownloader.m */; };
 		585113F81E7EC3600053AFBB /* SCSnapshotContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 585113F71E7EC3600053AFBB /* SCSnapshotContentView.m */; };
 		585113FB1E7EC4130053AFBB /* SCQRCodeGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 585113FA1E7EC4130053AFBB /* SCQRCodeGenerator.m */; };
-		585113FF1E7EC8460053AFBB /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 585113FE1E7EC8460053AFBB /* UIView+LayoutMethods.m */; };
 		585114021E7EC8620053AFBB /* UIColor+SCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 585114011E7EC8620053AFBB /* UIColor+SCExtension.m */; };
 		585114051E7EC8820053AFBB /* NSString+SCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 585114041E7EC8820053AFBB /* NSString+SCExtension.m */; };
 		585114081E7ECD670053AFBB /* UIImage+SCExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 585114071E7ECD670053AFBB /* UIImage+SCExtension.m */; };
@@ -28,6 +32,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		581F03E91EB080ED004292F7 /* SCSnapshotWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSnapshotWebView.h; sourceTree = "<group>"; };
+		581F03EA1EB080ED004292F7 /* SCSnapshotWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSnapshotWebView.m; sourceTree = "<group>"; };
+		581F03F01EB09238004292F7 /* SCWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWebViewController.h; sourceTree = "<group>"; };
+		581F03F11EB09238004292F7 /* SCWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWebViewController.m; sourceTree = "<group>"; };
+		581F03F21EB09238004292F7 /* SCWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCWebViewController.xib; sourceTree = "<group>"; };
+		581F03F61EB0B90E004292F7 /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		581F03F71EB0B90E004292F7 /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		581F03F91EB0BA51004292F7 /* SCPreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCPreviewViewController.xib; sourceTree = "<group>"; };
 		585113CA1E7EBF950053AFBB /* SCSnapshotDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCSnapshotDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		585113CE1E7EBF950053AFBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		585113D01E7EBF950053AFBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,8 +64,6 @@
 		585113F71E7EC3600053AFBB /* SCSnapshotContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSnapshotContentView.m; sourceTree = "<group>"; };
 		585113F91E7EC4130053AFBB /* SCQRCodeGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCQRCodeGenerator.h; sourceTree = "<group>"; };
 		585113FA1E7EC4130053AFBB /* SCQRCodeGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCQRCodeGenerator.m; sourceTree = "<group>"; };
-		585113FD1E7EC8460053AFBB /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
-		585113FE1E7EC8460053AFBB /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
 		585114001E7EC8620053AFBB /* UIColor+SCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SCExtension.h"; sourceTree = "<group>"; };
 		585114011E7EC8620053AFBB /* UIColor+SCExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SCExtension.m"; sourceTree = "<group>"; };
 		585114031E7EC8820053AFBB /* NSString+SCExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = "NSString+SCExtension.h"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -115,6 +125,10 @@
 				585113D41E7EBF950053AFBB /* ViewController.m */,
 				585113E51E7EC2AD0053AFBB /* SCPreviewViewController.h */,
 				585113E61E7EC2AD0053AFBB /* SCPreviewViewController.m */,
+				581F03F91EB0BA51004292F7 /* SCPreviewViewController.xib */,
+				581F03F01EB09238004292F7 /* SCWebViewController.h */,
+				581F03F11EB09238004292F7 /* SCWebViewController.m */,
+				581F03F21EB09238004292F7 /* SCWebViewController.xib */,
 				585113D61E7EBF950053AFBB /* Main.storyboard */,
 				585113D91E7EBF950053AFBB /* Assets.xcassets */,
 				585113DB1E7EBF950053AFBB /* LaunchScreen.storyboard */,
@@ -147,6 +161,8 @@
 				585113F71E7EC3600053AFBB /* SCSnapshotContentView.m */,
 				585113F91E7EC4130053AFBB /* SCQRCodeGenerator.h */,
 				585113FA1E7EC4130053AFBB /* SCQRCodeGenerator.m */,
+				581F03E91EB080ED004292F7 /* SCSnapshotWebView.h */,
+				581F03EA1EB080ED004292F7 /* SCSnapshotWebView.m */,
 			);
 			path = SnapshotManager;
 			sourceTree = "<group>";
@@ -156,12 +172,12 @@
 			children = (
 				585114001E7EC8620053AFBB /* UIColor+SCExtension.h */,
 				585114011E7EC8620053AFBB /* UIColor+SCExtension.m */,
-				585113FD1E7EC8460053AFBB /* UIView+LayoutMethods.h */,
-				585113FE1E7EC8460053AFBB /* UIView+LayoutMethods.m */,
 				585114031E7EC8820053AFBB /* NSString+SCExtension.h */,
 				585114041E7EC8820053AFBB /* NSString+SCExtension.m */,
 				585114061E7ECD670053AFBB /* UIImage+SCExtension.h */,
 				585114071E7ECD670053AFBB /* UIImage+SCExtension.m */,
+				581F03F61EB0B90E004292F7 /* UIView+Layout.h */,
+				581F03F71EB0B90E004292F7 /* UIView+Layout.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -239,6 +255,8 @@
 			files = (
 				585113DD1E7EBF950053AFBB /* LaunchScreen.storyboard in Resources */,
 				585113DA1E7EBF950053AFBB /* Assets.xcassets in Resources */,
+				581F03FA1EB0BA51004292F7 /* SCPreviewViewController.xib in Resources */,
+				581F03F41EB09238004292F7 /* SCWebViewController.xib in Resources */,
 				585113D81E7EBF950053AFBB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,14 +319,16 @@
 				585113EC1E7EC2FA0053AFBB /* SCSnapshotManager.m in Sources */,
 				585113EF1E7EC3120053AFBB /* SCSnapshotContent.m in Sources */,
 				585113D51E7EBF950053AFBB /* ViewController.m in Sources */,
+				581F03F31EB09238004292F7 /* SCWebViewController.m in Sources */,
 				585113D21E7EBF950053AFBB /* AppDelegate.m in Sources */,
 				585113F81E7EC3600053AFBB /* SCSnapshotContentView.m in Sources */,
 				585114081E7ECD670053AFBB /* UIImage+SCExtension.m in Sources */,
 				585113CF1E7EBF950053AFBB /* main.m in Sources */,
 				585113F21E7EC3230053AFBB /* SCSnapshotGenerator.m in Sources */,
-				585113FF1E7EC8460053AFBB /* UIView+LayoutMethods.m in Sources */,
+				581F03EB1EB080ED004292F7 /* SCSnapshotWebView.m in Sources */,
 				585114021E7EC8620053AFBB /* UIColor+SCExtension.m in Sources */,
 				585114051E7EC8820053AFBB /* NSString+SCExtension.m in Sources */,
+				581F03F81EB0B90E004292F7 /* UIView+Layout.m in Sources */,
 				585113F51E7EC33D0053AFBB /* SCSnapshotImageDownloader.m in Sources */,
 				585113E81E7EC2AD0053AFBB /* SCPreviewViewController.m in Sources */,
 				585113FB1E7EC4130053AFBB /* SCQRCodeGenerator.m in Sources */,

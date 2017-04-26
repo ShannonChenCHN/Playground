@@ -10,7 +10,7 @@
 
 #import "SCSnapshotContent.h"
 
-#import "UIView+LayoutMethods.h"
+#import "UIView+Layout.h"
 #import "UIColor+SCExtension.h"
 #import "NSString+SCExtension.h"
 

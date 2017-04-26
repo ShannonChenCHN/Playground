@@ -10,4 +10,6 @@
 
 @interface SCPreviewViewController : UIViewController
 
+- (instancetype)initWithSnapshot:(UIImage *)snapshot;
+
 @end

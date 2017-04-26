@@ -17,17 +17,18 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface SCSnapshotContent : NSObject
 
-@property (nonatomic, copy, nullable) NSString *posterName;
-@property (nonatomic, copy, nullable) NSString *posterAvatarURLString;
-@property (nonatomic, copy, nullable) NSString *userTagDescription;
+@property (nonatomic, copy, nullable) NSString *posterName;             ///< 用户名
+@property (nonatomic, copy, nullable) NSString *posterAvatarURLString;  ///< 头像
+@property (nonatomic, copy, nullable) NSString *userTagDescription;     ///< 用户标签
 
-@property (nonatomic, copy, nullable) NSString *textContent;
+@property (nonatomic, copy, nullable) NSString *textContent;            ///< 正文
 
-@property (nonatomic, copy, nullable) NSString *likeCount;
-@property (nonatomic, strong, nullable) NSArray <NSString *> *picUrls; ///< 大图 url
-@property (nonatomic, copy, nullable) NSString *shareUrl;  ///< 生成二维码的图文链接
-@property (nonatomic, copy) NSString *shareDescription;    ///< 底部分享文案
+@property (nonatomic, copy, nullable) NSString *likeCount;              ///< 点赞数
+@property (nonatomic, strong, nullable) NSArray <NSString *> *picUrls;  ///< 大图 url
+@property (nonatomic, copy, nullable) NSString *shareUrl;               ///< 生成二维码的图文链接
+@property (nonatomic, copy) NSString *shareDescription;                 ///< 底部分享文案
 
+// Images
 @property (nonatomic, strong, nullable) UIImage *posterAvatarImage;
 @property (nonatomic, strong, nullable) UIImage *qrCodeImage;
 @property (nonatomic, strong, nullable) NSArray <UIImage *> *downloadedImages;
