@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head enableshare>
+        <title>测试</title>
+        <script src="http://cdn.bootcss.com/jquery/1.7/jquery.min.js"></script>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+                <link rel="stylesheet" href="css/default.css" />
+                <style>
+                    .ulrs {
+                        margin-bottom: 10px;
+                    }
+                .ulrs button{
+                    display: block;
+                    height: 45px;
+                    width: 90%;
+                    margin: auto;
+                    text-align: center;
+                    background-color: lightseagreen;
+                    border-radius: 5px;
+                }
+                pre#log{
+                    width:90%;
+                    margin: auto;
+                    font-size: 0.1rem;
+                    border: 1px silver solid;
+                    max-height: 350px;
+                    overflow: scroll;
+                }
+                </style>
+                </head>
+    <body>
+        <ul class="ulrs">
+            
+            <li><button onclick="openURL();">open URL</button></li>
+            <li><button onclick="openCustomSchemeURL();">open Custom Scheme URL</button></li>
+            <li><button onclick="openNewWebView();">open New Web View</button></li>
+            <li><button onclick="postMessage();">Post Message</button></li>
+            <li><button onclick="Warn();">Show Alert Dialog Box</button></li>
+            <li><button onclick="getConfirmation();">Show Confirmation Dialog Box</button></li>
+            <li><button onclick="getValue();">Show Prompt Dialog Box</button></li>
+            <li><button onclick="closeWindow();">Close Web View</button></li>
+        </ul>
+        <pre id="log"></pre>
+        <script>
+            function log(data){
+                var current = new Date();
+                var time = current.getHours()+":"+current.getMinutes()+":"+current.getSeconds()+" ";
+                $("pre#log").text($("pre#log").text()+time+data+"\r\n");
+                $("pre#log").scrollTop($("pre#log")[0].scrollHeight);
+                return true;
+            }
+        Zepto(function ($){
+              log("OnlyUApp init:"+typeof(OnlyUApp));
+              });
+
+        function openURL(){
+            window.location = "https://m.baidu.com";
+        }
+
+        function openCustomSchemeURL(){
+            window.location = "webviewdemo://test";
+        }
+        
+        
+        function openNewWebView(){
+            window.open("https://m.baidu.com", "_blank");
+<!--            window.location = "https://m.baidu.com";-->
+        }
+        
+        function postMessage(){
+<!--            window.webkit.messageHandlers.testHandler.postMessage("Hello, World")-->
+            window.webkit.messageHandlers.testHandler.postMessage({className: "Dog", functionName: "bark"})
+        }
+        
+        function Warn() {
+            alert ("This is a warning message!");
+<!--            document.write ("This is a warning message!");-->
+        }
+        
+        function getConfirmation(){
+            var retVal = confirm("Do you want to continue ?");
+            if( retVal == true ){
+<!--                document.write ("User wants to continue!");-->
+                return true;
+            }
+            else{
+<!--                document.write ("User does not want to continue!");-->
+                return false;
+            }
+        }
+        
+        function getValue(){
+            var retVal = prompt("Enter your name : ", "your name here");
+<!--            document.write("You have entered : " + retVal);-->
+        }
+        
+        function closeWindow(){
+            window.close();
+        }
+        
+        </script>
+    </body>
+</html>
