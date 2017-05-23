@@ -17,7 +17,7 @@
 ### 工作学习总结
 - 博客：[TechNotes](https://github.com/ShannonChenCHN/iOSLevelingUp/tree/master/TechNotes)
 - 个人作品：
-  - [Gitter](https://github.com/ShannonChenCHN/Gitter)：完全自己实现，不使用任何第三方库
+  - [Gitter](https://github.com/ShannonChenCHN/Gitter)：完全自己实现（包括网络请求、图片下载和缓存等），不使用任何第三方库
   - [SCGoJD](https://github.com/ShannonChenCHN/SCGoJD)：iOS 入门时做的早期作品，65颗星                 
   - [SCKit](https://github.com/ShannonChenCHN/SCKit)：工作中总结出来的代码库，基本上每个库都有[对应的博客](https://github.com/ShannonChenCHN/SCKit/issues/16)     
 - 读过的文档：View Programming Guide for iOS等，[阅读笔记见 Github](https://github.com/ShannonChenCHN/iOSLevelingUp/tree/master/ReadingArticles/AppleDocumentation)
