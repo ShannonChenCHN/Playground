@@ -34,7 +34,7 @@
             
             <li><button onclick="openURL();">open URL</button></li>
             <li><button onclick="openCustomSchemeURL();">open Custom Scheme URL</button></li>
-            <li><button onclick="openNewWebView();">open New Web View</button></li>
+            <li><button onclick="openURLInNewWebView();">open URL In New Web View</button></li>
             <li><button onclick="postMessage();">Post Message</button></li>
             <li><button onclick="Warn();">Show Alert Dialog Box</button></li>
             <li><button onclick="getConfirmation();">Show Confirmation Dialog Box</button></li>
@@ -63,9 +63,8 @@
         }
         
         
-        function openNewWebView(){
+        function openURLInNewWebView(){
             window.open("https://m.baidu.com", "_blank");
-<!--            window.location = "https://m.baidu.com";-->
         }
         
         function postMessage(){

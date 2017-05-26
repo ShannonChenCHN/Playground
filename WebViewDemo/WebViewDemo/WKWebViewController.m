@@ -14,6 +14,9 @@
 
 @interface WKWebViewController () <WKNavigationDelegate, WKUIDelegate, WKScriptMessageHandler>
 
+
+@property (copy, nonatomic) NSURL *URL;
+@property (strong, nonatomic) WKWebViewConfiguration *configuration;
 @property (weak, nonatomic) WKWebView *webView;
 @property (weak, nonatomic) WKWebViewMessageHandler *messageHandler;
 
@@ -50,12 +53,16 @@
     WKPreferences* preferences = [[WKPreferences alloc] init];
     preferences.javaScriptCanOpenWindowsAutomatically = YES;
     
-    WKWebViewConfiguration* configuration = [[WKWebViewConfiguration alloc] init];
-    configuration.userContentController = userContentController;
-    configuration.preferences = preferences;
+    
+    if (self.configuration == nil) {
+        WKWebViewConfiguration *configuration = [[WKWebViewConfiguration alloc] init];
+        configuration.userContentController = userContentController;
+        configuration.preferences = preferences;
+        self.configuration = configuration;
+    }
     
     // 创建 WKWebView
-    WKWebView* webView = [[WKWebView alloc] initWithFrame:self.view.bounds configuration:configuration];
+    WKWebView* webView = [[WKWebView alloc] initWithFrame:self.view.bounds configuration:self.configuration];
     webView.UIDelegate = self;
     webView.navigationDelegate = self;
     webView.allowsBackForwardNavigationGestures = YES;
@@ -63,7 +70,11 @@
     self.webView = webView;
     
     // 加载网页
-    [self loadFileURL];
+    if (self.URL) {
+        [self loadRequestWithURL:self.URL];
+    } else {
+        [self loadFileURL];
+    }
     
     // 读取 User-Agent
     [self.webView evaluateJavaScript:@"navigator.userAgent" completionHandler:^(id _Nullable result, NSError * _Nullable error) {
@@ -104,6 +115,10 @@
     [request setValue:@"Wolverine" forHTTPHeaderField:@"X-Men-Header"];
     [request setValue:@"Custom User Agent" forHTTPHeaderField:@"User-Agent"];
     [self.webView loadRequest:request];
+}
+
+- (void)loadRequestWithURL:(NSURL *)URL {
+    [self.webView loadRequest:[NSURLRequest requestWithURL:URL]];
 }
 
 #pragma mark - Observer
@@ -269,6 +284,7 @@
     // http://stackoverflow.com/a/26683888/7088321
     // If the page uses window.open() or target="_blank", open the page in a new view controller.
     WKWebViewController *wkWebViewController = [[WKWebViewController alloc] init];
+    wkWebViewController.URL = navigationAction.request.URL;
     wkWebViewController.navigationItem.title = @"New WKWebView";
     wkWebViewController.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:wkWebViewController animated:YES];
