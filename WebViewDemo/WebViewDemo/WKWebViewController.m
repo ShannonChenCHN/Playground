@@ -70,11 +70,11 @@
     self.webView = webView;
     
     // 加载网页
-    if (self.URL) {
-        [self loadRequestWithURL:self.URL];
-    } else {
+//    if (self.URL) {
+//        [self loadRequestWithURL:self.URL];
+//    } else {
         [self loadFileURL];
-    }
+//    }
     
     // 读取 User-Agent
     [self.webView evaluateJavaScript:@"navigator.userAgent" completionHandler:^(id _Nullable result, NSError * _Nullable error) {
@@ -208,6 +208,7 @@
     
     // WKWebView didn't finish loading, when didFinishNavigation is called - Bug in WKWebView?
     // https://stackoverflow.com/questions/30291534/wkwebview-didnt-finish-loading-when-didfinishnavigation-is-called-bug-in-wkw?rq=1
+    
 }
 
 // Called when an error occurs during navigation.

@@ -40,8 +40,12 @@
             <li><button onclick="getConfirmation();">Show Confirmation Dialog Box</button></li>
             <li><button onclick="getValue();">Show Prompt Dialog Box</button></li>
             <li><button onclick="closeWindow();">Close Web View</button></li>
+            <li><button onclick="setLocalStorage();">Set Local Storage</button></li>
+            <li><button onclick="readLocalStorage();">Read Local Storage</button></li>
+            <li><button onclick="localStorage.clear();">Clear Local Storage</button></li>
+
         </ul>
-        <pre id="log"></pre>
+        
         <script>
             function log(data){
                 var current = new Date();
@@ -72,7 +76,7 @@
             window.webkit.messageHandlers.testHandler.postMessage({className: "Dog", functionName: "bark"})
         }
         
-        function Warn() {
+        function Warn(){
             alert ("This is a warning message!");
 <!--            document.write ("This is a warning message!");-->
         }
@@ -96,6 +100,27 @@
         
         function closeWindow(){
             window.close();
+        }
+        
+        
+        
+        function setLocalStorage(){
+            var user = {'name' : "John", 'age': 24};
+            localStorage.setItem('user', JSON.stringify(user));
+            
+            var searchHistory = new Array("新天地", "大学路", "日月光");
+            localStorage.setItem('searchHistory', JSON.stringify(searchHistory));
+        }
+        
+        function readLocalStorage(){
+            
+            var retrievedObjectString = localStorage.getItem('user');
+            var retrievedObject = JSON.parse(retrievedObjectString);
+            if (retrievedObject != undefined) {
+                alert ("Hello! My Name is "+retrievedObject.name+", and I am "+retrievedObject.age);
+            } else {
+                alert ("There is no local storage!");
+            }
         }
         
         </script>
