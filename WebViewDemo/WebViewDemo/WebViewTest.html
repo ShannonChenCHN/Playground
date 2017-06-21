@@ -3,6 +3,13 @@
     <head enableshare>
         <title>测试</title>
         <script src="http://cdn.bootcss.com/jquery/1.7/jquery.min.js"></script>
+        <script type="text/JavaScript">
+            window.onload = function() {
+                document.documentElement.style.webkitUserSelect='none';   // 禁止弹出用户选择菜单
+                document.documentElement.style.webkitTouchCallout = 'none';  // 禁止长按弹窗
+            };
+            
+            </script>
         <meta charset="utf-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
                 <link rel="stylesheet" href="css/default.css" />

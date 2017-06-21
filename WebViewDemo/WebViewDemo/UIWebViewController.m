@@ -53,7 +53,10 @@
 }
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
-    
+//    // 禁止弹出用户选择菜单
+//    [self.webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.style.webkitUserSelect='none';"];
+//    // 禁止长按弹窗
+//    [self.webView stringByEvaluatingJavaScriptFromString:@"document.documentElement.style.webkitTouchCallout='none';"];
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
