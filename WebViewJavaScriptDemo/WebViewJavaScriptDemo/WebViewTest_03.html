@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>测试</title>
+        <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+                <link rel="stylesheet" href="css/default.css" />
+                <style>
+                    .ulrs {
+                        margin-bottom: 10px;
+                    }
+                    .ulrs button {
+                        display: block;
+                        height: 45px;
+                        width: 90%;
+                        margin: auto;
+                        text-align: center;
+                        background-color: lightseagreen;
+                        border-radius: 5px;
+                    }
+                </style>
+    </head>
+    <body>
+        <ul class="ulrs">
+            
+            <li><button onclick="WebViewDemo.requestLocation();">Get Location Info</button></li>
+            <li><button onclick="shareAction();">Share</button></li>
+            <li><button onclick="sayHi();">Say Hi!</button></li>
+
+        </ul>
+    
+        
+        <script>
+            
+            function setLocation(location) {
+                alert(location);
+            }
+        
+        
+            function shareAction() {
+                share('测试分享的标题', '测试分享的内容', 'http://www.baidu.com');
+            }
+        
+            function sayHi() {
+                <!--调起原生中的方法-->
+                greeting("Hello, Mr.Buller!");
+            }
+
+        </script>
+    </body>
+</html>
