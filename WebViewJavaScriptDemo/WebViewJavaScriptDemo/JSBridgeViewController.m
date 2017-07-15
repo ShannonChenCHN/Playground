@@ -9,6 +9,8 @@
 #import "JSBridgeViewController.h"
 #import <WebViewJavascriptBridge.h>
 
+#import "BirthdayPickerViewController.h"
+
 @interface JSBridgeViewController ()
     
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
@@ -23,8 +25,9 @@
     [super viewDidLoad];
     
     self.bridge = [WebViewJavascriptBridge bridgeForWebView:self.webView];
-    [self.bridge setWebViewDelegate:self];
     
+    
+    __weak typeof(self) weakSelf = self;
     [self.bridge registerHandler:@"requestLocation" handler:^(id data, WVJBResponseCallback responseCallback) {
         responseCallback(@"上海市浦东新区张江高科");
     }];
@@ -32,6 +35,19 @@
     [self.bridge registerHandler:@"share" handler:^(id data, WVJBResponseCallback responseCallback) {
         NSString *shareContent = [NSString stringWithFormat:@"标题：%@\n 内容：%@ \n url：%@",data[@"title"], data[@"content"], data[@"url"]];
         [self showAlertViewWithTitle:@"调用原生分享菜单" message:shareContent];
+    }];
+    
+    [self.bridge registerHandler:@"chooseADay" handler:^(id data, WVJBResponseCallback responseCallback) {
+        
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        
+        BirthdayPickerViewController *controller = [storyboard instantiateViewControllerWithIdentifier:@"BirthdayPickerViewController"];
+        controller.completionHandler = ^(NSString *birthday) {
+            responseCallback(birthday);
+        };
+        UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+        [weakSelf.navigationController presentViewController:navigationController animated:YES completion:NULL];
+    
     }];
     
     

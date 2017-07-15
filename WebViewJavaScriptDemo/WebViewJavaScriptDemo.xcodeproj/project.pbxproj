@@ -19,6 +19,7 @@
 		5850F57A1F0A3755007D8302 /* WebViewTest_01.html in Resources */ = {isa = PBXBuildFile; fileRef = 5850F5781F0A3755007D8302 /* WebViewTest_01.html */; };
 		5850F57B1F0A3755007D8302 /* WebViewTest_02.html in Resources */ = {isa = PBXBuildFile; fileRef = 5850F5791F0A3755007D8302 /* WebViewTest_02.html */; };
 		5850F57D1F0A4840007D8302 /* WebViewTest_03.html in Resources */ = {isa = PBXBuildFile; fileRef = 5850F57C1F0A4840007D8302 /* WebViewTest_03.html */; };
+		5850F5801F0B8129007D8302 /* BirthdayPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5850F57F1F0B8129007D8302 /* BirthdayPickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		5850F5781F0A3755007D8302 /* WebViewTest_01.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WebViewTest_01.html; sourceTree = "<group>"; };
 		5850F5791F0A3755007D8302 /* WebViewTest_02.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WebViewTest_02.html; sourceTree = "<group>"; };
 		5850F57C1F0A4840007D8302 /* WebViewTest_03.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = WebViewTest_03.html; sourceTree = "<group>"; };
+		5850F57E1F0B8129007D8302 /* BirthdayPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirthdayPickerViewController.h; sourceTree = "<group>"; };
+		5850F57F1F0B8129007D8302 /* BirthdayPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirthdayPickerViewController.m; sourceTree = "<group>"; };
 		C9C68494A424BAFCF8B89C87 /* libPods-WebViewJavaScriptDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WebViewJavaScriptDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76AF92B6238B91469CBBBBB /* Pods-WebViewJavaScriptDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WebViewJavaScriptDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WebViewJavaScriptDemo/Pods-WebViewJavaScriptDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +100,8 @@
 				5850F5731F0A3407007D8302 /* JSBridgeViewController.m */,
 				5850F5751F0A3675007D8302 /* JSCoreViewController.h */,
 				5850F5761F0A3675007D8302 /* JSCoreViewController.m */,
+				5850F57E1F0B8129007D8302 /* BirthdayPickerViewController.h */,
+				5850F57F1F0B8129007D8302 /* BirthdayPickerViewController.m */,
 				5850F5621F0A1D61007D8302 /* Main.storyboard */,
 				5850F5651F0A1D61007D8302 /* Assets.xcassets */,
 				5850F5671F0A1D61007D8302 /* LaunchScreen.storyboard */,
@@ -253,6 +258,7 @@
 				5850F55E1F0A1D61007D8302 /* AppDelegate.m in Sources */,
 				5850F55B1F0A1D61007D8302 /* main.m in Sources */,
 				5850F5771F0A3675007D8302 /* JSCoreViewController.m in Sources */,
+				5850F5801F0B8129007D8302 /* BirthdayPickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

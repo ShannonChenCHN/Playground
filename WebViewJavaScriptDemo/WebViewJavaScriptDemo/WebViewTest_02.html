@@ -3,10 +3,6 @@
     <head>
         <title>测试</title>
         <script type="text/JavaScript">
-            window.onload = function() {
-                document.documentElement.style.webkitUserSelect='none';   // 禁止弹出用户选择菜单
-                document.documentElement.style.webkitTouchCallout = 'none';  // 禁止长按弹窗
-            };
         
             function setupWebViewJavascriptBridge(callback) {
                 if (window.WebViewJavascriptBridge) {
@@ -56,6 +52,7 @@
             
             <li><button onclick="requestLocation();">Get Location Info</button></li>
             <li><button onclick="share();">Share</button></li>
+            <li><button onclick="chooseADay();">Choose Your Birthday</button></li>
 
         </ul>
     
@@ -70,9 +67,17 @@
         
         
             function share() {
-                var params = {'title':'测试分享的标题','content':'测试分享的内容','url':'http://www.baidu.com'};
-                WebViewJavascriptBridge.callHandler("share", params, function(response) {
-                                                    
+                var params = {'title':'测试分享的标题','content':'测试分享的内容','url':'http://www.baidu.com', 'user':{'name':'Jack', 'age':'23'}};
+                WebViewJavascriptBridge.callHandler("share", params, null);
+            }
+        
+            function chooseADay() {
+                WebViewJavascriptBridge.callHandler("chooseADay", null, function(response) {
+                                                        if (response == null) {
+                                                            alert('已取消');
+                                                        } else  {
+                                                            alert('您的生日是：' + response);
+                                                        }
                                                     });
             }
 
