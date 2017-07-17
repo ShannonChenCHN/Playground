@@ -15,19 +15,19 @@
 ---
 
 ### 工作学习总结
-- 博客：[TechNotes](https://github.com/ShannonChenCHN/iOSLevelingUp/tree/master/TechNotes)
+- 个人主页：[eureka](https://github.com/ShannonChenCHN/eureka)
 - 个人作品：
-  - [Gitter](https://github.com/ShannonChenCHN/Gitter)：完全自己实现（包括网络请求、图片下载和缓存等），不使用任何第三方库
   - [SCGoJD](https://github.com/ShannonChenCHN/SCGoJD)：iOS 入门时做的早期作品，65颗星                 
+  - [DianPingApp]()：React Native 与原生混合开发实现的『仿大众点评』 iOS APP。
   - [SCKit](https://github.com/ShannonChenCHN/SCKit)：工作中总结出来的代码库，基本上每个库都有[对应的博客](https://github.com/ShannonChenCHN/SCKit/issues/16)     
-- 读过的文档：View Programming Guide for iOS等，[阅读笔记见 Github](https://github.com/ShannonChenCHN/iOSLevelingUp/tree/master/ReadingArticles/AppleDocumentation)
 - 读过的经典开源代码：AFNetworking、SDWebImage、Mantle等，[阅读笔记见 Github](https://github.com/ShannonChenCHN/iOSLevelingUp/tree/master/ReadingSourceCode)
 - 读过的技术书：Objective-C 高级编程、Effective Objective-C 2.0等，[阅读笔记见 Github](https://github.com/ShannonChenCHN/iOSLevelingUp/tree/master/ReadingBooks)
 - 关于 Swift：
   - 读完了 The Swift Programming Language 3.1，并练习了书中所有[例子](https://github.com/ShannonChenCHN/ASwiftTour/tree/master/Playgrounds/TheSwiftProgrammingLanguage)，做了[总结笔记](https://github.com/ShannonChenCHN/ASwiftTour)  
   - 用 Swift 写过几个[小项目](https://github.com/ShannonChenCHN/ASwiftTour)  
   - 部分[开源控件](https://github.com/ShannonChenCHN/SCKit/issues/15)分别用 Swift 和 Objective-C 都实现了一遍  
-- 使用 Github 进行自我管理和个人规划
+- 关于 React Native
+  - 见[我的 React Native 学习之旅](https://github.com/ShannonChenCHN/AFrontEndWebDevTour/blob/master/React-Native/README.md)
 
 ### 工作经历
 
@@ -37,7 +37,7 @@
 
 **项目：YHouse （4人团队、美食玩乐预订+社交）**
 - 图文快照
-- h5
+- hybrid
 - React Native
 
 **项目：OnlyU （单人开发、视频聊天+IM+社区）**
