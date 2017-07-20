@@ -25,6 +25,8 @@
             
             <li><button onclick="requestLocation();">Get Location Info</button></li>
             <li><button onclick="share();">Share</button></li>
+            <li><button onclick="hideRightNavButtons();">Hide Right Navigation Bar Buttons</button></li>
+            <li><button onclick="showRightNavButtons();">Show Right Navigation Bar Buttons</button></li>
 
         </ul>
     
@@ -58,6 +60,29 @@
         
             function share() {
                 loadURL("webviewdemo://share?title=测试分享的标题&content=测试分享的内容&url=http://www.baidu.com");
+            }
+        
+            function hideRightNavButtons() {
+                var buttons = [];
+                
+                var buttonsJSONString = JSON.stringify(buttons);
+                var url = "webviewdemo://showRightNavButtons?buttons=" + buttonsJSONString;
+                loadURL(url);
+
+            }
+        
+            function showRightNavButtons() {
+                var shareButton = {'title': null, 'image': 'share', 'jsAction': 'share'};
+                
+                var guidesButton = {'title': '攻略', 'image': null, 'jsAction': 'share'};
+                
+                var buttons = [shareButton, guidesButton];
+                
+                var buttonsJSONString = JSON.stringify(buttons);
+                
+                var url = "webviewdemo://showRightNavButtons?buttons=" + buttonsJSONString;
+<!--                alert(url);-->
+                loadURL(url);
             }
 
 
