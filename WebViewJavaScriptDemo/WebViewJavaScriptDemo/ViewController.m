@@ -93,7 +93,7 @@
                     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:buttonInfo[@"title"] style:UIBarButtonItemStylePlain target:self action:@selector(showGuides)];
                     [buttonItems addObject:item];
                     
-                    self.guidesButtonInfo = [buttonInfo[@"jsAction"] isKindOfClass:[NSString class]] ? buttonInfo[@"jsAction"] : buttonInfo[@"nativeAction"];
+                    self.guidesButtonInfo = [buttonInfo[@"jsAction"] isKindOfClass:[NSString class]] ? buttonInfo[@"jsAction"] : nil;
                     
                 } else if ([buttonInfo[@"image"] isKindOfClass:[NSString class]]) {
                     NSString *imageName = buttonInfo[@"image"];
@@ -101,7 +101,7 @@
                     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(share)];
                     [buttonItems addObject:item];
                     
-                    self.shareButtonInfo = [buttonInfo[@"jsAction"] isKindOfClass:[NSString class]] ? buttonInfo[@"jsAction"] : buttonInfo[@"nativeAction"];
+                    self.shareButtonInfo = [buttonInfo[@"jsAction"] isKindOfClass:[NSString class]] ? buttonInfo[@"jsAction"] : nil;
                 }
                 
             }];
