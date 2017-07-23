@@ -29,21 +29,6 @@
     self.button1.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
     [self.button1 sc_setLayoutStyle:SCButtonLayoutStyleImageBottom spacing:20];
     
-    UIButton *button = nil;
-    // 目标图文间距
-    CGFloat interImageTitleSpacing = 5;
-
-    // 图片下移，右移
-    button.imageEdgeInsets = UIEdgeInsetsMake(button.titleLabel.frame.size.height + interImageTitleSpacing,
-                                            0,
-                                            0,
-                                            -(button.titleLabel.frame.size.width));
-    
-    // 文字上移，左移
-    button.titleEdgeInsets = UIEdgeInsetsMake(0,
-                                            -(button.imageView.frame.size.width),
-                                            button.imageView.frame.size.height + interImageTitleSpacing,
-                                            0);
     
     self.button2.contentVerticalAlignment = UIControlContentVerticalAlignmentTop;
     self.button2.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
