@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KWV-wF-PDH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Button Layout-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsE-NH-Mrx">
+                                <rect key="frame" x="150" y="114" width="75" height="75"/>
+                                <color key="backgroundColor" red="1" green="0.73946098989999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="NaL-jU-5HF"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="PZ6-91-28h"/>
+                                    <constraint firstAttribute="width" constant="75" id="d1N-WU-gW7"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="f9C-v1-h9E"/>
+                                </constraints>
+                                <state key="normal" title="like" image="like_icon">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSe-fM-YJT" customClass="CustomButton">
+                                <rect key="frame" x="150" y="296" width="75" height="75"/>
+                                <color key="backgroundColor" red="1" green="0.73946098989999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Mnb-27-5wf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="Xpe-MG-Mbe"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="ema-Zh-Ycq"/>
+                                    <constraint firstAttribute="width" constant="75" id="kIZ-t2-fUU"/>
+                                </constraints>
+                                <state key="normal" title="like" image="like_icon">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvT-IZ-LBa" customClass="SCCustomButton">
+                                <rect key="frame" x="150" y="542" width="75" height="75"/>
+                                <color key="backgroundColor" red="1" green="0.73946098989999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="75" id="Dua-nK-Vvf"/>
+                                    <constraint firstAttribute="width" constant="75" id="Ge5-UZ-gJX"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="75" id="Ssh-l3-YoZ"/>
+                                    <constraint firstAttribute="height" constant="75" id="j2f-oj-fcE"/>
+                                </constraints>
+                                <state key="normal" title="like" image="like_icon">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iSe-fM-YJT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Pb-8s-AMQ"/>
+                            <constraint firstItem="bvT-IZ-LBa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1qQ-FF-PmN"/>
+                            <constraint firstItem="wsE-NH-Mrx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Pq-gw-XKv"/>
+                            <constraint firstItem="iSe-fM-YJT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="OZl-48-509"/>
+                            <constraint firstAttribute="bottom" secondItem="bvT-IZ-LBa" secondAttribute="bottom" constant="50" id="aPM-lo-2Ep"/>
+                            <constraint firstItem="wsE-NH-Mrx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="dri-YZ-deo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Button Layout" id="xku-Ji-l5f"/>
+                    <connections>
+                        <outlet property="button1" destination="wsE-NH-Mrx" id="SxT-Ud-t5R"/>
+                        <outlet property="button2" destination="iSe-fM-YJT" id="wde-9g-VIW"/>
+                        <outlet property="button3" destination="bvT-IZ-LBa" id="zxT-bG-7dO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="492" y="127"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="E7x-Si-atf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KWV-wF-PDH" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cg8-Zq-9bc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="665-Z8-02m"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YBW-e3-7tX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-66.400000000000006" y="127.28635682158921"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="like_icon" width="26" height="24"/>
+    </resources>
+</document>
