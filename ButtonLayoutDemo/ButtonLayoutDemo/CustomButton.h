@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface CustomButton : UIButton
+
+@property (assign, nonatomic) CGFloat interTitleImageSpacing;  ///< 图片文字间距
+
 
 @end

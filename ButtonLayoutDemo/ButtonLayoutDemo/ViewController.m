@@ -25,15 +25,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // 方案一
     self.button1.contentVerticalAlignment = UIControlContentVerticalAlignmentTop;
     self.button1.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
-    [self.button1 sc_setLayoutStyle:SCButtonLayoutStyleImageBottom spacing:20];
+    [self.button1 sc_setLayoutStyle:SCButtonLayoutStyleImageTop spacing:20];
     
+    // 方案二
+    self.button2.interTitleImageSpacing = 20;
+    self.button2.titleLabel.textAlignment = NSTextAlignmentCenter;
     
-    self.button2.contentVerticalAlignment = UIControlContentVerticalAlignmentTop;
-    self.button2.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;
-    
-    
+    // 方案三
     self.button3.interTitleImageSpacing = 20;
     self.button3.imagePosition = SCCustomButtonImagePositionTop;
     self.button3.contentVerticalAlignment = UIControlContentVerticalAlignmentTop;
