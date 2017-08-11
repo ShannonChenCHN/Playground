@@ -47,8 +47,6 @@
     [self.webView loadHTMLString:HTMLString baseURL:nil];
     
     
-    
-    
 }
     
 - (IBAction)callJavaScript {
