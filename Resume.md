@@ -36,8 +36,19 @@
 ###### 职位：iOS 开发工程师
 
 **项目：YHouse （4人团队、美食玩乐预订+社交）**
-- 图文快照
+- 图文快照（1.0~2.0）
+  - 架构
+  - 改进 
+  - 日志系统
+  - 二维码（包括 CoreImage）
+  - CoreGraphics
+  - UI 布局
 - hybrid
+  - WKWebView/SCWebBrowerView
+  - 架构上的优化
+    - JS Bridge
+    - 规范管理，易于扩展
+  - 性能上的优化
 - React Native
 
 **项目：OnlyU （单人开发、视频聊天+IM+社区）**
