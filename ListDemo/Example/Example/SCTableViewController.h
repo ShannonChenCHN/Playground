@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SCTableViewController.h
 //  Example
 //
 //  Created by ShannonChen on 2017/8/4.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface SCTableViewController : UIViewController
 
 
 @end
