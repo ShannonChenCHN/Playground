@@ -2,7 +2,7 @@
 //  SCTableViewDataSource.m
 //  Example
 //
-//  Created by yhouse on 2017/9/4.
+//  Created by ShannonChen on 2017/9/4.
 //  Copyright © 2017年 ShannonChen. All rights reserved.
 //
 
@@ -68,8 +68,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     if (self.sectionModels.count > indexPath.section &&
         self.sectionModels[indexPath.section].cellModels.count > indexPath.row) {
+        
         SCTableViewCellModel *model = self.sectionModels[indexPath.section].cellModels[indexPath.row];
         
         SCTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:model.cellIdentifier];

@@ -19,6 +19,14 @@
 
 @implementation SCTableViewController
 
+
+/***
+ 
+ TODO：
+ 1.实际案例的使用
+ 
+ **/
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     

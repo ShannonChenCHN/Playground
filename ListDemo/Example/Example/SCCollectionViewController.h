@@ -2,7 +2,7 @@
 //  SCCollectionViewController.h
 //  Example
 //
-//  Created by yhouse on 2017/9/4.
+//  Created by ShannonChen on 2017/9/4.
 //  Copyright © 2017年 ShannonChen. All rights reserved.
 //
 
