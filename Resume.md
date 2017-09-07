@@ -21,7 +21,7 @@
 ### 工作经历
 
 
-#### 上海悦会信息科技有限公司 （ 2016年08月 ~ 2017年09月 ）
+#### 公司：上海悦会信息科技有限公司 （ 2016年08月 ~ 2017年09月 ）
 ##### 职位：iOS 开发工程师
 
 ##### 项目：YHOUSE （4人团队、美食玩乐预订+社交）
@@ -34,12 +34,12 @@
   - 定义一套 `NSError` 规则，并引入了日志系统，用来记录和上报错误，一旦出现错误，就可追踪到详细信息
 - Hybrid
   - 引入 `WKWebView`
-    - 通过查阅文档和博客，调研了 WKWebView 的基本使用和各种坑，参考多个不同的开源方案，结合项目的自身需求，设计了一个同时支持 `UIWebView` 和 `WKWebView` 的类库 [SCWebBrowerView](https://github.com/ShannonChenCHN/SCWebBrowserView)
-    - 为了避免因为迁移到 `WKWebView` 导致上线后出现新的问题，采用了类簇模式优雅地实现新旧 web view controller 的动态切换
+     - 通过查阅文档和博客，调研了 WKWebView 的基本使用和各种坑，参考多个不同的开源方案，结合项目的自身需求，设计了一个同时支持 `UIWebView` 和 `WKWebView` 的类库 [SCWebBrowerView](https://github.com/ShannonChenCHN/SCWebBrowserView)
+     - 为了避免因为迁移到 `WKWebView` 导致上线后出现新的问题，采用了类簇模式优雅地实现新旧 web view controller 的动态切换
   - 架构上的优化
-    - 引入 JS Bridge 机制，规范 JS 和 OC 之间的调用关系
-    - 针对项目现状，通过研究 `WebViewJavaScriptBridge` 框架，分别在 JS 和 OC 端做了架构设计上的优化，解决了以前一个项目中存在多个 web view 和 web view controller 的问题，同时改进了 JS 端的调用方式，从沟通成本和研发成本上提高了开发效率
-    - 负责编写了相关文档，力求减低沟通成本，同时保证项目后续的生命力
+     - 引入 JS Bridge 机制，规范 JS 和 OC 之间的调用关系
+     - 针对项目现状，通过研究 `WebViewJavaScriptBridge` 框架，分别在 JS 和 OC 端做了架构设计上的优化，解决了以前一个项目中存在多个 web view 和 web view controller 的问题，同时改进了 JS 端的调用方式，从沟通成本和研发成本上提高了开发效率
+     - 负责编写了相关文档，力求减低沟通成本，同时保证项目后续的生命力
 - 会员页
   - 自定义 `UICollectionViewFlowLayout` 来实现可定义吸顶偏移量的 `section header` 
   - 借鉴 MVVM 架构的设计，采用 POP 的方式，抽象了一套可复用的列表框架
@@ -61,9 +61,8 @@
 - 优化 cookie 管理机制，实现原生与 web view 共享 cookie
 - 设计了一个可动态配置的个人中心列表，整个列表可以在后台自由控制展示内容和交互
 
-
  
-#### 宝宝树的电商-美囤妈妈 （ 2015年10月 ~ 2016年07月 ）
+#### 公司：宝宝树的电商-美囤妈妈 （ 2015年10月 ~ 2016年07月 ）
 ##### 职位：iOS 开发工程师
 
 ##### 项目：宝宝树孕育、美囤妈妈 （多人团队、电商+社区）   
@@ -81,17 +80,17 @@
 - 与前端同学一起解决 `UIWebView` 加载 h5 页面崩溃的问题
 - 通过 Instrument 工具找出了机身发热的元凶 —— 导航栏中跑马灯的 bug 导致 CPU 消耗过高
 
-
 #### 中航工业江西洪都航空工业集团有限责任公司 （ 2014年07月 ~ 2015年09月 ）
 
 ##### 职位：飞机装配工艺工程师
+
 
 ---
 
 ### 开源项目和作品
 - 技术文章
   - [WebViewJavascriptBridge 详解](http://www.jianshu.com/p/6f34903be630) ：Hybrid 优化过程中的调研总结，从`WebViewJavascriptBridge` 的功能 API、实现原理到源码解读、针对公司项目现状的最佳实践做了一个全面的介绍
-  - [SDWebImage 源码阅读笔记](http://www.jianshu.com/p/06f0265c22eb)：在实现图文快照需求过程中，其中用到 `SDWebImage` 来下载图片，在使用该框架的过程中也遇到了一些问题，索性就把 `SDWebImage` 源码详细阅读了一下，学习其中的设计思想和技术点
+  - [SDWebImage 源码阅读笔记](http://www.jianshu.com/p/06f0265c22eb)：在实现图文快照需求过程中，其中用到 `SDWebImage` 来批量下载图片，在使用该框架的过程中也遇到了一些问题，索性就把 `SDWebImage` 源码详细阅读了一下，学习其中的设计思想和技术点
   - [图文快照分享框架的实现](http://www.jianshu.com/p/b3fcb449cb35)：对图文快照需求实现过程的总结，针对长图片的功能从需求分析，到技术实现、架构抽象、相关问题讨论做了一个简单的介绍
 - 个人作品
   - [SCKit](https://github.com/ShannonChenCHN/SCKit)：自己在平时工作中总结出来的代码库合辑，包括一些常用的可复用的 UI 控件、业务开发中抽象出来的框架、调试工具等                
@@ -102,7 +101,6 @@
 -----
 
 ### 技能清单
-
 - 语言：
   - C（熟练）
   - Objective-C（熟练）
