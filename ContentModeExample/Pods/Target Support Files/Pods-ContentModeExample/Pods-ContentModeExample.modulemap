@@ -1,0 +1,6 @@
+framework module Pods_ContentModeExample {
+  umbrella header "Pods-ContentModeExample-umbrella.h"
+
+  export *
+  module * { export * }
+}
