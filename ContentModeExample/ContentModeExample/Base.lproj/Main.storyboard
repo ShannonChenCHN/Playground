@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ContentModeExample-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ContentModeExample" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,7 +36,7 @@
                             <constraint firstItem="9bD-ga-DpG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="sb7-xg-EpJ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="7O9-2d-oHI">
+                    <navigationItem key="navigationItem" title="ContentModeExample" id="7O9-2d-oHI">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="SUN-NJ-pga">
                             <connections>
                                 <segue destination="Zft-e8-P5o" kind="presentation" id="Sxb-yH-ppq"/>

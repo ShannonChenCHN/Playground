@@ -13,14 +13,30 @@ class SettingViewController: FormViewController {
     
     var imageName: String?
     var contentMode: UIViewContentMode?
-    var lastController: UIViewController? {
+    var clipToBounds: Bool?
+    
+    
+    var lastController: ViewController? {
         if let presentingViewController: UINavigationController = self.presentingViewController as? UINavigationController {
             
-            return presentingViewController.childViewControllers.first!
+            return presentingViewController.childViewControllers.first as? ViewController
         }
         return nil
     }
     
+    let contentModeMap: [UIViewContentMode: String] = [.scaleToFill : "scaleToFill",
+                                                       .scaleAspectFit : "scaleAspectFit",
+                                                       .scaleAspectFill : "scaleAspectFill",
+                                                       .redraw : "redraw",
+                                                       .center : "center",
+                                                       .top : "top",
+                                                       .bottom : "bottom",
+                                                       .left : "left",
+                                                       .right : "right",
+                                                       .topLeft : "topLeft",
+                                                       .topRight : "topRight",
+                                                       .bottomLeft : "bottomLeft",
+                                                       .bottomRight : "bottomRight"]
     
 
     override func viewDidLoad() {
@@ -28,30 +44,18 @@ class SettingViewController: FormViewController {
         
         
         
-        imageName = lastController?.value(forKey: "imageName") as? String
-        contentMode = lastController?.value(forKey: "contentMode") as? UIViewContentMode
-        
-        let contentModeMap: [UIViewContentMode: String] = [.scaleToFill : "scaleToFill",
-                                                           .scaleAspectFit : "scaleAspectFit",
-                                                           .scaleAspectFill : "scaleAspectFill",
-                                                           .redraw : "redraw",
-                                                           .center : "center",
-                                                           .top : "top",
-                                                           .bottom : "bottom",
-                                                           .left : "left",
-                                                           .right : "right",
-                                                           .topLeft : "topLeft",
-                                                           .topRight : "topRight",
-                                                           .bottomLeft : "bottomLeft",
-                                                           .bottomRight : "bottomRight"]
+        imageName = lastController?.imageName
+        contentMode = lastController?.contentMode
+        clipToBounds = lastController?.clipToBounds
+       
 
         form +++ Section("Section1")
             <<< ActionSheetRow<String>() {
                 $0.tag = "imageName";
                 $0.title = "Image Name"
-                $0.selectorTitle = "Select an Image to Show"
-                $0.options = ["Inspiration_01", "Inspiration_02"]
-                $0.value = imageName ?? "Inspiration_01"
+                $0.selectorTitle = "Select an image to show"
+                $0.options = ["inspiration_01", "inspiration_02"]
+                $0.value = imageName ?? "inspiration_01"
                 }
                 .onPresent { from, to in
                     to.popoverPresentationController?.permittedArrowDirections = .up
@@ -60,7 +64,7 @@ class SettingViewController: FormViewController {
             <<< ActionSheetRow<String>(){
                 $0.tag = "contentMode"
                 $0.title = "Content Mode"
-                $0.selectorTitle = "Specify a Content Mode for Image Displying"
+                $0.selectorTitle = "Specify a content mode for image displying"
                 $0.options = ["scaleToFill", "scaleAspectFit", "scaleAspectFill", "redraw", "center", "top", "bottom", "left", "right", "topLeft", "topRight", "bottomLeft", "bottomRight"]
                 
                 if let contentMode = contentMode, let value = contentModeMap[contentMode] {
@@ -72,6 +76,22 @@ class SettingViewController: FormViewController {
                 .onPresent { from, to in
                     to.popoverPresentationController?.permittedArrowDirections = .up
             }
+        
+            <<< ActionSheetRow<String>() {
+                $0.tag = "clipToBounds"
+                $0.title = "Clip To Bounds"
+                $0.selectorTitle = "Should clip image content to the bounds of the image view?"
+                $0.options = ["YES", "NO"]
+                if let clipToBounds = clipToBounds, clipToBounds == true {
+                    $0.value = "YES"
+                } else {
+                    $0.value = "NO"
+                }
+
+            }
+        .onPresent{ from, to in
+            to.popoverPresentationController?.permittedArrowDirections = .up
+        }
     
     }
 
@@ -82,25 +102,22 @@ class SettingViewController: FormViewController {
         navigationController?.dismiss(animated: true, completion: nil)
         
         
-        let valuesDictionary = form.values()
+        let contentModeString = form.values()["contentMode"] as? String
+        let contentMode = (contentModeMap as NSDictionary).allKeys(for: contentModeString!) as! [UIViewContentMode]
+        lastController?.contentMode = contentMode.last
         
-        for item in valuesDictionary {
-            print(item)
-            if let item = item as? [String: String] {
-                lastController?.setValue(item["value"], forKey: item["key"]!)
-            }
-            
+        
+
+        let imageName = form.values()["imageName"] as? String
+        if let imageName = imageName {
+            lastController?.imageName = imageName
         }
+        
+        let clipToBounds = form.values()["clipToBounds"] as? String
+        if let clipToBounds = clipToBounds {
+            lastController?.clipToBounds = clipToBounds == "YES" ? true : false
+        }
+        
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

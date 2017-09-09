@@ -12,12 +12,26 @@ class ViewController: UIViewController {
     
     var imageName: String? {
         didSet {
-            imageView.image = UIImage.init(named: imageName!)
+            if let imageName = imageName {
+                imageView.image = UIImage.init(named: imageName)
+            }
         }
     }
     var contentMode: UIViewContentMode? {
         didSet {
-            imageView.contentMode = contentMode!
+
+            if let contentMode = contentMode {
+                imageView.contentMode = contentMode
+            }
+            
+        }
+    }
+    
+    var clipToBounds: Bool? {
+        didSet {
+            if let clipToBounds = clipToBounds {
+                imageView.clipsToBounds = clipToBounds
+            }
         }
     }
     
@@ -28,8 +42,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         imageName = "inspiration_01"
         contentMode = UIViewContentMode.scaleToFill
+        clipToBounds = true
     }
-
     
 
 }
