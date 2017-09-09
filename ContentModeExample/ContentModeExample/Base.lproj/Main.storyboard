@@ -65,7 +65,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Setting" id="mmx-dl-w8z">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="ErV-Mn-Gfd">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ErV-Mn-Gfd">
                             <connections>
                                 <action selector="dissmiss:" destination="fRa-ax-b7D" id="qGq-Tr-uMn"/>
                             </connections>

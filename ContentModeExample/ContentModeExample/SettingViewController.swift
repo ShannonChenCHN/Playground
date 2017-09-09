@@ -49,12 +49,12 @@ class SettingViewController: FormViewController {
         clipToBounds = lastController?.clipToBounds
        
 
-        form +++ Section("Section1")
+        form +++ Section("")
             <<< ActionSheetRow<String>() {
                 $0.tag = "imageName";
                 $0.title = "Image Name"
                 $0.selectorTitle = "Select an image to show"
-                $0.options = ["inspiration_01", "inspiration_02"]
+                $0.options = ["inspiration_01", "inspiration_02", "small_icon"]
                 $0.value = imageName ?? "inspiration_01"
                 }
                 .onPresent { from, to in
