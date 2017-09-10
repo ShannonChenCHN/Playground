@@ -1,0 +1,28 @@
+platform :ios, '10.2'
+
+workspace 'CocoaPodsDemo.xcworkspace'
+project 'YHMainApp/YHMainApp.xcodeproj'
+
+
+target :'YHMainApp' do
+    project 'YHMainApp/YHMainApp.xcodeproj'
+
+    pod 'AFNetworking',  '3.1.0'
+    pod 'YHLibrary',    :path => './YHLibrary'
+    pod 'YHCommunity',    :path => './YHCommunity'
+
+end
+
+target :'YHCommunity' do
+    project 'YHCommunity/YHCommunity.xcodeproj'
+    
+    pod 'AFNetworking',  '3.1.0'
+#    pod 'YHLibrary',    :path => './YHLibrary'
+end
+
+target :'YHLibrary' do
+    project 'YHLibrary/YHLibrary.xcodeproj'
+
+
+
+end

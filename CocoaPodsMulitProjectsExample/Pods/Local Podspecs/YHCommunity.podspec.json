@@ -1,0 +1,35 @@
+{
+  "name": "YHCommunity",
+  "version": "2.0",
+  "license": "Commercial",
+  "homepage": "https://www.yhouse.com/",
+  "authors": "YHOUSE",
+  "summary": "YHCommunity",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "source_files": [
+    "YHCommunity/**/**/*.{h,m,c}"
+  ],
+  "public_header_files": [
+    "YHCommunity/**/**/*.{h,c}"
+  ],
+  "resources": [
+    "YHCommunity/*.xcassets",
+    "YHCommunity/**/*.xib",
+    "YHCommunity/Community/**/*"
+  ],
+  "exclude_files": [
+    "YHCommunity/AppDelegate.{h,m}",
+    "YHCommunity/**/main.m",
+    "YHCommunity/ViewController.{h,m}"
+  ],
+  "dependencies": {
+    "YHLibrary": [
+
+    ]
+  },
+  "source": {
+    "path": "YHCommunity"
+  }
+}
