@@ -11,6 +11,9 @@
 static NSUInteger kCurrentUserId = 123;
 
 
+/**
+ 个人详情
+ */
 @interface SCUserProfileViewController : UIViewController
 
 @property (assign, nonatomic) NSUInteger userId;
