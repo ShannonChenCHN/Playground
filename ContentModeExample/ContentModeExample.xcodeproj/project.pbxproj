@@ -13,6 +13,8 @@
 		58638BA21F624920003047B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58638BA11F624920003047B1 /* Assets.xcassets */; };
 		58638BA51F624920003047B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58638BA31F624920003047B1 /* LaunchScreen.storyboard */; };
 		58638BAD1F6289E7003047B1 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58638BAC1F6289E7003047B1 /* SettingViewController.swift */; };
+		58D0019B1F666ADE00BA3606 /* UIImageViewAligned.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D0019A1F666ADE00BA3606 /* UIImageViewAligned.swift */; };
+		58D0019D1F66ACBE00BA3606 /* CustomDrawingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58D0019C1F66ACBE00BA3606 /* CustomDrawingImageView.swift */; };
 		B966E2A03030450F5E3A64BB /* Pods_ContentModeExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A9701C6C3CBC75224418B2F /* Pods_ContentModeExample.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +28,8 @@
 		58638BA41F624920003047B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58638BA61F624920003047B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58638BAC1F6289E7003047B1 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		58D0019A1F666ADE00BA3606 /* UIImageViewAligned.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewAligned.swift; sourceTree = "<group>"; };
+		58D0019C1F66ACBE00BA3606 /* CustomDrawingImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDrawingImageView.swift; sourceTree = "<group>"; };
 		6A9701C6C3CBC75224418B2F /* Pods_ContentModeExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ContentModeExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE1AAD83F629E6F8C75F4F1B /* Pods-ContentModeExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ContentModeExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ContentModeExample/Pods-ContentModeExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,8 +76,10 @@
 			isa = PBXGroup;
 			children = (
 				58638B9A1F624920003047B1 /* AppDelegate.swift */,
+				58D0019A1F666ADE00BA3606 /* UIImageViewAligned.swift */,
 				58638B9C1F624920003047B1 /* ViewController.swift */,
 				58638BAC1F6289E7003047B1 /* SettingViewController.swift */,
+				58D0019C1F66ACBE00BA3606 /* CustomDrawingImageView.swift */,
 				58638B9E1F624920003047B1 /* Main.storyboard */,
 				58638BA11F624920003047B1 /* Assets.xcassets */,
 				58638BA31F624920003047B1 /* LaunchScreen.storyboard */,
@@ -126,6 +132,7 @@
 				TargetAttributes = {
 					58638B961F624920003047B1 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = L32PN8QKLZ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -223,6 +230,8 @@
 				58638B9D1F624920003047B1 /* ViewController.swift in Sources */,
 				58638B9B1F624920003047B1 /* AppDelegate.swift in Sources */,
 				58638BAD1F6289E7003047B1 /* SettingViewController.swift in Sources */,
+				58D0019D1F66ACBE00BA3606 /* CustomDrawingImageView.swift in Sources */,
+				58D0019B1F666ADE00BA3606 /* UIImageViewAligned.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +357,9 @@
 			baseConfigurationReference = FE1AAD83F629E6F8C75F4F1B /* Pods-ContentModeExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L32PN8QKLZ;
 				INFOPLIST_FILE = ContentModeExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shannon.com.ContentModeExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,7 +372,9 @@
 			baseConfigurationReference = 151D8BB7BDCFE59157AE3016 /* Pods-ContentModeExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L32PN8QKLZ;
 				INFOPLIST_FILE = ContentModeExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shannon.com.ContentModeExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -388,6 +401,7 @@
 				58638BAB1F624920003047B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
