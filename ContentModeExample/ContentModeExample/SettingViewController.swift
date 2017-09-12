@@ -9,11 +9,15 @@
 import UIKit
 import Eureka
 
+
+
 class SettingViewController: FormViewController {
     
+    // MARK: Properties
     var imageName: String?
     var contentMode: UIViewContentMode?
     var clipToBounds: Bool?
+    var imageAlignment: UIImageViewAlignmentMask?
     
     
     var lastController: ViewController? {
@@ -37,17 +41,23 @@ class SettingViewController: FormViewController {
                                                        .topRight : "topRight",
                                                        .bottomLeft : "bottomLeft",
                                                        .bottomRight : "bottomRight"]
+    let alignmentMap: [UIImageViewAlignmentMask.RawValue: String] = [UIImageViewAlignmentMask.top.rawValue : "top",
+                                                                     UIImageViewAlignmentMask.left.rawValue : "left",
+                                                                     UIImageViewAlignmentMask.topLeft.rawValue : "topLeft",
+                                                                     UIImageViewAlignmentMask.center.rawValue : "center"]
+    
+    
+    
     
 
+    // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         
         imageName = lastController?.imageName
         contentMode = lastController?.contentMode
         clipToBounds = lastController?.clipToBounds
-       
+        imageAlignment = lastController?.imageAlignment
 
         form +++ Section("")
             <<< ActionSheetRow<String>() {
@@ -71,6 +81,21 @@ class SettingViewController: FormViewController {
                     $0.value = value
                 } else {
                     $0.value = "scaleToFill"
+                }
+                }
+                .onPresent { from, to in
+                    to.popoverPresentationController?.permittedArrowDirections = .up
+            }
+            
+            <<< ActionSheetRow<String>() {
+                $0.tag = "alignment";
+                $0.title = "Image Alignment"
+                $0.selectorTitle = "Select a style to align the image."
+                $0.options = ["top", "left", "topLeft", "center"]
+                if let imageAlignment = imageAlignment, let value = alignmentMap[imageAlignment.rawValue] {
+                    $0.value = value
+                } else {
+                    $0.value = "none"
                 }
                 }
                 .onPresent { from, to in
@@ -106,6 +131,9 @@ class SettingViewController: FormViewController {
         let contentMode = (contentModeMap as NSDictionary).allKeys(for: contentModeString!) as! [UIViewContentMode]
         lastController?.contentMode = contentMode.last
         
+        let alignmentString = form.values()["alignment"] as? String
+        let alignment = (alignmentMap as NSDictionary).allKeys(for: alignmentString!) as! [UIImageViewAlignmentMask.RawValue]
+        lastController?.imageAlignment = alignment.last.map { UIImageViewAlignmentMask(rawValue: $0) }
         
 
         let imageName = form.values()["imageName"] as? String
