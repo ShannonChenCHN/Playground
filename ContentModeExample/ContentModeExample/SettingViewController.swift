@@ -75,7 +75,7 @@ class SettingViewController: FormViewController {
                 $0.tag = "contentMode"
                 $0.title = "Content Mode"
                 $0.selectorTitle = "Specify a content mode for image displying"
-                $0.options = ["scaleToFill", "scaleAspectFit", "scaleAspectFill", "redraw", "center", "top", "bottom", "left", "right", "topLeft", "topRight", "bottomLeft", "bottomRight", "scaleAspectFillTop"]
+                $0.options = ["scaleToFill", "scaleAspectFit", "scaleAspectFill", "redraw", "center", "top", "bottom", "left", "right", "topLeft", "topRight", "bottomLeft", "bottomRight"]
                 
                 if let contentMode = contentMode, let value = contentModeMap[contentMode] {
                     $0.value = value
