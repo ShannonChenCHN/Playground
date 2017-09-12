@@ -95,7 +95,7 @@ class SettingViewController: FormViewController {
                 if let imageAlignment = imageAlignment, let value = alignmentMap[imageAlignment.rawValue] {
                     $0.value = value
                 } else {
-                    $0.value = "center"
+                    $0.value = "none"
                 }
                 }
                 .onPresent { from, to in

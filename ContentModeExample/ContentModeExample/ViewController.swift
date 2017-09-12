@@ -63,6 +63,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         clipToBounds = true
     }
     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        let imageWH = 120 / 375.0 * UIScreen.main.bounds.size.width
+        
+        imageView.frame.size = CGSize.init(width: imageWH, height: imageWH)
+        imageView.center = view.center
+
+    }
+    
     
     // MARK: Actions
     @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
