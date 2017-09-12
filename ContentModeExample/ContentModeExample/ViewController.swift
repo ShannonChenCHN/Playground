@@ -14,7 +14,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     
     // MARK: Properties
     let kAssetsImageName = "assetsImage"
-    @IBOutlet weak var imageView: UIImageViewAligned!
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var customImageView: CustomDrawingImageView!
     
     
@@ -44,14 +44,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         }
     }
     
-    var imageAlignment: UIImageViewAlignmentMask? {
-        didSet {
-            if let imageAlignment = imageAlignment {
-                imageView.alignment = imageAlignment
-            }
-            
-        }
-    }
+//    var imageAlignment: UIImageViewAlignmentMask? {
+//        didSet {
+//            if let imageAlignment = imageAlignment {
+//                imageView.alignment = imageAlignment
+//            }
+//            
+//        }
+//    }
     
 
     // MARK: Life Cycle
@@ -66,7 +66,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        let imageWH = 120 / 375.0 * UIScreen.main.bounds.size.width
+        let imageWH = 20 / 375.0 * UIScreen.main.bounds.size.width
         
         imageView.frame.size = CGSize.init(width: imageWH, height: imageWH)
         imageView.center = view.center
