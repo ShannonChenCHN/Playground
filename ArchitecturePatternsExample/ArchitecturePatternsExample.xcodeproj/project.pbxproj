@@ -20,6 +20,7 @@
 		588B2F5A1F66E9BB007660CF /* SCDraftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F541F66E9BB007660CF /* SCDraftTableViewController.m */; };
 		588B2F5B1F66E9BB007660CF /* SCUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F571F66E9BB007660CF /* SCUserInfoViewController.m */; };
 		588B2F5C1F66E9BB007660CF /* SCUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 588B2F581F66E9BB007660CF /* SCUserInfoViewController.xib */; };
+		588B2F601F6AC732007660CF /* SCUserAPIManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F5F1F6AC732007660CF /* SCUserAPIManger.m */; };
 		987CEFF0BD7501A5B1BD30C9 /* libPods-ArchitecturePatternsExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8C9ADCD2117BDFD4ECA2A8 /* libPods-ArchitecturePatternsExample.a */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +50,8 @@
 		588B2F561F66E9BB007660CF /* SCUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserInfoViewController.h; sourceTree = "<group>"; };
 		588B2F571F66E9BB007660CF /* SCUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUserInfoViewController.m; sourceTree = "<group>"; };
 		588B2F581F66E9BB007660CF /* SCUserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCUserInfoViewController.xib; sourceTree = "<group>"; };
+		588B2F5E1F6AC732007660CF /* SCUserAPIManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserAPIManger.h; sourceTree = "<group>"; };
+		588B2F5F1F6AC732007660CF /* SCUserAPIManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUserAPIManger.m; sourceTree = "<group>"; };
 		5CA4B71FAB662D6F80A3C9F1 /* Pods-ArchitecturePatternsExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitecturePatternsExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitecturePatternsExample/Pods-ArchitecturePatternsExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +94,7 @@
 				588B2F231F65905D007660CF /* AppDelegate.m */,
 				588B2F251F65905D007660CF /* ViewController.h */,
 				588B2F261F65905D007660CF /* ViewController.m */,
+				588B2F5D1F6AC6F7007660CF /* APIManager */,
 				588B2F361F6594C7007660CF /* MVC */,
 				588B2F281F65905D007660CF /* Main.storyboard */,
 				588B2F2B1F65905D007660CF /* Assets.xcassets */,
@@ -157,6 +161,15 @@
 				588B2F581F66E9BB007660CF /* SCUserInfoViewController.xib */,
 			);
 			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		588B2F5D1F6AC6F7007660CF /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				588B2F5E1F6AC732007660CF /* SCUserAPIManger.h */,
+				588B2F5F1F6AC732007660CF /* SCUserAPIManger.m */,
+			);
+			path = APIManager;
 			sourceTree = "<group>";
 		};
 		8C46C98EEDE87953751DB21E /* Frameworks */ = {
@@ -307,6 +320,7 @@
 				588B2F241F65905D007660CF /* AppDelegate.m in Sources */,
 				588B2F5A1F66E9BB007660CF /* SCDraftTableViewController.m in Sources */,
 				588B2F211F65905D007660CF /* main.m in Sources */,
+				588B2F601F6AC732007660CF /* SCUserAPIManger.m in Sources */,
 				588B2F401F659697007660CF /* SCUserSelfProfileViewController.m in Sources */,
 				588B2F5B1F66E9BB007660CF /* SCUserInfoViewController.m in Sources */,
 			);

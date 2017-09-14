@@ -10,7 +10,7 @@
 
 @implementation SCBlogTableViewController
 
-- (instancetype)initWithUserId:(NSUInteger)userId {
+- (instancetype)initWithUserId:(NSString *)userId {
     self = [super init];
     if (self) {
         _userId = userId;

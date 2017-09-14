@@ -24,7 +24,7 @@
 @implementation SCUserProfileViewController
     
     
-- (instancetype)initWithUserId:(NSUInteger)userId {
+- (instancetype)initWithUserId:(NSString *)userId {
     if (self = [super init]) {
         _userId = userId;
     }
@@ -35,11 +35,8 @@
     [super viewDidLoad];
     
     
-    if (self.userId == kCurrentUserId) {
-        self.title = @"我";
-    } else {
-        self.title = [NSString stringWithFormat:@"用户 %li", self.userId];
-    }
+    
+    self.title = [NSString stringWithFormat:@"用户 %@", self.userId];
     
     self.view.backgroundColor = [UIColor whiteColor];
     

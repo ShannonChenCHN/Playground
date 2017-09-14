@@ -8,6 +8,32 @@
 
 #import "SCUserAPIManger.h"
 
+@interface SCUserAPIManger ()
+
+@property (strong, nonatomic) NSString *userId;
+    
+@end
+
 @implementation SCUserAPIManger
 
+- (instancetype)initWithUserId:(NSString *)userId {
+    
+    self = [super init];
+    if (self) {
+        _userId = userId;
+    }
+    
+    return self;
+}
+    
+- (NSString *)requestUrl {
+    return @"";
+}
+    
+- (YTKRequestMethod)requestMethod {
+    return YTKRequestMethodGET;
+}
+    
+    
+    
 @end

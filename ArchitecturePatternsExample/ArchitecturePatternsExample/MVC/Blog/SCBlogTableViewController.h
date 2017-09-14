@@ -15,9 +15,9 @@
 @interface SCBlogTableViewController : UITableViewController
     
     
-@property (assign, nonatomic) NSUInteger userId;
+@property (copy, nonatomic) NSString *userId;
 
-- (instancetype)initWithUserId:(NSUInteger)userId;
+- (instancetype)initWithUserId:(NSString *)userId;
 
 - (void)fetchDataWithCompletionHandler:(void(^)(NSError *error, id result))completion;
 

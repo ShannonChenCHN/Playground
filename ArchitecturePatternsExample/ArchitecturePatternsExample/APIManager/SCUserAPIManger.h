@@ -8,6 +8,8 @@
 
 #import <YTKNetwork/YTKNetwork.h>
 
-@interface SCUserAPIManger : YTKBaseRequest
+@interface SCUserAPIManger : YTKRequest
+
+- (instancetype)initWithUserId:(NSString *)userId;
 
 @end

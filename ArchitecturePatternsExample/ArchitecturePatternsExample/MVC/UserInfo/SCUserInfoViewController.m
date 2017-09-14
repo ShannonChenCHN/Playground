@@ -7,11 +7,12 @@
 //
 
 #import "SCUserInfoViewController.h"
+#import "SCUserAPIManger.h"
 
 @implementation SCUserInfoViewController
 
     
-- (instancetype)initWithUserId:(NSUInteger)userId {
+- (instancetype)initWithUserId:(NSString *)userId {
     self = [super init];
     if (self) {
         _userId = userId;
@@ -28,6 +29,16 @@
 }
     
 - (void)fetchDataWithCompletionHandler:(void (^)(NSError *, id))completion {
+    
+    SCUserAPIManger *api = [[SCUserAPIManger alloc] initWithUserId:self.userId];
+    [api startWithCompletionBlockWithSuccess:^(YTKBaseRequest *request) {
+        
+        NSLog(@"succeed");
+        
+    } failure:^(YTKBaseRequest *request) {
+        // you can use self here, retain cycle won't happen
+        NSLog(@"failed");
+    }];
     
 }
 
