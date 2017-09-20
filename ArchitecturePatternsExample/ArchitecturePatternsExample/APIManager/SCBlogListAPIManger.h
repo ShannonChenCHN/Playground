@@ -1,8 +1,8 @@
 //
-//  SCUserAPIManger.h
+//  SCBlogListAPIManger.h
 //  ArchitecturePatternsExample
 //
-//  Created by ShannonChen on 2017/9/14.
+//  Created by ShannonChen on 2017/9/21.
 //  Copyright © 2017年 ShannonChen. All rights reserved.
 //
 
@@ -10,9 +10,9 @@
 #import "SCUserAPI.h"
 
 /**
- 用户信息 API
+ 博客列表
  */
-@interface SCUserAPIManger : YTKRequest <SCUserAPI>
+@interface SCBlogListAPIManger : YTKRequest <SCUserAPI>
 
 
 

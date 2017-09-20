@@ -7,6 +7,7 @@
 //
 
 #import "SCBlogTableViewController.h"
+#import "SCBlogListAPIManger.h"
 
 @implementation SCBlogTableViewController
 
@@ -28,7 +29,18 @@
     
     
 - (void)fetchDataWithCompletionHandler:(void (^)(NSError *, id))completion {
-    
+    SCBlogListAPIManger *api = [[SCBlogListAPIManger alloc] initWithUserId:self.userId];
+    [api startWithCompletionBlockWithSuccess:^(YTKBaseRequest *request) {
+        
+        if (completion) {
+            completion(nil, request.responseJSONObject);
+        }
+        
+    } failure:^(YTKBaseRequest *request) {
+        if (completion) {
+            completion(request.error, nil);
+        }
+    }];
 }
 
 @end

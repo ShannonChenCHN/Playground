@@ -6,18 +6,11 @@
 //  Copyright © 2017年 ShannonChen. All rights reserved.
 //
 
-#import "SCUserProfileViewController.h"
-#import "SCBlogTableViewController.h"
-#import "SCDraftTableViewController.h"
-#import "SCUserInfoViewController.h"
+#import "SCUserProfileViewController_Private.h"
 
-#import "UIView+SCLayout.h"
 
 @interface SCUserProfileViewController ()
     
-@property (strong, nonatomic) SCUserInfoViewController *userInfoController;
-@property (strong, nonatomic) SCBlogTableViewController *blogController;
-@property (strong, nonatomic) SCDraftTableViewController *draftController;
 
 @end
 
@@ -79,7 +72,10 @@
     [self.userInfoController fetchDataWithCompletionHandler:nil];
     
     
-    [self.blogController fetchDataWithCompletionHandler:nil];
+    [self showHUD];
+    [self.blogController fetchDataWithCompletionHandler:^(NSError *error, id result) {
+        [self hideHUD];
+    }];
 }
 
 

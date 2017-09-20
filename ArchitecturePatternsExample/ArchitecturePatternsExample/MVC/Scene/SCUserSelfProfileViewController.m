@@ -7,8 +7,13 @@
 //
 
 #import "SCUserSelfProfileViewController.h"
+#import "SCUserProfileViewController_Private.h"
+
+#import "SCDraftTableViewController.h"
 
 @interface SCUserSelfProfileViewController ()
+
+@property (strong, nonatomic) SCDraftTableViewController *draftController;
 
 @end
 

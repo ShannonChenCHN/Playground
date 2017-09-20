@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58407AC41F72C47600CEA64F /* UIView+SCLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 58407AC31F72C47600CEA64F /* UIView+SCLayout.m */; };
+		58407AC71F72C4A800CEA64F /* UIView+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 58407AC61F72C4A800CEA64F /* UIView+HUD.m */; };
+		58407ACC1F72C84100CEA64F /* SCBlogListAPIManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 58407ACB1F72C84100CEA64F /* SCBlogListAPIManger.m */; };
 		588B2F211F65905D007660CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F201F65905D007660CF /* main.m */; };
 		588B2F241F65905D007660CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F231F65905D007660CF /* AppDelegate.m */; };
 		588B2F271F65905D007660CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F261F65905D007660CF /* ViewController.m */; };
@@ -15,7 +18,6 @@
 		588B2F2F1F65905D007660CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 588B2F2D1F65905D007660CF /* LaunchScreen.storyboard */; };
 		588B2F3D1F6595AB007660CF /* SCUserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F3C1F6595AB007660CF /* SCUserProfileViewController.m */; };
 		588B2F401F659697007660CF /* SCUserSelfProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F3F1F659697007660CF /* SCUserSelfProfileViewController.m */; };
-		588B2F4C1F66E3B6007660CF /* UIView+SCLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F4B1F66E3B6007660CF /* UIView+SCLayout.m */; };
 		588B2F591F66E9BB007660CF /* SCBlogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F511F66E9BB007660CF /* SCBlogTableViewController.m */; };
 		588B2F5A1F66E9BB007660CF /* SCDraftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F541F66E9BB007660CF /* SCDraftTableViewController.m */; };
 		588B2F5B1F66E9BB007660CF /* SCUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F571F66E9BB007660CF /* SCUserInfoViewController.m */; };
@@ -27,6 +29,14 @@
 /* Begin PBXFileReference section */
 		0F8C9ADCD2117BDFD4ECA2A8 /* libPods-ArchitecturePatternsExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArchitecturePatternsExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		508AC52BAFF019E2474F01E8 /* Pods-ArchitecturePatternsExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitecturePatternsExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitecturePatternsExample/Pods-ArchitecturePatternsExample.release.xcconfig"; sourceTree = "<group>"; };
+		58407AC21F72C47600CEA64F /* UIView+SCLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SCLayout.h"; sourceTree = "<group>"; };
+		58407AC31F72C47600CEA64F /* UIView+SCLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SCLayout.m"; sourceTree = "<group>"; };
+		58407AC51F72C4A800CEA64F /* UIView+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HUD.h"; sourceTree = "<group>"; };
+		58407AC61F72C4A800CEA64F /* UIView+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HUD.m"; sourceTree = "<group>"; };
+		58407AC91F72C6F300CEA64F /* SCUserProfileViewController_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserProfileViewController_Private.h; sourceTree = "<group>"; };
+		58407ACA1F72C84100CEA64F /* SCBlogListAPIManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBlogListAPIManger.h; sourceTree = "<group>"; };
+		58407ACB1F72C84100CEA64F /* SCBlogListAPIManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBlogListAPIManger.m; sourceTree = "<group>"; };
+		58407ACD1F72C8A100CEA64F /* SCUserAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserAPI.h; sourceTree = "<group>"; };
 		588B2F1C1F65905D007660CF /* ArchitecturePatternsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchitecturePatternsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		588B2F201F65905D007660CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		588B2F221F65905D007660CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,8 +51,6 @@
 		588B2F3C1F6595AB007660CF /* SCUserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SCUserProfileViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		588B2F3E1F659697007660CF /* SCUserSelfProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserSelfProfileViewController.h; sourceTree = "<group>"; };
 		588B2F3F1F659697007660CF /* SCUserSelfProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUserSelfProfileViewController.m; sourceTree = "<group>"; };
-		588B2F4A1F66E3B6007660CF /* UIView+SCLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SCLayout.h"; sourceTree = "<group>"; };
-		588B2F4B1F66E3B6007660CF /* UIView+SCLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SCLayout.m"; sourceTree = "<group>"; };
 		588B2F501F66E9BB007660CF /* SCBlogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBlogTableViewController.h; sourceTree = "<group>"; };
 		588B2F511F66E9BB007660CF /* SCBlogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBlogTableViewController.m; sourceTree = "<group>"; };
 		588B2F531F66E9BB007660CF /* SCDraftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDraftTableViewController.h; sourceTree = "<group>"; };
@@ -67,6 +75,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58407AC11F72C47600CEA64F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				58407AC21F72C47600CEA64F /* UIView+SCLayout.h */,
+				58407AC31F72C47600CEA64F /* UIView+SCLayout.m */,
+				58407AC51F72C4A800CEA64F /* UIView+HUD.h */,
+				58407AC61F72C4A800CEA64F /* UIView+HUD.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		588B2F131F65905D007660CF = {
 			isa = PBXGroup;
 			children = (
@@ -88,12 +107,11 @@
 		588B2F1E1F65905D007660CF /* ArchitecturePatternsExample */ = {
 			isa = PBXGroup;
 			children = (
-				588B2F4A1F66E3B6007660CF /* UIView+SCLayout.h */,
-				588B2F4B1F66E3B6007660CF /* UIView+SCLayout.m */,
 				588B2F221F65905D007660CF /* AppDelegate.h */,
 				588B2F231F65905D007660CF /* AppDelegate.m */,
 				588B2F251F65905D007660CF /* ViewController.h */,
 				588B2F261F65905D007660CF /* ViewController.m */,
+				58407AC11F72C47600CEA64F /* Utils */,
 				588B2F5D1F6AC6F7007660CF /* APIManager */,
 				588B2F361F6594C7007660CF /* MVC */,
 				588B2F281F65905D007660CF /* Main.storyboard */,
@@ -127,6 +145,7 @@
 		588B2F391F659544007660CF /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				58407AC91F72C6F300CEA64F /* SCUserProfileViewController_Private.h */,
 				588B2F3B1F6595AB007660CF /* SCUserProfileViewController.h */,
 				588B2F3C1F6595AB007660CF /* SCUserProfileViewController.m */,
 				588B2F3E1F659697007660CF /* SCUserSelfProfileViewController.h */,
@@ -166,8 +185,11 @@
 		588B2F5D1F6AC6F7007660CF /* APIManager */ = {
 			isa = PBXGroup;
 			children = (
+				58407ACD1F72C8A100CEA64F /* SCUserAPI.h */,
 				588B2F5E1F6AC732007660CF /* SCUserAPIManger.h */,
 				588B2F5F1F6AC732007660CF /* SCUserAPIManger.m */,
+				58407ACA1F72C84100CEA64F /* SCBlogListAPIManger.h */,
+				58407ACB1F72C84100CEA64F /* SCBlogListAPIManger.m */,
 			);
 			path = APIManager;
 			sourceTree = "<group>";
@@ -313,15 +335,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58407AC71F72C4A800CEA64F /* UIView+HUD.m in Sources */,
 				588B2F271F65905D007660CF /* ViewController.m in Sources */,
 				588B2F591F66E9BB007660CF /* SCBlogTableViewController.m in Sources */,
 				588B2F3D1F6595AB007660CF /* SCUserProfileViewController.m in Sources */,
-				588B2F4C1F66E3B6007660CF /* UIView+SCLayout.m in Sources */,
 				588B2F241F65905D007660CF /* AppDelegate.m in Sources */,
 				588B2F5A1F66E9BB007660CF /* SCDraftTableViewController.m in Sources */,
 				588B2F211F65905D007660CF /* main.m in Sources */,
 				588B2F601F6AC732007660CF /* SCUserAPIManger.m in Sources */,
+				58407AC41F72C47600CEA64F /* UIView+SCLayout.m in Sources */,
 				588B2F401F659697007660CF /* SCUserSelfProfileViewController.m in Sources */,
+				58407ACC1F72C84100CEA64F /* SCBlogListAPIManger.m in Sources */,
 				588B2F5B1F66E9BB007660CF /* SCUserInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
