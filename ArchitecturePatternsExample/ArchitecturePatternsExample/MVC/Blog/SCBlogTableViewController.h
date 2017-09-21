@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SCEventHandler.h"
 
 /**
  博客模块的 controller
  */
-@interface SCBlogTableViewController : UITableViewController
+@interface SCBlogTableViewController : UITableViewController <SCEventHandler>
     
     
 @property (copy, nonatomic) NSString *userId;

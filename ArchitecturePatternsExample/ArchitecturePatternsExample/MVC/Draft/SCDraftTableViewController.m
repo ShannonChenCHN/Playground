@@ -8,8 +8,25 @@
 
 #import "SCDraftTableViewController.h"
 
+@interface SCDraftTableViewController ()
+
+@end
+
 @implementation SCDraftTableViewController
 
+@synthesize eventHandler = _eventHandler;
+
+- (instancetype)initWithUserId:(NSString *)userId {
+    
+    self = [super initWithStyle:UITableViewStylePlain];
+    
+    if (self) {
+        _userId = userId;
+        
+    }
+    
+    return self;
+}
     
 - (void)fetchDataWithCompletionHandler:(void (^)(NSError *, id))completion {
     

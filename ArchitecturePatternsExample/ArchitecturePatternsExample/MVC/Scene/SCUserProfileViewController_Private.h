@@ -16,6 +16,8 @@
 
 @interface SCUserProfileViewController ()
 
+@property (copy, nonatomic) NSString *userId;
+
 @property (strong, nonatomic) SCUserInfoViewController *userInfoController;
 @property (strong, nonatomic) SCBlogTableViewController *blogController;
 

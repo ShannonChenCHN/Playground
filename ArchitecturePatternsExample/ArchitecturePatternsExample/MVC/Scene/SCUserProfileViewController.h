@@ -16,7 +16,6 @@ static NSString * const kCurrentUserId = @"123";
  */
 @interface SCUserProfileViewController : UIViewController
 
-@property (copy, nonatomic) NSString *userId;
     
 - (instancetype)initWithUserId:(NSString *)userId;
 

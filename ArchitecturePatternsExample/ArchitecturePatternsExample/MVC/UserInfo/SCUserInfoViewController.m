@@ -9,7 +9,20 @@
 #import "SCUserInfoViewController.h"
 #import "SCUserAPIManger.h"
 
+#import "SCUser.h"
+
+
+@interface SCUserInfoViewController ()
+
+@property (strong, nonatomic) SCUser *user;
+
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
+@end
+
 @implementation SCUserInfoViewController
+
+@synthesize eventHandler = _eventHandler;
 
     
 - (instancetype)initWithUserId:(NSString *)userId {
@@ -33,13 +46,23 @@
     SCUserAPIManger *api = [[SCUserAPIManger alloc] initWithUserId:self.userId];
     [api startWithCompletionBlockWithSuccess:^(YTKBaseRequest *request) {
         
-        NSLog(@"succeed");
         
     } failure:^(YTKBaseRequest *request) {
         // you can use self here, retain cycle won't happen
-        NSLog(@"failed");
+        
+        self.user = [[SCUser alloc] initWithUserId:self.userId];
+        self.nameLabel.text = self.user.name;
     }];
     
 }
+
+
+- (IBAction)didSelectUserAvatar:(id)sender {
+    
+    if (self.eventHandler) {
+        self.eventHandler(NSStringFromSelector(@selector(didSelectUserAvatar:)), self.user);
+    }
+}
+
 
 @end

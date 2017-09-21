@@ -7,14 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SCEventHandler.h"
+@class SCDraft;
 
 /**
  草稿箱模块的 controller
  */
-@interface SCDraftTableViewController : UITableViewController
+@interface SCDraftTableViewController : UITableViewController <SCEventHandler>
 
-    
+
+@property (copy, nonatomic) NSString *userId;
+
+- (instancetype)initWithUserId:(NSString *)userId;
+
 - (void)fetchDataWithCompletionHandler:(void(^)(NSError *error, id result))completion;
     
 @end
