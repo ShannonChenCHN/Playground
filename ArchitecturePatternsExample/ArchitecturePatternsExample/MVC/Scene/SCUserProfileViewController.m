@@ -6,18 +6,18 @@
 //  Copyright © 2017年 ShannonChen. All rights reserved.
 //
 
-#import "SCUserProfileViewController.h"
+#import "SCUserProfileViewController_Private.h"
+
 
 @interface SCUserProfileViewController ()
     
-
 
 @end
 
 @implementation SCUserProfileViewController
     
     
-- (instancetype)initWithUserId:(NSUInteger)userId {
+- (instancetype)initWithUserId:(NSString *)userId {
     if (self = [super init]) {
         _userId = userId;
     }
@@ -28,13 +28,54 @@
     [super viewDidLoad];
     
     
-    if (self.userId == kCurrentUserId) {
-        self.title = @"我";
-    } else {
-        self.title = [NSString stringWithFormat:@"%li", self.userId];
-    }
+    
+    self.title = [NSString stringWithFormat:@"用户 %@", self.userId];
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    
+    [self setupControllers];
+    
+    
+    [self setupViews];
+    
+    
+    [self setupModels];
+    
+}
+    
+
+    
+- (void)setupControllers {
+    
+    self.userInfoController = [[SCUserInfoViewController alloc] initWithUserId:self.userId];
+    
+    self.blogController = [[SCBlogTableViewController alloc] initWithUserId:self.userId];
+}
+    
+    
+- (void)setupViews {
+    
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    
+    self.userInfoController.view.frame = CGRectMake(0, 0, self.view.width, 160);
+    self.userInfoController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    [self.view addSubview:self.userInfoController.view];
+    
+    
+    self.blogController.view.frame = CGRectMake(0, self.userInfoController.view.bottom, self.view.width, self.view.height - self.userInfoController.view.height);
+    self.blogController.view.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    [self.view addSubview:self.blogController.view];
+}
+    
+- (void)setupModels {
+    [self.userInfoController fetchDataWithCompletionHandler:nil];
+    
+    
+    [self showHUD];
+    [self.blogController fetchDataWithCompletionHandler:^(NSError *error, id result) {
+        [self hideHUD];
+    }];
 }
 
 

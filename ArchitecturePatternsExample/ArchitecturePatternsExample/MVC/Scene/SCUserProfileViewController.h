@@ -8,13 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-static NSUInteger kCurrentUserId = 123;
+static NSString * const kCurrentUserId = @"123";
 
 
+/**
+ 个人详情
+ */
 @interface SCUserProfileViewController : UIViewController
 
-@property (assign, nonatomic) NSUInteger userId;
+@property (copy, nonatomic) NSString *userId;
     
-- (instancetype)initWithUserId:(NSUInteger)userId;
+- (instancetype)initWithUserId:(NSString *)userId;
+
     
 @end

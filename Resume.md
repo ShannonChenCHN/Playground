@@ -11,7 +11,7 @@
 
  - 陈祥龙 / 男 / 1992.10 / 湖南 
  - 本科 / 中北大学 / 飞行器制造工程专业 
- - 工作年限：3 年（2 年 iOS 开发经验）    
+ - 工作年限：3 年    
  - 应聘职位：iOS 开发工程师
  - Github：[https://github.com/ShannonChenCHN](https://github.com/ShannonChenCHN)
  - 博客：[http://www.jianshu.com/u/4ef5e287fc91](http://www.jianshu.com/u/4ef5e287fc91)   
@@ -21,12 +21,12 @@
 ### 工作经历
 
 
-#### 公司：上海悦会信息科技有限公司 （ 2016年08月 ~ 2017年09月 ）
+#### 公司：上海悦会信息科技有限公司 （ 2016年08月至今）
 ##### 职位：iOS 开发工程师
 
 ##### 项目：YHOUSE （4人团队、美食玩乐预订+社交）
 
-###### 职责：先后负责了图文快照、Hybrid 优化、新版会员频道、挑战频道的开发和维护
+###### 职责：负责 YHOUSE 业务的开发和基础类库、框架的优化、维护
 
 - 图文快照
   - 设计了一个快照生成系统，通过模块化和 POP 的方式实现解耦，从而达到强弱业务逻辑分离的目的，同时提高了代码的可重用性。因此，在从首版的帖子快照，发展到后续版本的商户快照、足迹快照、个人名片，再到快照预览功能的过程中，核心逻辑基本上没有做太多改动，提高了开发效率，节省了维护成本
@@ -44,7 +44,7 @@
   - 自定义 `UICollectionViewFlowLayout` 来实现可定义吸顶偏移量的 `section header` 
   - 借鉴 MVVM 架构的设计，采用 POP 的方式，抽象了一套可复用的列表框架
   - 拆分 controller 中的逻辑，将一些与业务逻辑不相关的代码分离出来，比如 `UICollectionView` 的代理方法
-  - 针对会员页的特殊情况，对现有的网络层的调用进行针对性优化，由集约型调用改为离散型调用，将回调方式由 block 改为 delegate，以达到简化逻辑，提高程序稳定性和减低维护成本的目的
+  - 针对会员页的特殊情况，对现有的网络层的调用进行针对性优化，采用离散型的调用和 delegate 形式的回调，以达到简化逻辑，提高程序稳定性和减低维护成本的目的
 
 ##### 项目：OnlyU （独立开发、视频聊天+社区）
 
@@ -72,12 +72,12 @@
 - 新版首页
   - 设计了一个基于 `UICollectionView` 的框架 [SCStickyCellHeaderCollectionView](https://github.com/ShannonChenCHN/SCStickyCellHeaderCollectionView)
   - 自定义 UICollectionViewFlowLayout， 实现带有吸顶效果的 “cell header” 
-  - 对 `UICollectionView` 的代理方法的调用以及相关转算进行封装，在实现功能的同时还保证了代码的可维护性，并将成果 
+  - 对 `UICollectionView` 的代理方法的调用以及相关转算进行封装，在实现功能的同时还保证了代码的可维护性 
 - 采用数据源思想，设计了一个低耦合的、可复用的三级分类列表
 - 通过 分类 + runtime 的形式优雅地实现了自定义 `UITabBarButton` 上的小红点
 - 实现 `UIWebview` 加载 WebP 格式图片的功能，同时保证不影响页面加载性能
 - 实现多个 APP 间共享同一设备唯一标识
-- 与前端同学一起解决 `UIWebView` 加载 h5 页面崩溃的问题
+- 与前端同学一起解决 UIWebView 加载一个 h5 页面时导致崩溃的问题
 - 通过 Instrument 工具找出了机身发热的元凶 —— 导航栏中跑马灯的 bug 导致 CPU 消耗过高
 
 #### 中航工业江西洪都航空工业集团有限责任公司 （ 2014年07月 ~ 2015年09月 ）
@@ -90,7 +90,7 @@
 ### 开源项目和作品
 - 技术文章
   - [WebViewJavascriptBridge 详解](http://www.jianshu.com/p/6f34903be630) ：Hybrid 优化过程中的调研总结，从`WebViewJavascriptBridge` 的功能 API、实现原理到源码解读、针对公司项目现状的最佳实践做了一个全面的介绍
-  - [SDWebImage 源码阅读笔记](http://www.jianshu.com/p/06f0265c22eb)：在实现图文快照需求过程中，其中用到 `SDWebImage` 来批量下载图片，在使用该框架的过程中也遇到了一些问题，索性就把 `SDWebImage` 源码详细阅读了一下，学习其中的设计思想和技术点
+  - [SDWebImage 源码解析](http://www.jianshu.com/p/06f0265c22eb)：在实现图文快照需求过程中，其中用到 `SDWebImage` 来批量下载图片，在使用该框架的过程中也遇到了一些问题，索性就把 `SDWebImage` 源码详细阅读了一下，学习其中的设计思想和技术点
   - [图文快照分享框架的实现](http://www.jianshu.com/p/b3fcb449cb35)：对图文快照需求实现过程的总结，针对长图片的功能从需求分析，到技术实现、架构抽象、相关问题讨论做了一个简单的介绍
 - 个人作品
   - [SCKit](https://github.com/ShannonChenCHN/SCKit)：自己在平时工作中总结出来的代码库合辑，包括一些常用的可复用的 UI 控件、业务开发中抽象出来的框架、调试工具等                

@@ -8,6 +8,9 @@
 
 #import "SCUserProfileViewController.h"
 
+/**
+ 查看自己的个人详情
+ */
 @interface SCUserSelfProfileViewController : SCUserProfileViewController
 
 @end

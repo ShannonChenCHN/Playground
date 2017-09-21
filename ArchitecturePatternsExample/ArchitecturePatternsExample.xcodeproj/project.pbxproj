@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58407AC41F72C47600CEA64F /* UIView+SCLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 58407AC31F72C47600CEA64F /* UIView+SCLayout.m */; };
+		58407AC71F72C4A800CEA64F /* UIView+HUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 58407AC61F72C4A800CEA64F /* UIView+HUD.m */; };
+		58407ACC1F72C84100CEA64F /* SCBlogListAPIManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 58407ACB1F72C84100CEA64F /* SCBlogListAPIManger.m */; };
 		588B2F211F65905D007660CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F201F65905D007660CF /* main.m */; };
 		588B2F241F65905D007660CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F231F65905D007660CF /* AppDelegate.m */; };
 		588B2F271F65905D007660CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F261F65905D007660CF /* ViewController.m */; };
@@ -15,9 +18,25 @@
 		588B2F2F1F65905D007660CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 588B2F2D1F65905D007660CF /* LaunchScreen.storyboard */; };
 		588B2F3D1F6595AB007660CF /* SCUserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F3C1F6595AB007660CF /* SCUserProfileViewController.m */; };
 		588B2F401F659697007660CF /* SCUserSelfProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F3F1F659697007660CF /* SCUserSelfProfileViewController.m */; };
+		588B2F591F66E9BB007660CF /* SCBlogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F511F66E9BB007660CF /* SCBlogTableViewController.m */; };
+		588B2F5A1F66E9BB007660CF /* SCDraftTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F541F66E9BB007660CF /* SCDraftTableViewController.m */; };
+		588B2F5B1F66E9BB007660CF /* SCUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F571F66E9BB007660CF /* SCUserInfoViewController.m */; };
+		588B2F5C1F66E9BB007660CF /* SCUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 588B2F581F66E9BB007660CF /* SCUserInfoViewController.xib */; };
+		588B2F601F6AC732007660CF /* SCUserAPIManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 588B2F5F1F6AC732007660CF /* SCUserAPIManger.m */; };
+		987CEFF0BD7501A5B1BD30C9 /* libPods-ArchitecturePatternsExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8C9ADCD2117BDFD4ECA2A8 /* libPods-ArchitecturePatternsExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F8C9ADCD2117BDFD4ECA2A8 /* libPods-ArchitecturePatternsExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ArchitecturePatternsExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		508AC52BAFF019E2474F01E8 /* Pods-ArchitecturePatternsExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitecturePatternsExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitecturePatternsExample/Pods-ArchitecturePatternsExample.release.xcconfig"; sourceTree = "<group>"; };
+		58407AC21F72C47600CEA64F /* UIView+SCLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SCLayout.h"; sourceTree = "<group>"; };
+		58407AC31F72C47600CEA64F /* UIView+SCLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SCLayout.m"; sourceTree = "<group>"; };
+		58407AC51F72C4A800CEA64F /* UIView+HUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HUD.h"; sourceTree = "<group>"; };
+		58407AC61F72C4A800CEA64F /* UIView+HUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HUD.m"; sourceTree = "<group>"; };
+		58407AC91F72C6F300CEA64F /* SCUserProfileViewController_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserProfileViewController_Private.h; sourceTree = "<group>"; };
+		58407ACA1F72C84100CEA64F /* SCBlogListAPIManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBlogListAPIManger.h; sourceTree = "<group>"; };
+		58407ACB1F72C84100CEA64F /* SCBlogListAPIManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBlogListAPIManger.m; sourceTree = "<group>"; };
+		58407ACD1F72C8A100CEA64F /* SCUserAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserAPI.h; sourceTree = "<group>"; };
 		588B2F1C1F65905D007660CF /* ArchitecturePatternsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArchitecturePatternsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		588B2F201F65905D007660CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		588B2F221F65905D007660CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -29,9 +48,19 @@
 		588B2F2E1F65905D007660CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		588B2F301F65905D007660CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		588B2F3B1F6595AB007660CF /* SCUserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserProfileViewController.h; sourceTree = "<group>"; };
-		588B2F3C1F6595AB007660CF /* SCUserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUserProfileViewController.m; sourceTree = "<group>"; };
+		588B2F3C1F6595AB007660CF /* SCUserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = SCUserProfileViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		588B2F3E1F659697007660CF /* SCUserSelfProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserSelfProfileViewController.h; sourceTree = "<group>"; };
 		588B2F3F1F659697007660CF /* SCUserSelfProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUserSelfProfileViewController.m; sourceTree = "<group>"; };
+		588B2F501F66E9BB007660CF /* SCBlogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCBlogTableViewController.h; sourceTree = "<group>"; };
+		588B2F511F66E9BB007660CF /* SCBlogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCBlogTableViewController.m; sourceTree = "<group>"; };
+		588B2F531F66E9BB007660CF /* SCDraftTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDraftTableViewController.h; sourceTree = "<group>"; };
+		588B2F541F66E9BB007660CF /* SCDraftTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDraftTableViewController.m; sourceTree = "<group>"; };
+		588B2F561F66E9BB007660CF /* SCUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserInfoViewController.h; sourceTree = "<group>"; };
+		588B2F571F66E9BB007660CF /* SCUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUserInfoViewController.m; sourceTree = "<group>"; };
+		588B2F581F66E9BB007660CF /* SCUserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCUserInfoViewController.xib; sourceTree = "<group>"; };
+		588B2F5E1F6AC732007660CF /* SCUserAPIManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserAPIManger.h; sourceTree = "<group>"; };
+		588B2F5F1F6AC732007660CF /* SCUserAPIManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUserAPIManger.m; sourceTree = "<group>"; };
+		5CA4B71FAB662D6F80A3C9F1 /* Pods-ArchitecturePatternsExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitecturePatternsExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitecturePatternsExample/Pods-ArchitecturePatternsExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +68,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987CEFF0BD7501A5B1BD30C9 /* libPods-ArchitecturePatternsExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58407AC11F72C47600CEA64F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				58407AC21F72C47600CEA64F /* UIView+SCLayout.h */,
+				58407AC31F72C47600CEA64F /* UIView+SCLayout.m */,
+				58407AC51F72C4A800CEA64F /* UIView+HUD.h */,
+				58407AC61F72C4A800CEA64F /* UIView+HUD.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		588B2F131F65905D007660CF = {
 			isa = PBXGroup;
 			children = (
 				588B2F1E1F65905D007660CF /* ArchitecturePatternsExample */,
 				588B2F1D1F65905D007660CF /* Products */,
+				E3AF073D177FAD06D2B1AE19 /* Pods */,
+				8C46C98EEDE87953751DB21E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,6 +111,8 @@
 				588B2F231F65905D007660CF /* AppDelegate.m */,
 				588B2F251F65905D007660CF /* ViewController.h */,
 				588B2F261F65905D007660CF /* ViewController.m */,
+				58407AC11F72C47600CEA64F /* Utils */,
+				588B2F5D1F6AC6F7007660CF /* APIManager */,
 				588B2F361F6594C7007660CF /* MVC */,
 				588B2F281F65905D007660CF /* Main.storyboard */,
 				588B2F2B1F65905D007660CF /* Assets.xcassets */,
@@ -89,31 +134,18 @@
 		588B2F361F6594C7007660CF /* MVC */ = {
 			isa = PBXGroup;
 			children = (
-				588B2F371F659544007660CF /* Blog */,
-				588B2F381F659544007660CF /* Draft */,
+				588B2F4F1F66E9BB007660CF /* Blog */,
+				588B2F521F66E9BB007660CF /* Draft */,
+				588B2F551F66E9BB007660CF /* UserInfo */,
 				588B2F391F659544007660CF /* Scene */,
-				588B2F3A1F659544007660CF /* UserInfo */,
 			);
 			path = MVC;
-			sourceTree = "<group>";
-		};
-		588B2F371F659544007660CF /* Blog */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Blog;
-			sourceTree = "<group>";
-		};
-		588B2F381F659544007660CF /* Draft */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Draft;
 			sourceTree = "<group>";
 		};
 		588B2F391F659544007660CF /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				58407AC91F72C6F300CEA64F /* SCUserProfileViewController_Private.h */,
 				588B2F3B1F6595AB007660CF /* SCUserProfileViewController.h */,
 				588B2F3C1F6595AB007660CF /* SCUserProfileViewController.m */,
 				588B2F3E1F659697007660CF /* SCUserSelfProfileViewController.h */,
@@ -122,11 +154,61 @@
 			path = Scene;
 			sourceTree = "<group>";
 		};
-		588B2F3A1F659544007660CF /* UserInfo */ = {
+		588B2F4F1F66E9BB007660CF /* Blog */ = {
 			isa = PBXGroup;
 			children = (
+				588B2F501F66E9BB007660CF /* SCBlogTableViewController.h */,
+				588B2F511F66E9BB007660CF /* SCBlogTableViewController.m */,
+			);
+			path = Blog;
+			sourceTree = "<group>";
+		};
+		588B2F521F66E9BB007660CF /* Draft */ = {
+			isa = PBXGroup;
+			children = (
+				588B2F531F66E9BB007660CF /* SCDraftTableViewController.h */,
+				588B2F541F66E9BB007660CF /* SCDraftTableViewController.m */,
+			);
+			path = Draft;
+			sourceTree = "<group>";
+		};
+		588B2F551F66E9BB007660CF /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				588B2F561F66E9BB007660CF /* SCUserInfoViewController.h */,
+				588B2F571F66E9BB007660CF /* SCUserInfoViewController.m */,
+				588B2F581F66E9BB007660CF /* SCUserInfoViewController.xib */,
 			);
 			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		588B2F5D1F6AC6F7007660CF /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				58407ACD1F72C8A100CEA64F /* SCUserAPI.h */,
+				588B2F5E1F6AC732007660CF /* SCUserAPIManger.h */,
+				588B2F5F1F6AC732007660CF /* SCUserAPIManger.m */,
+				58407ACA1F72C84100CEA64F /* SCBlogListAPIManger.h */,
+				58407ACB1F72C84100CEA64F /* SCBlogListAPIManger.m */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
+		8C46C98EEDE87953751DB21E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F8C9ADCD2117BDFD4ECA2A8 /* libPods-ArchitecturePatternsExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3AF073D177FAD06D2B1AE19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CA4B71FAB662D6F80A3C9F1 /* Pods-ArchitecturePatternsExample.debug.xcconfig */,
+				508AC52BAFF019E2474F01E8 /* Pods-ArchitecturePatternsExample.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +218,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 588B2F331F65905D007660CF /* Build configuration list for PBXNativeTarget "ArchitecturePatternsExample" */;
 			buildPhases = (
+				C4499034B27C11CF39ADE2E2 /* [CP] Check Pods Manifest.lock */,
 				588B2F181F65905D007660CF /* Sources */,
 				588B2F191F65905D007660CF /* Frameworks */,
 				588B2F1A1F65905D007660CF /* Resources */,
+				67A965C70DB535573D4F7472 /* [CP] Embed Pods Frameworks */,
+				F0D60EB49A5C06A335CBDB8F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				588B2F2F1F65905D007660CF /* LaunchScreen.storyboard in Resources */,
+				588B2F5C1F66E9BB007660CF /* SCUserInfoViewController.xib in Resources */,
 				588B2F2C1F65905D007660CF /* Assets.xcassets in Resources */,
 				588B2F2A1F65905D007660CF /* Main.storyboard in Resources */,
 			);
@@ -196,16 +282,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		67A965C70DB535573D4F7472 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArchitecturePatternsExample/Pods-ArchitecturePatternsExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4499034B27C11CF39ADE2E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F0D60EB49A5C06A335CBDB8F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArchitecturePatternsExample/Pods-ArchitecturePatternsExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		588B2F181F65905D007660CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58407AC71F72C4A800CEA64F /* UIView+HUD.m in Sources */,
 				588B2F271F65905D007660CF /* ViewController.m in Sources */,
+				588B2F591F66E9BB007660CF /* SCBlogTableViewController.m in Sources */,
 				588B2F3D1F6595AB007660CF /* SCUserProfileViewController.m in Sources */,
 				588B2F241F65905D007660CF /* AppDelegate.m in Sources */,
+				588B2F5A1F66E9BB007660CF /* SCDraftTableViewController.m in Sources */,
 				588B2F211F65905D007660CF /* main.m in Sources */,
+				588B2F601F6AC732007660CF /* SCUserAPIManger.m in Sources */,
+				58407AC41F72C47600CEA64F /* UIView+SCLayout.m in Sources */,
 				588B2F401F659697007660CF /* SCUserSelfProfileViewController.m in Sources */,
+				58407ACC1F72C84100CEA64F /* SCBlogListAPIManger.m in Sources */,
+				588B2F5B1F66E9BB007660CF /* SCUserInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +462,7 @@
 		};
 		588B2F341F65905D007660CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CA4B71FAB662D6F80A3C9F1 /* Pods-ArchitecturePatternsExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L32PN8QKLZ;
@@ -334,6 +476,7 @@
 		};
 		588B2F351F65905D007660CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 508AC52BAFF019E2474F01E8 /* Pods-ArchitecturePatternsExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L32PN8QKLZ;
@@ -364,6 +507,7 @@
 				588B2F351F65905D007660CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

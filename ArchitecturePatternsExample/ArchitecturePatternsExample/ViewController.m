@@ -28,7 +28,7 @@
 }
     
 - (IBAction)pushMVCExampleForOtherScene:(id)sender {
-    [self.navigationController pushViewController:[[SCUserProfileViewController alloc] initWithUserId:234] animated:YES];
+    [self.navigationController pushViewController:[[SCUserProfileViewController alloc] initWithUserId:@"234"] animated:YES];
 }
 
 
