@@ -44,7 +44,7 @@
     [super setupViews];
     
     self.segmentedControl = [[UISegmentedControl alloc] initWithItems:@[@"博客", @"草稿"]];
-    self.segmentedControl.frame = CGRectMake(0, self.userInfoController.view.bottom, 200, 30);
+    self.segmentedControl.frame = CGRectMake(0, self.userInfoController.view.bottom + 5, 200, 30);
     self.segmentedControl.centerX = self.view.centerX;
     self.segmentedControl.selectedSegmentIndex = 0;
     [self.segmentedControl addTarget:self action:@selector(switchTableView:) forControlEvents:UIControlEventValueChanged];
@@ -52,7 +52,7 @@
     
     
     
-    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, self.segmentedControl.bottom, self.view.width, self.view.height - self.segmentedControl.bottom - 64)];
+    self.scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, self.segmentedControl.bottom + 5, self.view.width, self.view.height - self.segmentedControl.bottom - 64)];
     self.scrollView.contentSize = CGSizeMake(self.view.width * 2, 0);
     self.scrollView.scrollEnabled = NO;
     [self.view addSubview:self.scrollView];
