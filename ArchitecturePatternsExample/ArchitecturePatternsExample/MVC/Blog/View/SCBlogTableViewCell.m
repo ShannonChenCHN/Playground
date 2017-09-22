@@ -22,26 +22,28 @@
 
 @synthesize eventHandler = _eventHandler;
 
-- (void)setCellModel:(SCBlogCellModel *)cellModel {
-    _cellModel = cellModel;
-    
-    self.nameLabel.text = cellModel.titleText;
-    self.summaryTextLabel.text = cellModel.summaryText;
-    
-    self.likeButton.selected = cellModel.isLiked;
-    
+- (void)setBlogTitle:(NSString *)title {
+    self.nameLabel.text = title;
+}
+
+- (void)setSummaryText:(NSString *)text {
+    self.summaryTextLabel.text = text;
+}
+
+- (void)setLikeState:(BOOL)isLiked {
+    self.likeButton.selected = isLiked;
 }
 
 
 - (IBAction)didSelectLikeButton:(id)sender {
     if (self.eventHandler) {
-        self.eventHandler(NSStringFromSelector(@selector(didSelectLikeButton:)), self.cellModel.blog);
+        self.eventHandler(NSStringFromSelector(@selector(didSelectLikeButton:)), nil);
     }
 }
 
 - (IBAction)didSelectShareButton:(id)sender {
     if (self.eventHandler) {
-        self.eventHandler(NSStringFromSelector(@selector(didSelectShareButton:)), self.cellModel.blog);
+        self.eventHandler(NSStringFromSelector(@selector(didSelectShareButton:)), nil);
     }
 }
 

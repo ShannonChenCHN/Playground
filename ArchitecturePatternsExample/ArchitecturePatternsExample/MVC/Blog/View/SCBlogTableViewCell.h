@@ -9,14 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "SCEventHandler.h"
 
-@class SCBlogCellModel;
-
 
 /**
  博客列表 cell
  */
 @interface SCBlogTableViewCell : UITableViewCell <SCEventHandler>
 
-@property (strong, nonatomic) SCBlogCellModel *cellModel;
+- (void)setBlogTitle:(NSString *)title;
+
+- (void)setSummaryText:(NSString *)text;
+
+- (void)setLikeState:(BOOL)isLiked;
 
 @end

@@ -104,7 +104,9 @@ static NSString * const kCellReuseIdentifier = @"SCBlogCell";
     
     if (indexPath.row < self.cellModels.count) {
         SCBlogCellModel *cellModel = self.cellModels[indexPath.row];
-        cell.cellModel = cellModel;
+        [cell setBlogTitle:cellModel.titleText];
+        [cell setSummaryText:cellModel.summaryText];
+        [cell setLikeState:cellModel.isLiked];
         
         __weak typeof(self) weakSelf = self;
         __weak typeof(cell) weakCell = cell;
@@ -115,11 +117,11 @@ static NSString * const kCellReuseIdentifier = @"SCBlogCell";
                     [weakSelf showToastWithText:@"你已经赞过它了~"];
                 } else {
                     cellModel.isLiked = YES;
-                    weakCell.cellModel = cellModel;
+                    [weakCell setLikeState:cellModel.isLiked];
                 }
             } else {
                 if (weakSelf.eventHandler) {
-                    weakSelf.eventHandler(eventId, self.cellModels[indexPath.row].blog);
+                    weakSelf.eventHandler(eventId, weakSelf.cellModels[indexPath.row].blog);
                 }
             }
         };

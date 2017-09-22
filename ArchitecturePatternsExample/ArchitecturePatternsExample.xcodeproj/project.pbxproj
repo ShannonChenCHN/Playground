@@ -139,6 +139,7 @@
 				588B2F231F65905D007660CF /* AppDelegate.m */,
 				588B2F251F65905D007660CF /* ViewController.h */,
 				588B2F261F65905D007660CF /* ViewController.m */,
+				58E984201F73CCA400B399A5 /* MVP */,
 				58E983E71F73CB7500B399A5 /* MVC */,
 				58407AC11F72C47600CEA64F /* Utils */,
 				588B2F5D1F6AC6F7007660CF /* APIManager */,
@@ -286,6 +287,13 @@
 				58E9840C1F73CB7500B399A5 /* SCUser.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		58E984201F73CCA400B399A5 /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MVP;
 			sourceTree = "<group>";
 		};
 		8C46C98EEDE87953751DB21E /* Frameworks */ = {
