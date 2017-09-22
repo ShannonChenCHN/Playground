@@ -7,10 +7,16 @@
 //
 
 #import "MVPBlogViewPresenter.h"
+#import "SCBlogListAPIManger.h"
+#import "MVPBlogCellPresenter.h"
 
 @interface MVPBlogViewPresenter ()
 
 @property (copy, nonatomic) NSString *userId;
+
+@property (strong, nonatomic) SCBlogListAPIManger *blogListAPIManager;
+
+@property (strong, nonatomic) NSMutableArray <MVPBlogCellPresenter *> *cellPresenters;
 
 @end
 
@@ -25,7 +31,17 @@
     return self;
 }
 
+
+
 - (void)fetchDataWithCompletionHandler:(void (^)(NSError *, id))completion {
+    
+}
+
+- (void)refreshData {
+    
+}
+
+- (void)loadMoreData {
     
 }
 
