@@ -33,6 +33,13 @@
 		58E9841D1F73CB7500B399A5 /* SCUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9840C1F73CB7500B399A5 /* SCUser.m */; };
 		58E9841E1F73CB7500B399A5 /* SCUserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9840E1F73CB7500B399A5 /* SCUserInfoViewController.m */; };
 		58E9841F1F73CB7500B399A5 /* SCUserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58E9840F1F73CB7500B399A5 /* SCUserInfoViewController.xib */; };
+		58E984231F75080400B399A5 /* MVPUserSelfProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E984221F75080400B399A5 /* MVPUserSelfProfileViewController.m */; };
+		58E984291F75094300B399A5 /* MVPBlogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E984281F75094300B399A5 /* MVPBlogViewController.m */; };
+		58E9842C1F75095F00B399A5 /* MVPDraftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9842B1F75095F00B399A5 /* MVPDraftViewController.m */; };
+		58E9843E1F750EBF00B399A5 /* MVPBlogTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E9843C1F750EBF00B399A5 /* MVPBlogTableViewCell.m */; };
+		58E9843F1F750EBF00B399A5 /* MVPBlogTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58E9843D1F750EBF00B399A5 /* MVPBlogTableViewCell.xib */; };
+		58E984421F750ED300B399A5 /* MVPBlogCellPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E984411F750ED300B399A5 /* MVPBlogCellPresenter.m */; };
+		58E984451F750EEC00B399A5 /* MVPBlogViewPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 58E984441F750EEC00B399A5 /* MVPBlogViewPresenter.m */; };
 		987CEFF0BD7501A5B1BD30C9 /* libPods-ArchitecturePatternsExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F8C9ADCD2117BDFD4ECA2A8 /* libPods-ArchitecturePatternsExample.a */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +95,19 @@
 		58E9840D1F73CB7500B399A5 /* SCUserInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCUserInfoViewController.h; sourceTree = "<group>"; };
 		58E9840E1F73CB7500B399A5 /* SCUserInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCUserInfoViewController.m; sourceTree = "<group>"; };
 		58E9840F1F73CB7500B399A5 /* SCUserInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCUserInfoViewController.xib; sourceTree = "<group>"; };
+		58E984211F75080400B399A5 /* MVPUserSelfProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPUserSelfProfileViewController.h; sourceTree = "<group>"; };
+		58E984221F75080400B399A5 /* MVPUserSelfProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPUserSelfProfileViewController.m; sourceTree = "<group>"; };
+		58E984271F75094300B399A5 /* MVPBlogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPBlogViewController.h; sourceTree = "<group>"; };
+		58E984281F75094300B399A5 /* MVPBlogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPBlogViewController.m; sourceTree = "<group>"; };
+		58E9842A1F75095F00B399A5 /* MVPDraftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPDraftViewController.h; sourceTree = "<group>"; };
+		58E9842B1F75095F00B399A5 /* MVPDraftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPDraftViewController.m; sourceTree = "<group>"; };
+		58E9843B1F750EBF00B399A5 /* MVPBlogTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPBlogTableViewCell.h; sourceTree = "<group>"; };
+		58E9843C1F750EBF00B399A5 /* MVPBlogTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPBlogTableViewCell.m; sourceTree = "<group>"; };
+		58E9843D1F750EBF00B399A5 /* MVPBlogTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MVPBlogTableViewCell.xib; sourceTree = "<group>"; };
+		58E984401F750ED300B399A5 /* MVPBlogCellPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPBlogCellPresenter.h; sourceTree = "<group>"; };
+		58E984411F750ED300B399A5 /* MVPBlogCellPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPBlogCellPresenter.m; sourceTree = "<group>"; };
+		58E984431F750EEC00B399A5 /* MVPBlogViewPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPBlogViewPresenter.h; sourceTree = "<group>"; };
+		58E984441F750EEC00B399A5 /* MVPBlogViewPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVPBlogViewPresenter.m; sourceTree = "<group>"; };
 		5CA4B71FAB662D6F80A3C9F1 /* Pods-ArchitecturePatternsExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArchitecturePatternsExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArchitecturePatternsExample/Pods-ArchitecturePatternsExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -292,8 +312,37 @@
 		58E984201F73CCA400B399A5 /* MVP */ = {
 			isa = PBXGroup;
 			children = (
+				58E984211F75080400B399A5 /* MVPUserSelfProfileViewController.h */,
+				58E984221F75080400B399A5 /* MVPUserSelfProfileViewController.m */,
+				58E984241F75089F00B399A5 /* Blog */,
+				58E984251F75089F00B399A5 /* Draft */,
 			);
 			path = MVP;
+			sourceTree = "<group>";
+		};
+		58E984241F75089F00B399A5 /* Blog */ = {
+			isa = PBXGroup;
+			children = (
+				58E984271F75094300B399A5 /* MVPBlogViewController.h */,
+				58E984281F75094300B399A5 /* MVPBlogViewController.m */,
+				58E984401F750ED300B399A5 /* MVPBlogCellPresenter.h */,
+				58E984411F750ED300B399A5 /* MVPBlogCellPresenter.m */,
+				58E984431F750EEC00B399A5 /* MVPBlogViewPresenter.h */,
+				58E984441F750EEC00B399A5 /* MVPBlogViewPresenter.m */,
+				58E9843B1F750EBF00B399A5 /* MVPBlogTableViewCell.h */,
+				58E9843C1F750EBF00B399A5 /* MVPBlogTableViewCell.m */,
+				58E9843D1F750EBF00B399A5 /* MVPBlogTableViewCell.xib */,
+			);
+			path = Blog;
+			sourceTree = "<group>";
+		};
+		58E984251F75089F00B399A5 /* Draft */ = {
+			isa = PBXGroup;
+			children = (
+				58E9842A1F75095F00B399A5 /* MVPDraftViewController.h */,
+				58E9842B1F75095F00B399A5 /* MVPDraftViewController.m */,
+			);
+			path = Draft;
 			sourceTree = "<group>";
 		};
 		8C46C98EEDE87953751DB21E /* Frameworks */ = {
@@ -378,6 +427,7 @@
 				58E9841F1F73CB7500B399A5 /* SCUserInfoViewController.xib in Resources */,
 				588B2F2F1F65905D007660CF /* LaunchScreen.storyboard in Resources */,
 				58E984131F73CB7500B399A5 /* SCBlogTableViewCell.xib in Resources */,
+				58E9843F1F750EBF00B399A5 /* MVPBlogTableViewCell.xib in Resources */,
 				58E984161F73CB7500B399A5 /* SCBlogDetailViewController.xib in Resources */,
 				588B2F2C1F65905D007660CF /* Assets.xcassets in Resources */,
 				58E984181F73CB7500B399A5 /* SCUserDetailViewController.xib in Resources */,
@@ -440,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E984291F75094300B399A5 /* MVPBlogViewController.m in Sources */,
 				58407AC71F72C4A800CEA64F /* UIView+HUD.m in Sources */,
 				58E984191F73CB7500B399A5 /* SCDraft.m in Sources */,
 				58E9841E1F73CB7500B399A5 /* SCUserInfoViewController.m in Sources */,
@@ -447,12 +498,17 @@
 				58E9841C1F73CB7500B399A5 /* SCUserSelfProfileViewController.m in Sources */,
 				58E9841A1F73CB7500B399A5 /* SCDraftTableViewController.m in Sources */,
 				588B2F271F65905D007660CF /* ViewController.m in Sources */,
+				58E9842C1F75095F00B399A5 /* MVPDraftViewController.m in Sources */,
+				58E984421F750ED300B399A5 /* MVPBlogCellPresenter.m in Sources */,
+				58E984451F750EEC00B399A5 /* MVPBlogViewPresenter.m in Sources */,
 				58E984151F73CB7500B399A5 /* SCBlogDetailViewController.m in Sources */,
 				588B2F241F65905D007660CF /* AppDelegate.m in Sources */,
 				588B2F211F65905D007660CF /* main.m in Sources */,
 				588B2F601F6AC732007660CF /* SCUserAPIManger.m in Sources */,
 				58E984101F73CB7500B399A5 /* SCBlog.m in Sources */,
 				58E984171F73CB7500B399A5 /* SCUserDetailViewController.m in Sources */,
+				58E984231F75080400B399A5 /* MVPUserSelfProfileViewController.m in Sources */,
+				58E9843E1F750EBF00B399A5 /* MVPBlogTableViewCell.m in Sources */,
 				58E984121F73CB7500B399A5 /* SCBlogTableViewCell.m in Sources */,
 				58E984141F73CB7500B399A5 /* SCBlogCellModel.m in Sources */,
 				58E9841B1F73CB7500B399A5 /* SCUserProfileViewController.m in Sources */,

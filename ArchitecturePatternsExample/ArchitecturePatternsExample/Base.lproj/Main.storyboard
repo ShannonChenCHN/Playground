@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jrr-HN-WVU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jrr-HN-WVU">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -29,7 +29,7 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <state key="normal" title="  Self  "/>
                                         <connections>
-                                            <action selector="pushMVCExampleForSelfScene:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OAf-Ju-7YC"/>
+                                            <action selector="pushMVCExampleForSelfScene:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dZJ-J3-J9G"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVy-WW-13C">
@@ -55,11 +55,49 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cwf-lw-h9l">
                                 <rect key="frame" x="0.0" y="444.5" width="375" height="222.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MVVM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcH-1z-WUF">
+                                        <rect key="frame" x="157.5" y="50" width="60" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="1" green="0.55747994970000003" blue="0.5634877277" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="TcH-1z-WUF" firstAttribute="top" secondItem="cwf-lw-h9l" secondAttribute="top" constant="50" id="iSu-fi-REy"/>
+                                    <constraint firstItem="TcH-1z-WUF" firstAttribute="centerX" secondItem="cwf-lw-h9l" secondAttribute="centerX" id="lmo-nW-LPj"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LCI-ek-xCw">
                                 <rect key="frame" x="0.0" y="222.5" width="375" height="222"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MVP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tG3-VY-cDP">
+                                        <rect key="frame" x="166.5" y="40" width="42.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vva-jX-PR5">
+                                        <rect key="frame" x="157" y="132" width="60" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="3z9-Sx-TiJ"/>
+                                            <constraint firstAttribute="height" constant="30" id="jNx-zY-ib6"/>
+                                        </constraints>
+                                        <state key="normal" title="  Self  "/>
+                                        <connections>
+                                            <action selector="pushMVPExampleForSelfScene:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gZ5-8k-2cF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.23137254900000001" green="0.80784313730000001" blue="0.73725490199999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="tG3-VY-cDP" firstAttribute="top" secondItem="LCI-ek-xCw" secondAttribute="top" constant="40" id="01c-bx-SBk"/>
+                                    <constraint firstItem="vva-jX-PR5" firstAttribute="centerX" secondItem="LCI-ek-xCw" secondAttribute="centerX" id="Kkp-cK-LkO"/>
+                                    <constraint firstAttribute="bottom" secondItem="vva-jX-PR5" secondAttribute="bottom" constant="60" id="ala-xE-78a"/>
+                                    <constraint firstItem="tG3-VY-cDP" firstAttribute="centerX" secondItem="LCI-ek-xCw" secondAttribute="centerX" id="lQ6-aq-oXG"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MVC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wXx-BL-zA8">
                                 <rect key="frame" x="165" y="104" width="45" height="24"/>
@@ -67,13 +105,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRn-TY-xos">
+                                <rect key="frame" x="157" y="582" width="60" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="BuC-7E-IEQ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="Ign-zi-gHI"/>
+                                    <constraint firstAttribute="height" constant="30" id="obx-VB-Y3k"/>
+                                </constraints>
+                                <state key="normal" title="  Self  "/>
+                                <connections>
+                                    <action selector="pushMVVMExampleForSelfScene:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iBo-o4-mCz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wXx-BL-zA8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="276-rZ-fvy"/>
                             <constraint firstItem="LCI-ek-xCw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7Yb-IB-dy2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FRn-TY-xos" secondAttribute="bottom" constant="55" id="Btq-gb-Ix8"/>
                             <constraint firstItem="cwf-lw-h9l" firstAttribute="leading" secondItem="lq9-KG-ssS" secondAttribute="leading" id="GiQ-g0-Yrz"/>
                             <constraint firstItem="cwf-lw-h9l" firstAttribute="top" secondItem="LCI-ek-xCw" secondAttribute="bottom" id="N7Z-Xd-6KA"/>
+                            <constraint firstItem="FRn-TY-xos" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NhX-JN-7ib"/>
                             <constraint firstItem="lq9-KG-ssS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Q6j-1E-Cfe"/>
                             <constraint firstItem="cwf-lw-h9l" firstAttribute="height" secondItem="LCI-ek-xCw" secondAttribute="height" id="SN5-Xg-9bn"/>
                             <constraint firstAttribute="bottom" secondItem="cwf-lw-h9l" secondAttribute="bottom" id="TXo-d8-llR"/>

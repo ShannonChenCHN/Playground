@@ -13,6 +13,8 @@
 
 #import "UIView+SCLayout.h"
 
+#import "SCUser.h"
+
 @interface SCUserSelfProfileViewController ()
 
 @property (strong, nonatomic) SCDraftTableViewController *draftController;

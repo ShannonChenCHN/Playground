@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+static NSString * const kCurrentUserId = @"123";
+
 @interface SCUser : NSObject
 
 
