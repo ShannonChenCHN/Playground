@@ -7,6 +7,7 @@
 //
 
 #import "UIColor+Gradient.h"
+#import <objc/runtime.h>
 
 @implementation UIColor (Hex)
 
@@ -77,14 +78,93 @@
 
 
 
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @implementation UIColor (Gradient)
 
-+ (UIColor *)colorWithGradientStyle:(UIGradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray<UIColor *> * _Nonnull)colors; {
+static const char SCGradientStyleKey = '\0';
+static const char SCGradientColorsKey = '\0';
+
+- (void)setGradientStyle:(UIGradientStyle)gradientStyle {
+    objc_setAssociatedObject(self, &SCGradientStyleKey, @(gradientStyle), OBJC_ASSOCIATION_RETAIN);
+}
+
+- (UIGradientStyle)gradientStyle {
+    id obj =  objc_getAssociatedObject(self, &SCGradientStyleKey);
+    if ([obj respondsToSelector:@selector(integerValue)]) {
+        return [obj integerValue];
+    }
     
-    return [UIColor colorWithPatternImage:[UIImage imageWithGradientStyle:gradientStyle withFrame:frame andColors:colors]];
+    return UIGradientStyleTopLeftToBottomRight;
+}
+
+- (void)setColors:(NSArray<UIColor *> *)colors {
+    objc_setAssociatedObject(self, &SCGradientColorsKey, colors, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (NSArray<UIColor *> *)colors {
+    return objc_getAssociatedObject(self, &SCGradientColorsKey);
+}
+
++ (UIColor *)colorWithGradientStyle:(UIGradientStyle)gradientStyle colors:(NSArray<UIColor *> *)colors {
+    UIColor *color = [[UIColor alloc] init];
+    color.colors = colors;
+    color.gradientStyle = gradientStyle;
+    
+    return color;
+}
+
+
++ (UIColor *)colorWithGradientStyle:(UIGradientStyle)gradientStyle frame:(CGRect)frame colors:(NSArray<UIColor *> *)colors {
+    
+    UIColor *color = [UIColor colorWithPatternImage:[UIImage imageWithGradientStyle:gradientStyle frame:frame colors:colors]];
+
+    return color;
+}
+
+@end
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+@implementation UIView (Gradient)
+
+static const char SCGradientBackgroundColorKey = '\0';
+
+#pragma mark - Method swizzling
++ (void)load {
+    [self exchangeInstanceMethod1:@selector(layoutSubviews) method2:@selector(sc_layoutSubviews)];
+}
+
++ (void)exchangeInstanceMethod1:(SEL)method1 method2:(SEL)method2 {
+    method_exchangeImplementations(class_getInstanceMethod(self, method1), class_getInstanceMethod(self, method2));
+}
+
++ (void)exchangeClassMethod1:(SEL)method1 method2:(SEL)method2 {
+    method_exchangeImplementations(class_getClassMethod(self, method1), class_getClassMethod(self, method2));
+}
+
+
+
+#pragma mark - color
+- (void)setGradientBackgroundColor:(UIColor *)gradientBackgroundColor {
+    objc_setAssociatedObject(self, &SCGradientBackgroundColorKey, gradientBackgroundColor, OBJC_ASSOCIATION_RETAIN);
+}
+
+- (UIColor *)gradientBackgroundColor {
+    return objc_getAssociatedObject(self, &SCGradientBackgroundColorKey);
+}
+
+
+- (void)sc_layoutSubviews {
+    [self sc_layoutSubviews];
+    
+    if (self.gradientBackgroundColor && self.gradientBackgroundColor.colors) {
+        self.backgroundColor = [UIColor colorWithGradientStyle:self.gradientBackgroundColor.gradientStyle
+                                                         frame:self.bounds
+                                                        colors:self.gradientBackgroundColor.colors];
+    }
     
 }
+
 
 @end

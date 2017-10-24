@@ -8,10 +8,12 @@
 
 #import "ViewController.h"
 #import "UIColor+Gradient.h"
+#import "SCCustomView.h"
 
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *button;
+@property (strong, nonatomic) SCCustomView *customView;
 
 @end
 
@@ -19,23 +21,29 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.customView = [[SCCustomView alloc] initWithFrame:CGRectMake(0, 0, 300, 100)];
+    self.customView.center = CGPointMake(self.view.bounds.size.width * 0.5, 150);
+    [self.view addSubview:self.customView];
 
-
+    [self setupBackgroundColor];
 }
 
 
-- (void)viewDidLayoutSubviews {
+- (void)setupBackgroundColor {
     
-//    self.button.backgroundColor = [UIColor colorWithGradientStyle:UIGradientStyleTopLeftToBottomRight
-//                                                      withFrame:self.button.bounds
-//                                                      andColors:@[[UIColor colorWithHexString:@"ff4d85"],
-//                                                                  [UIColor colorWithHexString:@"ff5a5e"]]];
     
     UIImage *bgImage = [UIImage imageWithGradientStyle:UIGradientStyleTopLeftToBottomRight
-                                             withFrame:self.button.bounds
-                                             andColors:@[[UIColor colorWithHexString:@"ff4d85"],
+                                                 frame:self.button.bounds
+                                                colors:@[[UIColor colorWithHexString:@"ff4d85"],
                                                          [UIColor colorWithHexString:@"ff5a5e"]]];
     [self.button setBackgroundImage:bgImage forState:UIControlStateNormal];
+}
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    self.customView.resized = !self.customView.isResized;
 }
 
 

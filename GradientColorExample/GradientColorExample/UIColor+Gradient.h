@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UIImage+Gradient.h"
 
+NS_ASSUME_NONNULL_BEGIN
 
 @interface UIColor (Hex)
 
@@ -19,6 +20,18 @@
 
 @interface UIColor (Gradient)
 
-+ (UIColor * _Nullable)colorWithGradientStyle:(UIGradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray<UIColor *> * _Nonnull)colors;
++ (UIColor * _Nullable)colorWithGradientStyle:(UIGradientStyle)gradientStyle frame:(CGRect)frame colors:(NSArray<UIColor *> * _Nonnull)colors;
+
++ (UIColor * _Nullable)colorWithGradientStyle:(UIGradientStyle)gradientStyle colors:(NSArray<UIColor *> * _Nonnull)colors;
+
 
 @end
+
+@interface UIView (Gradient)
+
+@property (strong, nonatomic) UIColor *gradientBackgroundColor;
+
+@end
+
+
+NS_ASSUME_NONNULL_END
