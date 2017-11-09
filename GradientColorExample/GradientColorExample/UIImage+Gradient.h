@@ -34,6 +34,6 @@ typedef NS_ENUM (NSUInteger, UIGradientStyle) {
 @interface UIImage (Gradient)
 
 // reference: Chameleon https://github.com/ViccAlexander/Chameleon/blob/6dd284bde21ea2e7f9fd89bc36f40df16e16369d/Pod/Classes/Objective-C/UIColor%2BChameleon.m#L473
-+ (instancetype _Nullable)imageWithGradientStyle:(UIGradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray<UIColor *> * _Nonnull)colors;
++ (instancetype _Nullable)imageWithGradientStyle:(UIGradientStyle)gradientStyle frame:(CGRect)frame colors:(NSArray<UIColor *> * _Nonnull)colors;
 
 @end

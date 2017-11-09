@@ -10,7 +10,7 @@
 
 @implementation UIImage (Gradient)
 
-+ (instancetype)imageWithGradientStyle:(UIGradientStyle)gradientStyle withFrame:(CGRect)frame andColors:(NSArray<UIColor *> *)colors {
++ (instancetype)imageWithGradientStyle:(UIGradientStyle)gradientStyle frame:(CGRect)frame colors:(NSArray<UIColor *> *)colors {
     //Create our background gradient layer
     CAGradientLayer *backgroundGradientLayer = [CAGradientLayer layer];
     
