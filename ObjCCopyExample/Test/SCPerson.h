@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SCPerson : NSObject
+@interface SCPerson : NSObject <NSCopying>
+
+@property (nonatomic, assign) NSInteger age;
 
 @property (copy, nonatomic) NSMutableString *name;
 

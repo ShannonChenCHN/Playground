@@ -10,14 +10,29 @@
 #import "CanvasViewGenerator.h"
 #import "BrandingFactory.h"
 
+#import "PaletteViewController.h"
+
+#import "CoordinatingController.h"
 
 @interface ViewController ()
 
 @property (nonatomic, strong) CanvasView *canvasView;
 
+
 @end
 
 @implementation ViewController
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _strokeColor = [UIColor blackColor];
+        
+        [CoordinatingController sharedInstance].canvasViewController = self;
+        
+    }
+    return self;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -40,7 +55,47 @@
     toolBar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     [self.view addSubview:toolBar];
     
+    UIBarButtonItem *deleteItem = [[UIBarButtonItem alloc] initWithTitle:@"删除" style:UIBarButtonItemStylePlain target:self action:@selector(didSelectDeleteButton)];
+    UIBarButtonItem *saveItem = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStylePlain target:self action:@selector(didSelectSaveButton)];
+    UIBarButtonItem *openItem = [[UIBarButtonItem alloc] initWithTitle:@"打开" style:UIBarButtonItemStylePlain target:self action:@selector(didSelectOpenButton)];
+    UIBarButtonItem *settingItem = [[UIBarButtonItem alloc] initWithTitle:@"设置" style:UIBarButtonItemStylePlain target:self action:@selector(didSelectSettingButton)];
+    UIBarButtonItem *undoItem = [[UIBarButtonItem alloc] initWithTitle:@"撤销" style:UIBarButtonItemStylePlain target:self action:@selector(didSelectUndoButton)];
+    UIBarButtonItem *redoItem = [[UIBarButtonItem alloc] initWithTitle:@"重做" style:UIBarButtonItemStylePlain target:self action:@selector(didSelectRedoButton)];
+    UIBarButtonItem *spacingItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:NULL];
+    [toolBar setItems:@[deleteItem, spacingItem, saveItem, spacingItem, openItem, spacingItem, settingItem, spacingItem, undoItem, spacingItem, redoItem]];
+    
+    
+    
+    
 }
 
+
+- (void)didSelectDeleteButton {
+    
+
+    
+}
+
+- (void)didSelectSaveButton {
+    
+}
+
+- (void)didSelectOpenButton {
+    
+}
+
+- (void)didSelectSettingButton {
+    PaletteViewController *vc = [[PaletteViewController alloc] initWithNibName:@"PaletteViewController" bundle:nil];
+    vc.strokeColor = self.strokeColor;
+    [self presentViewController:vc animated:YES completion:NULL];
+}
+
+- (void)didSelectUndoButton {
+    
+}
+
+- (void)didSelectRedoButton {
+    
+}
 
 @end

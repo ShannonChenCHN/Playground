@@ -26,4 +26,12 @@
     [self.name appendString:@" Kidd"];
 }
 
+- (id)copyWithZone:(NSZone *)zone {
+    SCPerson *person = [[[self class] allocWithZone:zone] init];
+    person.age = self.age;
+    person.name = self.name.copy;
+    
+    return person;
+}
+
 @end

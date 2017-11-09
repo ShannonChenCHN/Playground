@@ -24,6 +24,13 @@ int main(int argc, const char * argv[]) {
 //        testArrayCopy();
 //        testPropertyCopy();
         
+        SCPerson *person_1 = [[SCPerson alloc] init];
+        person_1.age = 16;
+        person_1.name = @"Moa";
+        
+        SCPerson *person_2= person_1.mutableCopy;
+        person_2.age = 30;
+//        [person_2.name appendString:@"Erica"]; // 会导致 crash
         
         
     }
