@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		580748051FB7F52200D41F42 /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 580747FC1FB7F52200D41F42 /* Command.m */; };
+		580748061FB7F52200D41F42 /* CommandSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 580747FE1FB7F52200D41F42 /* CommandSlider.m */; };
+		580748071FB7F52200D41F42 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 580748001FB7F52200D41F42 /* PaletteViewController.m */; };
+		580748081FB7F52200D41F42 /* PaletteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 580748011FB7F52200D41F42 /* PaletteViewController.xib */; };
+		580748091FB7F52200D41F42 /* SetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 580748031FB7F52200D41F42 /* SetStrokeColorCommand.m */; };
+		5807480C1FB7F5A200D41F42 /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5807480B1FB7F5A200D41F42 /* ThumbnailViewController.m */; };
 		5826E6FE1FA5E3E1006A746C /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 5826E6E91FA5E3E1006A746C /* Dot.m */; };
 		5826E6FF1FA5E3E1006A746C /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 5826E6EC1FA5E3E1006A746C /* Stroke.m */; };
 		5826E7001FA5E3E1006A746C /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5826E6EE1FA5E3E1006A746C /* Vertex.m */; };
@@ -31,15 +37,22 @@
 		587C272A1FA4473400ABDEA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 587C27281FA4473400ABDEA6 /* Main.storyboard */; };
 		587C272C1FA4473400ABDEA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587C272B1FA4473400ABDEA6 /* Assets.xcassets */; };
 		587C272F1FA4473400ABDEA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 587C272D1FA4473400ABDEA6 /* LaunchScreen.storyboard */; };
-		5894FEDE1FA77C28005B7AAC /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5894FEDD1FA77C28005B7AAC /* PaletteViewController.m */; };
-		5894FEE01FA77C51005B7AAC /* PaletteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5894FEDF1FA77C51005B7AAC /* PaletteViewController.xib */; };
-		5894FEE31FA78017005B7AAC /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = 5894FEE21FA78017005B7AAC /* Command.m */; };
-		5894FEE71FA7807D005B7AAC /* SetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 5894FEE61FA7807D005B7AAC /* SetStrokeColorCommand.m */; };
 		5894FEEA1FA781A7005B7AAC /* CoordinatingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5894FEE91FA781A7005B7AAC /* CoordinatingController.m */; };
-		5894FEED1FA78544005B7AAC /* CommandSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 5894FEEC1FA78544005B7AAC /* CommandSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		580747FB1FB7F52200D41F42 /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		580747FC1FB7F52200D41F42 /* Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
+		580747FD1FB7F52200D41F42 /* CommandSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandSlider.h; sourceTree = "<group>"; };
+		580747FE1FB7F52200D41F42 /* CommandSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandSlider.m; sourceTree = "<group>"; };
+		580747FF1FB7F52200D41F42 /* PaletteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
+		580748001FB7F52200D41F42 /* PaletteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaletteViewController.m; sourceTree = "<group>"; };
+		580748011FB7F52200D41F42 /* PaletteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaletteViewController.xib; sourceTree = "<group>"; };
+		580748021FB7F52200D41F42 /* SetStrokeColorCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetStrokeColorCommand.h; sourceTree = "<group>"; };
+		580748031FB7F52200D41F42 /* SetStrokeColorCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetStrokeColorCommand.m; sourceTree = "<group>"; };
+		580748041FB7F52200D41F42 /* SetStrokeColorCommandDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetStrokeColorCommandDelegate.h; sourceTree = "<group>"; };
+		5807480A1FB7F5A200D41F42 /* ThumbnailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThumbnailViewController.h; sourceTree = "<group>"; };
+		5807480B1FB7F5A200D41F42 /* ThumbnailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThumbnailViewController.m; sourceTree = "<group>"; };
 		5826E6E81FA5E3E1006A746C /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
 		5826E6E91FA5E3E1006A746C /* Dot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
 		5826E6EA1FA5E3E1006A746C /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
@@ -87,18 +100,8 @@
 		587C272B1FA4473400ABDEA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		587C272E1FA4473400ABDEA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		587C27301FA4473400ABDEA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5894FEDC1FA77C28005B7AAC /* PaletteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
-		5894FEDD1FA77C28005B7AAC /* PaletteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaletteViewController.m; sourceTree = "<group>"; };
-		5894FEDF1FA77C51005B7AAC /* PaletteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaletteViewController.xib; sourceTree = "<group>"; };
-		5894FEE11FA78017005B7AAC /* Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
-		5894FEE21FA78017005B7AAC /* Command.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
-		5894FEE41FA7804D005B7AAC /* SetStrokeColorCommandDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetStrokeColorCommandDelegate.h; sourceTree = "<group>"; };
-		5894FEE51FA7807D005B7AAC /* SetStrokeColorCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetStrokeColorCommand.h; sourceTree = "<group>"; };
-		5894FEE61FA7807D005B7AAC /* SetStrokeColorCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetStrokeColorCommand.m; sourceTree = "<group>"; };
 		5894FEE81FA781A7005B7AAC /* CoordinatingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoordinatingController.h; sourceTree = "<group>"; };
 		5894FEE91FA781A7005B7AAC /* CoordinatingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoordinatingController.m; sourceTree = "<group>"; };
-		5894FEEB1FA78544005B7AAC /* CommandSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandSlider.h; sourceTree = "<group>"; };
-		5894FEEC1FA78544005B7AAC /* CommandSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandSlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		580747FA1FB7F52200D41F42 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				580747FB1FB7F52200D41F42 /* Command.h */,
+				580747FC1FB7F52200D41F42 /* Command.m */,
+				580747FD1FB7F52200D41F42 /* CommandSlider.h */,
+				580747FE1FB7F52200D41F42 /* CommandSlider.m */,
+				580747FF1FB7F52200D41F42 /* PaletteViewController.h */,
+				580748001FB7F52200D41F42 /* PaletteViewController.m */,
+				580748011FB7F52200D41F42 /* PaletteViewController.xib */,
+				580748021FB7F52200D41F42 /* SetStrokeColorCommand.h */,
+				580748031FB7F52200D41F42 /* SetStrokeColorCommand.m */,
+				580748041FB7F52200D41F42 /* SetStrokeColorCommandDelegate.h */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
 		5826E6E61FA5E3E0006A746C /* Factory */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,16 +254,9 @@
 				5894FEE91FA781A7005B7AAC /* CoordinatingController.m */,
 				587C27251FA4473400ABDEA6 /* ViewController.h */,
 				587C27261FA4473400ABDEA6 /* ViewController.m */,
-				5894FEDC1FA77C28005B7AAC /* PaletteViewController.h */,
-				5894FEDD1FA77C28005B7AAC /* PaletteViewController.m */,
-				5894FEDF1FA77C51005B7AAC /* PaletteViewController.xib */,
-				5894FEE11FA78017005B7AAC /* Command.h */,
-				5894FEE21FA78017005B7AAC /* Command.m */,
-				5894FEE51FA7807D005B7AAC /* SetStrokeColorCommand.h */,
-				5894FEE61FA7807D005B7AAC /* SetStrokeColorCommand.m */,
-				5894FEE41FA7804D005B7AAC /* SetStrokeColorCommandDelegate.h */,
-				5894FEEB1FA78544005B7AAC /* CommandSlider.h */,
-				5894FEEC1FA78544005B7AAC /* CommandSlider.m */,
+				5807480A1FB7F5A200D41F42 /* ThumbnailViewController.h */,
+				5807480B1FB7F5A200D41F42 /* ThumbnailViewController.m */,
+				580747FA1FB7F52200D41F42 /* Adapter */,
 				5826E6E61FA5E3E0006A746C /* Factory */,
 				5826E6E71FA5E3E0006A746C /* Model */,
 				5826E6EF1FA5E3E1006A746C /* View */,
@@ -324,9 +337,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5894FEE01FA77C51005B7AAC /* PaletteViewController.xib in Resources */,
 				587C272F1FA4473400ABDEA6 /* LaunchScreen.storyboard in Resources */,
 				587C272C1FA4473400ABDEA6 /* Assets.xcassets in Resources */,
+				580748081FB7F52200D41F42 /* PaletteViewController.xib in Resources */,
 				587C272A1FA4473400ABDEA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,21 +357,22 @@
 				5826E74F1FA61CA3006A746C /* PaperCanvasView.m in Sources */,
 				5826E7451FA61C73006A746C /* SierraView.m in Sources */,
 				5826E6FE1FA5E3E1006A746C /* Dot.m in Sources */,
+				580748071FB7F52200D41F42 /* PaletteViewController.m in Sources */,
 				5826E70F1FA5E44A006A746C /* SierraBrandingFactory.m in Sources */,
 				587C27241FA4473400ABDEA6 /* AppDelegate.m in Sources */,
 				5826E7441FA61C73006A746C /* SierraToolBar.m in Sources */,
 				5826E6FF1FA5E3E1006A746C /* Stroke.m in Sources */,
 				5826E7561FA61CC6006A746C /* CanvasViewGenerator.m in Sources */,
 				5826E7091FA5E416006A746C /* BrandingFactory.m in Sources */,
-				5894FEE71FA7807D005B7AAC /* SetStrokeColorCommand.m in Sources */,
 				5826E7421FA61C73006A746C /* AcmeView.m in Sources */,
 				5826E74D1FA61CA3006A746C /* CanvasView.m in Sources */,
 				5826E7431FA61C73006A746C /* SierraMainButton.m in Sources */,
+				580748051FB7F52200D41F42 /* Command.m in Sources */,
 				5894FEEA1FA781A7005B7AAC /* CoordinatingController.m in Sources */,
 				5826E7001FA5E3E1006A746C /* Vertex.m in Sources */,
-				5894FEE31FA78017005B7AAC /* Command.m in Sources */,
-				5894FEDE1FA77C28005B7AAC /* PaletteViewController.m in Sources */,
-				5894FEED1FA78544005B7AAC /* CommandSlider.m in Sources */,
+				580748061FB7F52200D41F42 /* CommandSlider.m in Sources */,
+				580748091FB7F52200D41F42 /* SetStrokeColorCommand.m in Sources */,
+				5807480C1FB7F5A200D41F42 /* ThumbnailViewController.m in Sources */,
 				5826E74E1FA61CA3006A746C /* ClothCanvasView.m in Sources */,
 				5826E7571FA61CC6006A746C /* ClothCanvasViewGenerator.m in Sources */,
 				5826E7401FA61C73006A746C /* AcmeMainButton.m in Sources */,

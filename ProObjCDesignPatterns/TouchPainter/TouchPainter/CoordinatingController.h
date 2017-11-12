@@ -6,16 +6,25 @@
 //  Copyright © 2017年 ShannonChen. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-@class ViewController;
-@class PaletteViewController;
+#import <UIKit/UIKit.h>
+#import "ViewController.h"
+#import "PaletteViewController.h"
+#import "ThumbnailViewController.h"
 
-@interface CoordinatingController : NSObject 
 
+typedef NS_ENUM(NSInteger, CoordinatingTarget) {
+    CoordinatingTargetDefault,
+    CoordinatingTargetCanvas,
+    CoordinatingTargetPalette,
+    CoordinatingTargetThumbnail,
+};
 
+@interface CoordinatingController : NSObject
+
+@property (nonatomic, strong, readonly) ViewController *canvasViewController;
+@property (nonatomic, strong, readonly) UIViewController *activeViewController;
+    
 + (instancetype)sharedInstance;
-
-
-@property (nonatomic, weak) ViewController *canvasViewController;
+- (void)requestViewTransitionWithTarget:(CoordinatingTarget)target params:(NSDictionary *)params;
 
 @end

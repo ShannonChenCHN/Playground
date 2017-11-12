@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Command.h"
+#import "SetStrokeColorCommand.h"
 
 @interface CommandSlider : UISlider
 
-@property (nonatomic, strong) IBOutlet Command *command;
+@property (nonatomic, strong) IBOutlet SetStrokeColorCommand *command;
 
 @end

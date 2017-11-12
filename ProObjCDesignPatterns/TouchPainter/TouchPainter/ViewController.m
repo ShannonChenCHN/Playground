@@ -28,7 +28,7 @@
     if (self) {
         _strokeColor = [UIColor blackColor];
         
-        [CoordinatingController sharedInstance].canvasViewController = self;
+        
         
     }
     return self;
@@ -85,9 +85,10 @@
 }
 
 - (void)didSelectSettingButton {
-    PaletteViewController *vc = [[PaletteViewController alloc] initWithNibName:@"PaletteViewController" bundle:nil];
-    vc.strokeColor = self.strokeColor;
-    [self presentViewController:vc animated:YES completion:NULL];
+    
+    NSDictionary *params = self.strokeColor ? @{@"strokeCOlor" : self.strokeColor} : @{};
+    [[CoordinatingController sharedInstance] requestViewTransitionWithTarget:CoordinatingTargetPalette
+                                                                      params:params];
 }
 
 - (void)didSelectUndoButton {
@@ -98,4 +99,6 @@
     
 }
 
+
+    
 @end
