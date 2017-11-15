@@ -11,6 +11,7 @@
 @interface ViewController : UIViewController
 
 @property (nonatomic, strong) UIColor *strokeColor;
+@property (nonatomic, assign) CGFloat strokeSize;
 
 @end
 

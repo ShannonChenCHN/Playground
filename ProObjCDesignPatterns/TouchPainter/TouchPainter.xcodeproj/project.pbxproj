@@ -13,6 +13,7 @@
 		580748081FB7F52200D41F42 /* PaletteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 580748011FB7F52200D41F42 /* PaletteViewController.xib */; };
 		580748091FB7F52200D41F42 /* SetStrokeColorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 580748031FB7F52200D41F42 /* SetStrokeColorCommand.m */; };
 		5807480C1FB7F5A200D41F42 /* ThumbnailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5807480B1FB7F5A200D41F42 /* ThumbnailViewController.m */; };
+		5807480F1FB8217D00D41F42 /* Scribble.m in Sources */ = {isa = PBXBuildFile; fileRef = 5807480E1FB8217D00D41F42 /* Scribble.m */; };
 		5826E6FE1FA5E3E1006A746C /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 5826E6E91FA5E3E1006A746C /* Dot.m */; };
 		5826E6FF1FA5E3E1006A746C /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 5826E6EC1FA5E3E1006A746C /* Stroke.m */; };
 		5826E7001FA5E3E1006A746C /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 5826E6EE1FA5E3E1006A746C /* Vertex.m */; };
@@ -53,6 +54,8 @@
 		580748041FB7F52200D41F42 /* SetStrokeColorCommandDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetStrokeColorCommandDelegate.h; sourceTree = "<group>"; };
 		5807480A1FB7F5A200D41F42 /* ThumbnailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThumbnailViewController.h; sourceTree = "<group>"; };
 		5807480B1FB7F5A200D41F42 /* ThumbnailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThumbnailViewController.m; sourceTree = "<group>"; };
+		5807480D1FB8217D00D41F42 /* Scribble.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scribble.h; sourceTree = "<group>"; };
+		5807480E1FB8217D00D41F42 /* Scribble.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scribble.m; sourceTree = "<group>"; };
 		5826E6E81FA5E3E1006A746C /* Dot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
 		5826E6E91FA5E3E1006A746C /* Dot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
 		5826E6EA1FA5E3E1006A746C /* Mark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
@@ -256,6 +259,8 @@
 				587C27261FA4473400ABDEA6 /* ViewController.m */,
 				5807480A1FB7F5A200D41F42 /* ThumbnailViewController.h */,
 				5807480B1FB7F5A200D41F42 /* ThumbnailViewController.m */,
+				5807480D1FB8217D00D41F42 /* Scribble.h */,
+				5807480E1FB8217D00D41F42 /* Scribble.m */,
 				580747FA1FB7F52200D41F42 /* Adapter */,
 				5826E6E61FA5E3E0006A746C /* Factory */,
 				5826E6E71FA5E3E0006A746C /* Model */,
@@ -374,6 +379,7 @@
 				580748091FB7F52200D41F42 /* SetStrokeColorCommand.m in Sources */,
 				5807480C1FB7F5A200D41F42 /* ThumbnailViewController.m in Sources */,
 				5826E74E1FA61CA3006A746C /* ClothCanvasView.m in Sources */,
+				5807480F1FB8217D00D41F42 /* Scribble.m in Sources */,
 				5826E7571FA61CC6006A746C /* ClothCanvasViewGenerator.m in Sources */,
 				5826E7401FA61C73006A746C /* AcmeMainButton.m in Sources */,
 				5826E70C1FA5E438006A746C /* AcmeBrandingFactory.m in Sources */,
