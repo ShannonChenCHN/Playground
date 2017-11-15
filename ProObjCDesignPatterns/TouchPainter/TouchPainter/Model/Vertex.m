@@ -57,6 +57,12 @@
     return nil;
 }
 
+- (void)drawWithContext:(CGContextRef)context {
+    CGFloat x = self.location.x;
+    CGFloat y = self.location.y;
+    
+    CGContextAddLineToPoint(context, x, y);
+}
 
 #pragma mark - <NSCopying>
 - (id)copyWithZone:(NSZone *)zone {

@@ -20,9 +20,13 @@
 
 - (id)copy; // 因为 <NSObject> 协议中没有声明 -copy 方法，所以我们需要在这里提供 -copy 方法，然后让具体的类实现 NSCopying 协议
 
+- (NSEnumerator *)enumerator;
+- (void)enumerateMarksUsingBlock:(void (NS_NOESCAPE ^)(id <Mark> item, BOOL *stop))block;
 
 - (void)addMark:(id <Mark>)mark;
 - (void)removeMark:(id <Mark>)mark;
 - (id <Mark>)childMarkAtIndex:(NSUInteger)index;
+
+- (void)drawWithContext:(CGContextRef)context;
 
 @end

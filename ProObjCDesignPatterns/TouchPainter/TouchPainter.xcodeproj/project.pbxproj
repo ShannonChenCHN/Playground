@@ -32,6 +32,7 @@
 		5826E7561FA61CC6006A746C /* CanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5826E7511FA61CC6006A746C /* CanvasViewGenerator.m */; };
 		5826E7571FA61CC6006A746C /* ClothCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5826E7531FA61CC6006A746C /* ClothCanvasViewGenerator.m */; };
 		5826E7581FA61CC6006A746C /* PaperCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5826E7551FA61CC6006A746C /* PaperCanvasViewGenerator.m */; };
+		58469F8B1FBC929100C94419 /* MarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 58469F8A1FBC929100C94419 /* MarkEnumerator.m */; };
 		587C27211FA4473400ABDEA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 587C27201FA4473400ABDEA6 /* main.m */; };
 		587C27241FA4473400ABDEA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 587C27231FA4473400ABDEA6 /* AppDelegate.m */; };
 		587C27271FA4473400ABDEA6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587C27261FA4473400ABDEA6 /* ViewController.m */; };
@@ -93,6 +94,8 @@
 		5826E7531FA61CC6006A746C /* ClothCanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClothCanvasViewGenerator.m; sourceTree = "<group>"; };
 		5826E7541FA61CC6006A746C /* PaperCanvasViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperCanvasViewGenerator.h; sourceTree = "<group>"; };
 		5826E7551FA61CC6006A746C /* PaperCanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperCanvasViewGenerator.m; sourceTree = "<group>"; };
+		58469F891FBC929100C94419 /* MarkEnumerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkEnumerator.h; sourceTree = "<group>"; };
+		58469F8A1FBC929100C94419 /* MarkEnumerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkEnumerator.m; sourceTree = "<group>"; };
 		587C271C1FA4473400ABDEA6 /* TouchPainter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchPainter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		587C27201FA4473400ABDEA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		587C27221FA4473400ABDEA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -151,13 +154,13 @@
 		5826E6E71FA5E3E0006A746C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5826E6EA1FA5E3E1006A746C /* Mark.h */,
 				5826E6E81FA5E3E1006A746C /* Dot.h */,
 				5826E6E91FA5E3E1006A746C /* Dot.m */,
-				5826E6EA1FA5E3E1006A746C /* Mark.h */,
-				5826E6EB1FA5E3E1006A746C /* Stroke.h */,
-				5826E6EC1FA5E3E1006A746C /* Stroke.m */,
 				5826E6ED1FA5E3E1006A746C /* Vertex.h */,
 				5826E6EE1FA5E3E1006A746C /* Vertex.m */,
+				5826E6EB1FA5E3E1006A746C /* Stroke.h */,
+				5826E6EC1FA5E3E1006A746C /* Stroke.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -261,6 +264,8 @@
 				5807480B1FB7F5A200D41F42 /* ThumbnailViewController.m */,
 				5807480D1FB8217D00D41F42 /* Scribble.h */,
 				5807480E1FB8217D00D41F42 /* Scribble.m */,
+				58469F891FBC929100C94419 /* MarkEnumerator.h */,
+				58469F8A1FBC929100C94419 /* MarkEnumerator.m */,
 				580747FA1FB7F52200D41F42 /* Adapter */,
 				5826E6E61FA5E3E0006A746C /* Factory */,
 				5826E6E71FA5E3E0006A746C /* Model */,
@@ -377,6 +382,7 @@
 				5826E7001FA5E3E1006A746C /* Vertex.m in Sources */,
 				580748061FB7F52200D41F42 /* CommandSlider.m in Sources */,
 				580748091FB7F52200D41F42 /* SetStrokeColorCommand.m in Sources */,
+				58469F8B1FBC929100C94419 /* MarkEnumerator.m in Sources */,
 				5807480C1FB7F5A200D41F42 /* ThumbnailViewController.m in Sources */,
 				5826E74E1FA61CA3006A746C /* ClothCanvasView.m in Sources */,
 				5807480F1FB8217D00D41F42 /* Scribble.m in Sources */,

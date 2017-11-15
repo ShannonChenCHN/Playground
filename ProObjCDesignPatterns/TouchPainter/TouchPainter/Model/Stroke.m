@@ -7,6 +7,7 @@
 //
 
 #import "Stroke.h"
+#import "MarkEnumerator.h"
 
 @interface Stroke ()
 
@@ -67,6 +68,38 @@
 
 - (NSUInteger)count {
     return self.children.count;
+}
+
+- (void)drawWithContext:(CGContextRef)context {
+    
+    // 起点
+    CGContextMoveToPoint(context, self.location.x, self.location.y);
+    
+    // 绘制子元素
+    for (id <Mark> mark in self.children) {
+        [mark drawWithContext:context];
+    }
+    
+    CGContextSetStrokeColorWithColor(context, self.color.CGColor);
+}
+
+#pragma mark - enumerator method
+- (NSEnumerator *)enumerator {
+    // 具体的迭代算法交给单独的 MarkEnumerator 类去处理
+    return [[MarkEnumerator alloc] initWithMark:self];
+}
+
+- (void)enumerateMarksUsingBlock:(void (^)(id<Mark>, BOOL *))block {
+    BOOL stop = NO;
+    
+    NSEnumerator *enumerator = self.enumerator;
+    
+    for (id <Mark> aMark in enumerator) {
+        block(aMark, &stop);
+        if (stop) {
+            break;
+        }
+    }
 }
 
 #pragma mark - <NSCopying>
