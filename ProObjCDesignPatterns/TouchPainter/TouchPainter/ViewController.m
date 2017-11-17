@@ -33,7 +33,7 @@
     self = [super init];
     if (self) {
         _strokeColor = [UIColor blackColor];
-        
+        _strokeSize = 5;
         
         
     }
@@ -47,9 +47,6 @@
     self.scribble = scribble;
     
     [self addSubviews];
-    [self addToolBar];
-    
-    
     
 }
 
@@ -63,9 +60,7 @@
     BrandingFactory *factory = [BrandingFactory factoryWithBrand:BrandNameAcme];
     UIView *view = [factory brandedViewWithFrame:CGRectZero];
     UIButton *button = [factory brandedMainButtonWithFrame:CGRectZero];
-}
 
-- (void)addToolBar {
     CGFloat toolBarHeight = 49;
     CGRect frame = CGRectMake(0, self.view.bounds.size.height - toolBarHeight, self.view.bounds.size.width, toolBarHeight);
     UIToolbar *toolBar = [factory brandedToolBarWithFrame:frame];
@@ -181,7 +176,7 @@
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
     if ([object isKindOfClass:[Scribble class]] && [keyPath isEqualToString:NSStringFromSelector(@selector(mark))]) {
         id <Mark> mark = change[NSKeyValueChangeNewKey];
-        self.canvasView.mark = mark;
+        self.canvasView.mark = self.scribble.mark;
         [self.canvasView setNeedsDisplay];
     }
 }

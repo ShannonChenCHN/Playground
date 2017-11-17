@@ -33,6 +33,7 @@
 		5826E7571FA61CC6006A746C /* ClothCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5826E7531FA61CC6006A746C /* ClothCanvasViewGenerator.m */; };
 		5826E7581FA61CC6006A746C /* PaperCanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5826E7551FA61CC6006A746C /* PaperCanvasViewGenerator.m */; };
 		58469F8B1FBC929100C94419 /* MarkEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 58469F8A1FBC929100C94419 /* MarkEnumerator.m */; };
+		58469F8F1FBDD3A500C94419 /* MarkRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 58469F8E1FBDD3A500C94419 /* MarkRenderer.m */; };
 		587C27211FA4473400ABDEA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 587C27201FA4473400ABDEA6 /* main.m */; };
 		587C27241FA4473400ABDEA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 587C27231FA4473400ABDEA6 /* AppDelegate.m */; };
 		587C27271FA4473400ABDEA6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587C27261FA4473400ABDEA6 /* ViewController.m */; };
@@ -96,6 +97,9 @@
 		5826E7551FA61CC6006A746C /* PaperCanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperCanvasViewGenerator.m; sourceTree = "<group>"; };
 		58469F891FBC929100C94419 /* MarkEnumerator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkEnumerator.h; sourceTree = "<group>"; };
 		58469F8A1FBC929100C94419 /* MarkEnumerator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkEnumerator.m; sourceTree = "<group>"; };
+		58469F8C1FBDD2C200C94419 /* MarkVisitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkVisitor.h; sourceTree = "<group>"; };
+		58469F8D1FBDD3A500C94419 /* MarkRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MarkRenderer.h; sourceTree = "<group>"; };
+		58469F8E1FBDD3A500C94419 /* MarkRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MarkRenderer.m; sourceTree = "<group>"; };
 		587C271C1FA4473400ABDEA6 /* TouchPainter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchPainter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		587C27201FA4473400ABDEA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		587C27221FA4473400ABDEA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -266,6 +270,9 @@
 				5807480E1FB8217D00D41F42 /* Scribble.m */,
 				58469F891FBC929100C94419 /* MarkEnumerator.h */,
 				58469F8A1FBC929100C94419 /* MarkEnumerator.m */,
+				58469F8C1FBDD2C200C94419 /* MarkVisitor.h */,
+				58469F8D1FBDD3A500C94419 /* MarkRenderer.h */,
+				58469F8E1FBDD3A500C94419 /* MarkRenderer.m */,
 				580747FA1FB7F52200D41F42 /* Adapter */,
 				5826E6E61FA5E3E0006A746C /* Factory */,
 				5826E6E71FA5E3E0006A746C /* Model */,
@@ -376,6 +383,7 @@
 				5826E7091FA5E416006A746C /* BrandingFactory.m in Sources */,
 				5826E7421FA61C73006A746C /* AcmeView.m in Sources */,
 				5826E74D1FA61CA3006A746C /* CanvasView.m in Sources */,
+				58469F8F1FBDD3A500C94419 /* MarkRenderer.m in Sources */,
 				5826E7431FA61C73006A746C /* SierraMainButton.m in Sources */,
 				580748051FB7F52200D41F42 /* Command.m in Sources */,
 				5894FEEA1FA781A7005B7AAC /* CoordinatingController.m in Sources */,

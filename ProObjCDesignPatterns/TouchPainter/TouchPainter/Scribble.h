@@ -14,6 +14,8 @@
  涂鸦 model
  */
 @interface Scribble : NSObject
+
+@property (nonatomic, strong) id <Mark> mark;
     
 - (void)addMark:(id <Mark>)aMark shouldAddToPreviousMark:(BOOL)shouldAddToPreviousMark;
 - (void)removeMark:(id <Mark>)aMark;

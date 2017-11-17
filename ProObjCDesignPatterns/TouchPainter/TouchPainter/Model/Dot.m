@@ -23,6 +23,10 @@
     CGContextFillEllipseInRect(context, frame);
 }
 
+- (void)acceptMarkVisitor:(id<MarkVisitor>)visitor {
+    [visitor visitDot:self];
+}
+
 #pragma mark - <NSCoping>
 - (id)copyWithZone:(NSZone *)zone {
     Dot *dotCopy = [[[self class] allocWithZone:zone] initWithLocation:self.location];

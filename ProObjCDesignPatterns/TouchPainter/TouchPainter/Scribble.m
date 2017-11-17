@@ -11,8 +11,7 @@
 
 @interface Scribble ()
     
-@property (nonatomic, strong) id <Mark> mark;
-@property (nonatomic, strong) id <Mark> parentMark;
+
     
 @end
 
@@ -21,7 +20,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _parentMark = [[Stroke alloc] init];
+        _mark = [[Stroke alloc] init];
     }
     return self;
 }
@@ -32,9 +31,9 @@
     [self willChangeValueForKey:NSStringFromSelector(@selector(mark))];
     
     if (shouldAddToPreviousMark) {
-        [self.parentMark.lastChild addMark:aMark];
+        [self.mark.lastChild addMark:aMark];
     } else {
-        [self.parentMark addMark:aMark];
+        [self.mark addMark:aMark];
     }
     
     // 手动调用 KVO
@@ -43,14 +42,14 @@
     
 - (void)removeMark:(id<Mark>)aMark {
     
-    if (aMark == self.parentMark) {
+    if (aMark == self.mark) {
         return;
     }
     
     
     [self willChangeValueForKey:NSStringFromSelector(@selector(mark))];
     
-    [self.parentMark removeMark:aMark];
+    [self.mark removeMark:aMark];
     
     [self didChangeValueForKey:NSStringFromSelector(@selector(mark))];
 }

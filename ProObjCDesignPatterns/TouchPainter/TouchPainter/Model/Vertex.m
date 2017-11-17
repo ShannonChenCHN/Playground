@@ -64,6 +64,10 @@
     CGContextAddLineToPoint(context, x, y);
 }
 
+- (void)acceptMarkVisitor:(id<MarkVisitor>)visitor {
+    [visitor visitVertex:self];
+}
+
 #pragma mark - <NSCopying>
 - (id)copyWithZone:(NSZone *)zone {
 

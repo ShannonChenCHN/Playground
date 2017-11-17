@@ -83,6 +83,17 @@
     CGContextSetStrokeColorWithColor(context, self.color.CGColor);
 }
 
+- (void)acceptMarkVisitor:(id<MarkVisitor>)visitor {
+    
+    // 后序遍历：先访问子节点，后访问父节点
+    
+    for (id <Mark> child in self.children) {
+        [child acceptMarkVisitor:visitor];
+    }
+    
+    [visitor visitStroke:self];
+}
+
 #pragma mark - enumerator method
 - (NSEnumerator *)enumerator {
     // 具体的迭代算法交给单独的 MarkEnumerator 类去处理
