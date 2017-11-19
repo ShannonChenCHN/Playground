@@ -267,6 +267,15 @@
 			path = Visitor;
 			sourceTree = "<group>";
 		};
+		58469F931FC13D1800C94419 /* Observer & Memento */ = {
+			isa = PBXGroup;
+			children = (
+				5807480D1FB8217D00D41F42 /* Scribble.h */,
+				5807480E1FB8217D00D41F42 /* Scribble.m */,
+			);
+			path = "Observer & Memento";
+			sourceTree = "<group>";
+		};
 		587C27131FA4473400ABDEA6 = {
 			isa = PBXGroup;
 			children = (
@@ -292,8 +301,7 @@
 				587C27261FA4473400ABDEA6 /* CanvasViewController.m */,
 				5807480A1FB7F5A200D41F42 /* ThumbnailViewController.h */,
 				5807480B1FB7F5A200D41F42 /* ThumbnailViewController.m */,
-				5807480D1FB8217D00D41F42 /* Scribble.h */,
-				5807480E1FB8217D00D41F42 /* Scribble.m */,
+				58469F931FC13D1800C94419 /* Observer & Memento */,
 				58469F921FC1395600C94419 /* Visitor */,
 				58469F911FC1391D00C94419 /* Iterator */,
 				58469F901FC138F700C94419 /* Mediator */,
