@@ -10,7 +10,7 @@
 
 @interface CoordinatingController ()
     
-@property (nonatomic, strong) ViewController *canvasViewController;
+@property (nonatomic, strong) CanvasViewController *canvasViewController;
 @property (nonatomic, strong) UIViewController *activeViewController;
 @property (nonatomic, strong) UINavigationController *rootNavigationController;
     
@@ -48,8 +48,8 @@
             
             _rootNavigationController = (UINavigationController *)rootViewController;
             if (_rootNavigationController.viewControllers.count &&
-                [_rootNavigationController.viewControllers.firstObject isKindOfClass:[ViewController class]]) {
-                _canvasViewController = (ViewController *)_rootNavigationController.viewControllers.firstObject;
+                [_rootNavigationController.viewControllers.firstObject isKindOfClass:[CanvasViewController class]]) {
+                _canvasViewController = (CanvasViewController *)_rootNavigationController.viewControllers.firstObject;
             }
         }
         

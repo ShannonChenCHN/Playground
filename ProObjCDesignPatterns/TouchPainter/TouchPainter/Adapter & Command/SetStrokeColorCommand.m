@@ -7,7 +7,7 @@
 //
 
 #import "SetStrokeColorCommand.h"
-#import "ViewController.h"
+#import "CanvasViewController.h"
 #import "CoordinatingController.h"
 
 @implementation SetStrokeColorCommand
@@ -22,7 +22,7 @@
     UIColor *color = [UIColor colorWithRed:redValue green:greenValue blue:blueValue alpha:1.0];
     
     CoordinatingController *coordinator = [CoordinatingController sharedInstance];
-    ViewController *canvasVC = coordinator.canvasViewController;
+    CanvasViewController *canvasVC = coordinator.canvasViewController;
     canvasVC.strokeColor = color;
     
     

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CanvasViewController.h
 //  TouchPainter
 //
 //  Created by ShannonChen on 2017/10/28.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface CanvasViewController : UIViewController
 
 @property (nonatomic, strong) UIColor *strokeColor;
 @property (nonatomic, assign) CGFloat strokeSize;

@@ -36,7 +36,7 @@
 		58469F8F1FBDD3A500C94419 /* MarkRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 58469F8E1FBDD3A500C94419 /* MarkRenderer.m */; };
 		587C27211FA4473400ABDEA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 587C27201FA4473400ABDEA6 /* main.m */; };
 		587C27241FA4473400ABDEA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 587C27231FA4473400ABDEA6 /* AppDelegate.m */; };
-		587C27271FA4473400ABDEA6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587C27261FA4473400ABDEA6 /* ViewController.m */; };
+		587C27271FA4473400ABDEA6 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587C27261FA4473400ABDEA6 /* CanvasViewController.m */; };
 		587C272A1FA4473400ABDEA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 587C27281FA4473400ABDEA6 /* Main.storyboard */; };
 		587C272C1FA4473400ABDEA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 587C272B1FA4473400ABDEA6 /* Assets.xcassets */; };
 		587C272F1FA4473400ABDEA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 587C272D1FA4473400ABDEA6 /* LaunchScreen.storyboard */; };
@@ -104,8 +104,8 @@
 		587C27201FA4473400ABDEA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		587C27221FA4473400ABDEA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		587C27231FA4473400ABDEA6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		587C27251FA4473400ABDEA6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		587C27261FA4473400ABDEA6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		587C27251FA4473400ABDEA6 /* CanvasViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CanvasViewController.h; sourceTree = "<group>"; };
+		587C27261FA4473400ABDEA6 /* CanvasViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CanvasViewController.m; sourceTree = "<group>"; };
 		587C27291FA4473400ABDEA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		587C272B1FA4473400ABDEA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		587C272E1FA4473400ABDEA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		580747FA1FB7F52200D41F42 /* Adapter */ = {
+		580747FA1FB7F52200D41F42 /* Adapter & Command */ = {
 			isa = PBXGroup;
 			children = (
 				580747FB1FB7F52200D41F42 /* Command.h */,
@@ -139,10 +139,10 @@
 				580748031FB7F52200D41F42 /* SetStrokeColorCommand.m */,
 				580748041FB7F52200D41F42 /* SetStrokeColorCommandDelegate.h */,
 			);
-			path = Adapter;
+			path = "Adapter & Command";
 			sourceTree = "<group>";
 		};
-		5826E6E61FA5E3E0006A746C /* Factory */ = {
+		5826E6E61FA5E3E0006A746C /* Abstract Factory */ = {
 			isa = PBXGroup;
 			children = (
 				5826E7071FA5E416006A746C /* BrandingFactory.h */,
@@ -152,10 +152,10 @@
 				5826E70D1FA5E44A006A746C /* SierraBrandingFactory.h */,
 				5826E70E1FA5E44A006A746C /* SierraBrandingFactory.m */,
 			);
-			path = Factory;
+			path = "Abstract Factory";
 			sourceTree = "<group>";
 		};
-		5826E6E71FA5E3E0006A746C /* Model */ = {
+		5826E6E71FA5E3E0006A746C /* Composite & Prototype & Iterator */ = {
 			isa = PBXGroup;
 			children = (
 				5826E6EA1FA5E3E1006A746C /* Mark.h */,
@@ -166,19 +166,19 @@
 				5826E6EB1FA5E3E1006A746C /* Stroke.h */,
 				5826E6EC1FA5E3E1006A746C /* Stroke.m */,
 			);
-			path = Model;
+			path = "Composite & Prototype & Iterator";
 			sourceTree = "<group>";
 		};
-		5826E6EF1FA5E3E1006A746C /* View */ = {
+		5826E6EF1FA5E3E1006A746C /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				5826E7461FA61CA3006A746C /* CanvasView */,
 				5826E7311FA61C73006A746C /* BrandedView */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		5826E6F61FA5E3E1006A746C /* ViewGenerator */ = {
+		5826E6F61FA5E3E1006A746C /* Factory Method */ = {
 			isa = PBXGroup;
 			children = (
 				5826E7501FA61CC6006A746C /* CanvasViewGenerator.h */,
@@ -188,7 +188,7 @@
 				5826E7541FA61CC6006A746C /* PaperCanvasViewGenerator.h */,
 				5826E7551FA61CC6006A746C /* PaperCanvasViewGenerator.m */,
 			);
-			path = ViewGenerator;
+			path = "Factory Method";
 			sourceTree = "<group>";
 		};
 		5826E7311FA61C73006A746C /* BrandedView */ = {
@@ -239,6 +239,34 @@
 			path = CanvasView;
 			sourceTree = "<group>";
 		};
+		58469F901FC138F700C94419 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				5894FEE81FA781A7005B7AAC /* CoordinatingController.h */,
+				5894FEE91FA781A7005B7AAC /* CoordinatingController.m */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		58469F911FC1391D00C94419 /* Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				58469F891FBC929100C94419 /* MarkEnumerator.h */,
+				58469F8A1FBC929100C94419 /* MarkEnumerator.m */,
+			);
+			path = Iterator;
+			sourceTree = "<group>";
+		};
+		58469F921FC1395600C94419 /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				58469F8C1FBDD2C200C94419 /* MarkVisitor.h */,
+				58469F8D1FBDD3A500C94419 /* MarkRenderer.h */,
+				58469F8E1FBDD3A500C94419 /* MarkRenderer.m */,
+			);
+			path = Visitor;
+			sourceTree = "<group>";
+		};
 		587C27131FA4473400ABDEA6 = {
 			isa = PBXGroup;
 			children = (
@@ -260,24 +288,20 @@
 			children = (
 				587C27221FA4473400ABDEA6 /* AppDelegate.h */,
 				587C27231FA4473400ABDEA6 /* AppDelegate.m */,
-				5894FEE81FA781A7005B7AAC /* CoordinatingController.h */,
-				5894FEE91FA781A7005B7AAC /* CoordinatingController.m */,
-				587C27251FA4473400ABDEA6 /* ViewController.h */,
-				587C27261FA4473400ABDEA6 /* ViewController.m */,
+				587C27251FA4473400ABDEA6 /* CanvasViewController.h */,
+				587C27261FA4473400ABDEA6 /* CanvasViewController.m */,
 				5807480A1FB7F5A200D41F42 /* ThumbnailViewController.h */,
 				5807480B1FB7F5A200D41F42 /* ThumbnailViewController.m */,
 				5807480D1FB8217D00D41F42 /* Scribble.h */,
 				5807480E1FB8217D00D41F42 /* Scribble.m */,
-				58469F891FBC929100C94419 /* MarkEnumerator.h */,
-				58469F8A1FBC929100C94419 /* MarkEnumerator.m */,
-				58469F8C1FBDD2C200C94419 /* MarkVisitor.h */,
-				58469F8D1FBDD3A500C94419 /* MarkRenderer.h */,
-				58469F8E1FBDD3A500C94419 /* MarkRenderer.m */,
-				580747FA1FB7F52200D41F42 /* Adapter */,
-				5826E6E61FA5E3E0006A746C /* Factory */,
-				5826E6E71FA5E3E0006A746C /* Model */,
-				5826E6EF1FA5E3E1006A746C /* View */,
-				5826E6F61FA5E3E1006A746C /* ViewGenerator */,
+				58469F921FC1395600C94419 /* Visitor */,
+				58469F911FC1391D00C94419 /* Iterator */,
+				58469F901FC138F700C94419 /* Mediator */,
+				580747FA1FB7F52200D41F42 /* Adapter & Command */,
+				5826E6E61FA5E3E0006A746C /* Abstract Factory */,
+				5826E6E71FA5E3E0006A746C /* Composite & Prototype & Iterator */,
+				5826E6EF1FA5E3E1006A746C /* Views */,
+				5826E6F61FA5E3E1006A746C /* Factory Method */,
 				587C27281FA4473400ABDEA6 /* Main.storyboard */,
 				587C272B1FA4473400ABDEA6 /* Assets.xcassets */,
 				587C272D1FA4473400ABDEA6 /* LaunchScreen.storyboard */,
@@ -368,7 +392,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				587C27271FA4473400ABDEA6 /* ViewController.m in Sources */,
+				587C27271FA4473400ABDEA6 /* CanvasViewController.m in Sources */,
 				5826E7411FA61C73006A746C /* AcmeToolBar.m in Sources */,
 				5826E7581FA61CC6006A746C /* PaperCanvasViewGenerator.m in Sources */,
 				5826E74F1FA61CA3006A746C /* PaperCanvasView.m in Sources */,

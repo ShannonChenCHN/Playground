@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ViewController.h"
+#import "CanvasViewController.h"
 #import "PaletteViewController.h"
 #import "ThumbnailViewController.h"
 
@@ -21,7 +21,7 @@ typedef NS_ENUM(NSInteger, CoordinatingTarget) {
 
 @interface CoordinatingController : NSObject
 
-@property (nonatomic, strong, readonly) ViewController *canvasViewController;
+@property (nonatomic, strong, readonly) CanvasViewController *canvasViewController;
 @property (nonatomic, strong, readonly) UIViewController *activeViewController;
     
 + (instancetype)sharedInstance;

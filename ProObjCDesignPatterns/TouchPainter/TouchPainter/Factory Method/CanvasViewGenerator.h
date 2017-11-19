@@ -18,7 +18,7 @@ typedef NS_ENUM(NSInteger, CanvasViewStyle) {
 
 
 /**
- 画布生成器
+ 画布生成器（采用了工厂方法/类簇模式）
  注：其实这里也可以不用画布生成器来决定生成何种画布，而用 CanvasView 基类自己去决定，
     就像 NSNumber 那样，NSNumber 作为基类提供不同的接口，只是在实现这些工厂方法时交给对应的子类去处理
  */

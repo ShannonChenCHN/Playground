@@ -1,12 +1,12 @@
 //
-//  ViewController.m
+//  CanvasViewController.m
 //  TouchPainter
 //
 //  Created by ShannonChen on 2017/10/28.
 //  Copyright © 2017年 ShannonChen. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "CanvasViewController.h"
 #import "CanvasViewGenerator.h"
 #import "BrandingFactory.h"
 #import "Scribble.h"
@@ -17,7 +17,7 @@
 
 #import "CoordinatingController.h"
 
-@interface ViewController ()
+@interface CanvasViewController ()
 
 @property (nonatomic, strong) CanvasView *canvasView;
 @property (nonatomic, strong) Scribble *scribble;
@@ -25,19 +25,33 @@
 
 @end
 
-@implementation ViewController
+@implementation CanvasViewController
 
 
 #pragma mark - Life cycle
-- (instancetype)init {
-    self = [super init];
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        _strokeColor = [UIColor blackColor];
-        _strokeSize = 5;
         
-        
+        [self commonInit];
     }
     return self;
+}
+
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    
+    if (self) {
+        [self commonInit];
+    }
+    
+    return self;
+}
+
+
+- (void)commonInit {
+    _strokeColor = [UIColor blackColor];
+    _strokeSize = 5;
 }
 
 - (void)viewDidLoad {
