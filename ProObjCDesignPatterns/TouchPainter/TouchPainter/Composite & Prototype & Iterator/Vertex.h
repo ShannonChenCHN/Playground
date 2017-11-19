@@ -16,13 +16,8 @@
 
 @property (nonatomic, assign) CGPoint location;
 @property (nonatomic, assign, readonly) NSUInteger count;
-@property (nonatomic, strong, readonly) id <Mark> lastChild;
 
 
 - (instancetype)initWithLocation:(CGPoint)location;
-
-- (void)addMark:(id <Mark>)mark;
-- (void)removeMark:(id <Mark>)mark;
-- (id <Mark>)childMarkAtIndex:(NSUInteger)index;
 
 @end

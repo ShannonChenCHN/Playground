@@ -68,6 +68,7 @@
     [visitor visitVertex:self];
 }
 
+
 #pragma mark - <NSCopying>
 - (id)copyWithZone:(NSZone *)zone {
 

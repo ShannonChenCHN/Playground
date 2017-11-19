@@ -10,6 +10,9 @@
 
 @interface Command : NSObject
 
+@property (nonatomic, strong) NSDictionary *userInfo;
+
 - (void)execute;
+- (void)undo;
 
 @end

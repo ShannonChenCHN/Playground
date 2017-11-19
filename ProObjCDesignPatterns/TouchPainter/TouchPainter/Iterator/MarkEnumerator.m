@@ -7,39 +7,11 @@
 //
 
 #import "MarkEnumerator.h"
-
-@interface NSMutableArray<ObjectType> (Stack)
-
-- (void)push:(ObjectType)object;
-- (ObjectType)pop;
-
-@end
-
-@implementation NSMutableArray (Stack)
-
-- (void)push:(id)object {
-    [self addObject:object];
-}
-
-- (id)pop {
-    if (self.count == 0) {
-        return nil;
-    }
-    
-    id object = self.lastObject;
-    
-    [self removeLastObject];
-    
-    return object;
-}
-
-@end
-
-
+#import "Stack.h"
 
 @interface MarkEnumerator ()
 
-@property (nonatomic, strong) NSMutableArray *stack;
+@property (nonatomic, strong) Stack <id <Mark>> *stack;
 
 @end
 
@@ -47,7 +19,7 @@
 
 - (instancetype)initWithMark:(id<Mark>)mark {
     if (self = [super init]) {
-        _stack = [[NSMutableArray alloc] initWithCapacity:mark.count];
+        _stack = [[Stack alloc] initWithCapacity:mark.count];
         
         [self traverseAndBuildStackWithMark:mark];
     }
@@ -62,7 +34,7 @@
 }
 
 - (id)nextObject {
-    return self.stack.pop;
+    return [self.stack pop];
 }
 
 

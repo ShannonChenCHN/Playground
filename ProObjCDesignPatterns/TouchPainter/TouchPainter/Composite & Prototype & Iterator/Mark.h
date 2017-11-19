@@ -28,14 +28,15 @@
 - (id <Mark>)childMarkAtIndex:(NSUInteger)index;
 
 
-// enumeration
-- (NSEnumerator *)enumerator;
-- (void)enumerateMarksUsingBlock:(void (NS_NOESCAPE ^)(id <Mark> item, BOOL *stop))block;
-
-
 // Drawing
 - (void)drawWithContext:(CGContextRef)context;
 
 - (void)acceptMarkVisitor:(id <MarkVisitor>)visitor;
+
+@optional
+// enumeration
+- (NSEnumerator *)enumerator;
+- (void)enumerateMarksUsingBlock:(void (NS_NOESCAPE ^)(id <Mark> item, BOOL *stop))block;
+
 
 @end

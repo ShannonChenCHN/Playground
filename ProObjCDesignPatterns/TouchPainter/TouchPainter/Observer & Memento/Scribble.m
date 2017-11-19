@@ -30,10 +30,10 @@
     // 手动调用 KVO
     [self willChangeValueForKey:NSStringFromSelector(@selector(mark))];
     
-    if (shouldAddToPreviousMark) {
+    if (shouldAddToPreviousMark) {  // 如果是顶点就拼在后面
         [self.mark.lastChild addMark:aMark];
     } else {
-        [self.mark addMark:aMark];
+        [self.mark addMark:aMark];  // 如果是点或者线就直接存起来
     }
     
     // 手动调用 KVO
