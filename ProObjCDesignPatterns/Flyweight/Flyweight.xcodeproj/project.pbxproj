@@ -13,6 +13,9 @@
 		58469FCC1FC13E6D00C94419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58469FCB1FC13E6D00C94419 /* Assets.xcassets */; };
 		58469FCF1FC13E6D00C94419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58469FCD1FC13E6D00C94419 /* LaunchScreen.storyboard */; };
 		58469FD21FC13E6D00C94419 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58469FD11FC13E6D00C94419 /* main.m */; };
+		5873483A1FC2E42200DC4A49 /* FlyweightView.m in Sources */ = {isa = PBXBuildFile; fileRef = 587348391FC2E42200DC4A49 /* FlyweightView.m */; };
+		5873483D1FC2E4CF00DC4A49 /* ExtrinsicFlowerState.m in Sources */ = {isa = PBXBuildFile; fileRef = 5873483C1FC2E4CF00DC4A49 /* ExtrinsicFlowerState.m */; };
+		587348401FC2E5A900DC4A49 /* FlowerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 5873483F1FC2E5A900DC4A49 /* FlowerFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		58469FCE1FC13E6D00C94419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58469FD01FC13E6D00C94419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58469FD11FC13E6D00C94419 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		587348381FC2E42200DC4A49 /* FlyweightView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyweightView.h; sourceTree = "<group>"; };
+		587348391FC2E42200DC4A49 /* FlyweightView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyweightView.m; sourceTree = "<group>"; };
+		5873483B1FC2E4CF00DC4A49 /* ExtrinsicFlowerState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExtrinsicFlowerState.h; sourceTree = "<group>"; };
+		5873483C1FC2E4CF00DC4A49 /* ExtrinsicFlowerState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExtrinsicFlowerState.m; sourceTree = "<group>"; };
+		5873483E1FC2E5A900DC4A49 /* FlowerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowerFactory.h; sourceTree = "<group>"; };
+		5873483F1FC2E5A900DC4A49 /* FlowerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlowerFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,12 @@
 				58469FC31FC13E6D00C94419 /* AppDelegate.m */,
 				58469FC51FC13E6D00C94419 /* ViewController.h */,
 				58469FC61FC13E6D00C94419 /* ViewController.m */,
+				587348381FC2E42200DC4A49 /* FlyweightView.h */,
+				587348391FC2E42200DC4A49 /* FlyweightView.m */,
+				5873483B1FC2E4CF00DC4A49 /* ExtrinsicFlowerState.h */,
+				5873483C1FC2E4CF00DC4A49 /* ExtrinsicFlowerState.m */,
+				5873483E1FC2E5A900DC4A49 /* FlowerFactory.h */,
+				5873483F1FC2E5A900DC4A49 /* FlowerFactory.m */,
 				58469FC81FC13E6D00C94419 /* Main.storyboard */,
 				58469FCB1FC13E6D00C94419 /* Assets.xcassets */,
 				58469FCD1FC13E6D00C94419 /* LaunchScreen.storyboard */,
@@ -142,7 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5873483A1FC2E42200DC4A49 /* FlyweightView.m in Sources */,
 				58469FC71FC13E6D00C94419 /* ViewController.m in Sources */,
+				5873483D1FC2E4CF00DC4A49 /* ExtrinsicFlowerState.m in Sources */,
+				587348401FC2E5A900DC4A49 /* FlowerFactory.m in Sources */,
 				58469FD21FC13E6D00C94419 /* main.m in Sources */,
 				58469FC41FC13E6D00C94419 /* AppDelegate.m in Sources */,
 			);
@@ -281,6 +299,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L32PN8QKLZ;
 				INFOPLIST_FILE = Flyweight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ShannonChen.Flyweight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,6 +314,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L32PN8QKLZ;
 				INFOPLIST_FILE = Flyweight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ShannonChen.Flyweight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
