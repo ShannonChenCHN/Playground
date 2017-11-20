@@ -10,18 +10,8 @@
 
 @implementation ClothCanvasView
 
-- (instancetype)initWithFrame:(CGRect)frame {
-    self = [super initWithFrame:frame];
-    if (self) {
-        
-        UIImage *backgroundImage = [UIImage imageNamed:@"cloth"];
-        UIImageView *backgroundView = [[UIImageView alloc] initWithImage:backgroundImage];
-        [self addSubview:backgroundView];
-        
-        
-        self.backgroundColor = [UIColor blueColor];
-    }
-    return self;
+- (UIImage *)backgroundImage {
+    return [UIImage imageNamed:@"background_texture"];
 }
 
 @end

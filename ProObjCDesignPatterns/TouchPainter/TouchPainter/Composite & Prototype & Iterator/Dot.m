@@ -13,6 +13,12 @@
 @synthesize color = _color, size = _size;
 
 
+- (void)acceptMarkVisitor:(id<MarkVisitor>)visitor {
+    [visitor visitDot:self];
+}
+
+#pragma mark - An Extended Direct-draw Example
+// for a direct draw example
 - (void)drawWithContext:(CGContextRef)context {
     CGFloat x = self.location.x;
     CGFloat y = self.location.y;
@@ -23,9 +29,6 @@
     CGContextFillEllipseInRect(context, frame);
 }
 
-- (void)acceptMarkVisitor:(id<MarkVisitor>)visitor {
-    [visitor visitDot:self];
-}
 
 #pragma mark - <NSCoping>
 - (id)copyWithZone:(NSZone *)zone {
@@ -36,6 +39,23 @@
     
     
     return dotCopy;
+}
+
+#pragma mark - NSCoder methods
+- (id)initWithCoder:(NSCoder *)coder {
+    if (self = [super initWithCoder:coder]) {
+        _color = [coder decodeObjectForKey:@"DotColor"];
+        _size = [coder decodeFloatForKey:@"DotSize"];
+    }
+    
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)coder {
+    [super encodeWithCoder:coder];
+    
+    [coder encodeObject:_color forKey:@"DotColor"];
+    [coder encodeFloat:_size forKey:@"DotSize"];
 }
 
 @end

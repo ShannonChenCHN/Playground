@@ -10,7 +10,7 @@
 #import "MarkVisitor.h"
 
 /// 图像绘制的元素
-@protocol Mark <NSObject>
+@protocol Mark <NSObject, NSCopying, NSCoding>
 
 @property (nonatomic, strong) UIColor *color;
 @property (nonatomic, assign) CGFloat size;

@@ -57,6 +57,18 @@
     return nil;
 }
 
+- (void)acceptMarkVisitor:(id<MarkVisitor>)visitor {
+    [visitor visitVertex:self];
+}
+
+#pragma mark - MarkIterator methods
+
+// for internal iterator implementation
+- (void) enumerateMarksUsingBlock:(void (^)(id <Mark> item, BOOL *stop)) block {}
+
+#pragma mark - An Extended Direct-draw Example
+
+// for a direct draw example
 - (void)drawWithContext:(CGContextRef)context {
     CGFloat x = self.location.x;
     CGFloat y = self.location.y;
@@ -64,17 +76,26 @@
     CGContextAddLineToPoint(context, x, y);
 }
 
-- (void)acceptMarkVisitor:(id<MarkVisitor>)visitor {
-    [visitor visitVertex:self];
-}
-
-
 #pragma mark - <NSCopying>
 - (id)copyWithZone:(NSZone *)zone {
 
     Vertex *vertexCopy = [[[self class] allocWithZone:zone] initWithLocation:self.location];
     
     return vertexCopy;
+}
+
+#pragma mark - NSCoder methods
+
+- (id)initWithCoder:(NSCoder *)coder {
+    if (self = [super init]) {
+        _location = [[coder decodeObjectForKey:@"VertexLocation"] CGPointValue];
+    }
+    
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)coder {
+    [coder encodeObject:[NSValue valueWithCGPoint:_location] forKey:@"VertexLocation"];
 }
 
 @end

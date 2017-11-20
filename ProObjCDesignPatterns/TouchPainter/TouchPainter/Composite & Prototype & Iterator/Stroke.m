@@ -70,18 +70,6 @@
     return self.children.count;
 }
 
-- (void)drawWithContext:(CGContextRef)context {
-    
-    // 起点
-    CGContextMoveToPoint(context, self.location.x, self.location.y);
-    
-    // 绘制子元素
-    for (id <Mark> mark in self.children) {
-        [mark drawWithContext:context];
-    }
-    
-    CGContextSetStrokeColorWithColor(context, self.color.CGColor);
-}
 
 - (void)acceptMarkVisitor:(id<MarkVisitor>)visitor {
     
@@ -94,7 +82,7 @@
     [visitor visitStroke:self];
 }
 
-#pragma mark - enumerator method
+#pragma mark - Enumerator method
 - (NSEnumerator *)enumerator {
     // 具体的迭代算法交给单独的 MarkEnumerator 类去处理
     return [[MarkEnumerator alloc] initWithMark:self];
@@ -112,6 +100,23 @@
         }
     }
 }
+
+#pragma mark - An Extended Direct-draw Example
+
+// for a direct draw example
+- (void)drawWithContext:(CGContextRef)context {
+    
+    // 起点
+    CGContextMoveToPoint(context, self.location.x, self.location.y);
+    
+    // 绘制子元素
+    for (id <Mark> mark in self.children) {
+        [mark drawWithContext:context];
+    }
+    
+    CGContextSetStrokeColorWithColor(context, self.color.CGColor);
+}
+
 
 #pragma mark - <NSCopying>
 - (id)copyWithZone:(NSZone *)zone {
@@ -131,5 +136,23 @@
     return strokeCopy;
 }
 
+
+#pragma mark - NSCoder methods
+
+- (id)initWithCoder:(NSCoder *)coder {
+    if (self = [super init]) {
+        _color = [coder decodeObjectForKey:@"StrokeColor"];
+        _size = [coder decodeFloatForKey:@"StrokeSize"];
+        _children = [coder decodeObjectForKey:@"StrokeChildren"];
+    }
+    
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)coder {
+    [coder encodeObject:_color forKey:@"StrokeColor"];
+    [coder encodeFloat:_size forKey:@"StrokeSize"];
+    [coder encodeObject:_children forKey:@"StrokeChildren"];
+}
 
 @end

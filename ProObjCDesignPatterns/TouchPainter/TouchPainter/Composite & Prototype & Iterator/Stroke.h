@@ -14,7 +14,7 @@
 /**
  绘制的线条
  */
-@interface Stroke : NSObject <Mark, NSCopying>
+@interface Stroke : NSObject <Mark>
 
 @property (nonatomic, strong) UIColor *color;
 @property (nonatomic, assign) CGFloat size;

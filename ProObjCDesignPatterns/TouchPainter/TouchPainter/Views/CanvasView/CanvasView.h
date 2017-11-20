@@ -16,4 +16,7 @@
 
 @property (nonatomic, strong) id <Mark> mark;
 
+// 模板方法
+- (UIImage *)backgroundImage;
+
 @end

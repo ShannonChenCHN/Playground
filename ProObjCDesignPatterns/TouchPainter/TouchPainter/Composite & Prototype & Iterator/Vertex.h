@@ -11,7 +11,7 @@
 
 
 /// 顶点，为绘图提供位置信息
-@interface Vertex : NSObject <Mark, NSCopying>
+@interface Vertex : NSObject <Mark>
 
 
 @property (nonatomic, assign) CGPoint location;

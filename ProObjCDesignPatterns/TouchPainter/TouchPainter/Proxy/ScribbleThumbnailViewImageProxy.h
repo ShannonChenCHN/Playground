@@ -7,7 +7,12 @@
 //
 
 #import "ScribbleThumbnailView.h"
+#import "Command.h"
 
-@interface ScribbleThumbnailViewImageProxy : ScribbleThumbnailView
+
+@interface ScribbleThumbnailViewImageProxy : ScribbleThumbnailView 
+
+@property (nonatomic, strong) Command *touchCommand;
+
 
 @end

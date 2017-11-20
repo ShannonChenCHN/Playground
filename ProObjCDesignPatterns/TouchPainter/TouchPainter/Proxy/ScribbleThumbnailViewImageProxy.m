@@ -17,13 +17,27 @@
 
 @implementation ScribbleThumbnailViewImageProxy
 
+@synthesize scribble = _scribble, scribblePath = _scribblePath;
+
+- (Scribble *)scribble {
+    if (_scribble == nil) {
+        
+        NSFileManager *fileManager = [NSFileManager defaultManager];
+        NSData *scribbleData = [fileManager contentsAtPath:_scribblePath];
+        
+        ScribbleMemento *scribbleMemento = [ScribbleMemento mementoWithData:scribbleData];
+        _scribble = [Scribble scribbleWithMemento:scribbleMemento];
+    }
+    
+    return _scribble;
+}
+
 - (UIImage *)image {
     if (_realImage == nil) {
         _realImage = [UIImage imageWithContentsOfFile:self.imagePath];
     }
     return _realImage;
 }
-
 
 
 
@@ -63,8 +77,13 @@
     @autoreleasepool {
         [self image];
         
-        [self setNeedsDisplay];
+        [self performSelectorInBackground:@selector(setNeedsDisplay) withObject:nil];
     }
+}
+
+#pragma mark - Touch event handlers
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    [self.touchCommand execute];
 }
 
 @end

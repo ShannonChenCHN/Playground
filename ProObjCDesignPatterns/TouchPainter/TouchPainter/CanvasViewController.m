@@ -15,8 +15,11 @@
 
 #import "CoordinatingController.h"
 
-#import "DrawScribbleCommand.h"
 #import "Stack.h"
+#import "CustomBarButtonItem.h"
+#import "DrawScribbleCommand.h"
+#import "DeleteScribbleCommand.h"
+#import "SaveScribbleCommand.h"
 
 #define USE_NS_UNDO_MANAGER      0
 #define STACK_CAPACITY           10
@@ -24,7 +27,6 @@
 @interface CanvasViewController ()
 
 @property (nonatomic, strong) CanvasView *canvasView;
-@property (nonatomic, strong) Scribble *scribble;
 @property (nonatomic, assign) CGPoint startPoint;
 
 #if !USE_NS_UNDO_MANAGER
@@ -66,8 +68,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    Scribble *scribble = [[Scribble alloc] init];
-    self.scribble = scribble;
+    if (self.scribble == nil) {
+        self.scribble = [[Scribble alloc] init];
+    }
     
     [self addSubviews];
     
@@ -91,13 +94,15 @@
     toolBar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     [self.view addSubview:toolBar];
     
-    UIBarButtonItem *deleteItem = [[UIBarButtonItem alloc] initWithTitle:@"删除" style:UIBarButtonItemStylePlain target:self action:@selector(didSelectDeleteButton)];
-    UIBarButtonItem *saveItem = [[UIBarButtonItem alloc] initWithTitle:@"保存" style:UIBarButtonItemStylePlain target:self action:@selector(didSelectSaveButton)];
-    UIBarButtonItem *openItem = [[UIBarButtonItem alloc] initWithTitle:@"打开" style:UIBarButtonItemStylePlain target:self action:@selector(didSelectOpenButton)];
-    UIBarButtonItem *settingItem = [[UIBarButtonItem alloc] initWithTitle:@"设置" style:UIBarButtonItemStylePlain target:self action:@selector(didSelectSettingButton)];
-    UIBarButtonItem *undoItem = [[UIBarButtonItem alloc] initWithTitle:@"撤销" style:UIBarButtonItemStylePlain target:self action:@selector(didSelectUndoButton)];
-    UIBarButtonItem *redoItem = [[UIBarButtonItem alloc] initWithTitle:@"重做" style:UIBarButtonItemStylePlain target:self action:@selector(didSelectRedoButton)];
-    UIBarButtonItem *spacingItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:NULL];
+    CustomBarButtonItem *deleteItem = [[CustomBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:self action:@selector(didSelectDeleteButton:)];
+    deleteItem.command = [[DeleteScribbleCommand alloc] init];
+    CustomBarButtonItem *saveItem = [[CustomBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"save"] style:UIBarButtonItemStylePlain target:self action:@selector(didSelectSaveButton:)];
+    saveItem.command = [[SaveScribbleCommand alloc] init];
+    CustomBarButtonItem *openItem = [[CustomBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"open"] style:UIBarButtonItemStylePlain target:self action:@selector(didSelectOpenButton)];
+    CustomBarButtonItem *settingItem = [[CustomBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"palette"] style:UIBarButtonItemStylePlain target:self action:@selector(didSelectSettingButton)];
+    CustomBarButtonItem *undoItem = [[CustomBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"undo"] style:UIBarButtonItemStylePlain target:self action:@selector(didSelectUndoButton)];
+    CustomBarButtonItem *redoItem = [[CustomBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"redo"] style:UIBarButtonItemStylePlain target:self action:@selector(didSelectRedoButton)];
+    CustomBarButtonItem *spacingItem = [[CustomBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:NULL];
     [toolBar setItems:@[deleteItem, spacingItem, saveItem, spacingItem, openItem, spacingItem, settingItem, spacingItem, undoItem, spacingItem, redoItem]];
 }
 
@@ -118,14 +123,12 @@
 
 #pragma mark - Action
 
-- (void)didSelectDeleteButton {
-    
-
-    
+- (void)didSelectDeleteButton:(CustomBarButtonItem *)sender  {
+    [sender.command execute];
 }
 
-- (void)didSelectSaveButton {
-    
+- (void)didSelectSaveButton:(CustomBarButtonItem *)sender {
+    [sender.command execute];
 }
 
 - (void)didSelectOpenButton {

@@ -19,7 +19,15 @@
     return self;
 }
 
+- (UIImage *)backgroundImage {
+    return nil;
+}
+
 - (void)drawRect:(CGRect)rect {
+    
+    if (self.backgroundImage) {
+        [self.backgroundImage drawInRect:rect];
+    }
     
     if (self.mark) {
         // 获取绘图上下文

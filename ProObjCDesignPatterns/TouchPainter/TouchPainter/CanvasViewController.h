@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Scribble.h"
+#import "CanvasView.h"
 
 @interface CanvasViewController : UIViewController
 
 @property (nonatomic, strong) UIColor *strokeColor;
 @property (nonatomic, assign) CGFloat strokeSize;
+
+@property (strong, nonatomic) Scribble *scribble;
+@property (nonatomic, strong, readonly) CanvasView *canvasView;
 
 @end
 
