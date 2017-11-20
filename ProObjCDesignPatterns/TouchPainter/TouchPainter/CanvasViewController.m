@@ -13,8 +13,6 @@
 #import "Stroke.h"
 #import "Dot.h"
 
-#import "PaletteViewController.h"
-
 #import "CoordinatingController.h"
 
 #import "DrawScribbleCommand.h"
@@ -131,7 +129,8 @@
 }
 
 - (void)didSelectOpenButton {
-    
+    [[CoordinatingController sharedInstance] requestViewTransitionWithTarget:CoordinatingTargetThumbnail
+                                                                      params:nil];
 }
 
 - (void)didSelectSettingButton {

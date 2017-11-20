@@ -36,6 +36,8 @@
 		58469F8F1FBDD3A500C94419 /* MarkRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 58469F8E1FBDD3A500C94419 /* MarkRenderer.m */; };
 		58469FDA1FC1ADC000C94419 /* DrawScribbleCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 58469FD91FC1ADC000C94419 /* DrawScribbleCommand.m */; };
 		58469FDD1FC1B17400C94419 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 58469FDC1FC1B17400C94419 /* Stack.m */; };
+		58469FE21FC1BF6D00C94419 /* ScribbleThumbnailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 58469FE11FC1BF6D00C94419 /* ScribbleThumbnailView.m */; };
+		58469FE51FC1BFC800C94419 /* ScribbleThumbnailViewImageProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58469FE41FC1BFC800C94419 /* ScribbleThumbnailViewImageProxy.m */; };
 		587C27211FA4473400ABDEA6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 587C27201FA4473400ABDEA6 /* main.m */; };
 		587C27241FA4473400ABDEA6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 587C27231FA4473400ABDEA6 /* AppDelegate.m */; };
 		587C27271FA4473400ABDEA6 /* CanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 587C27261FA4473400ABDEA6 /* CanvasViewController.m */; };
@@ -106,6 +108,10 @@
 		58469FD91FC1ADC000C94419 /* DrawScribbleCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawScribbleCommand.m; sourceTree = "<group>"; };
 		58469FDB1FC1B17400C94419 /* Stack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		58469FDC1FC1B17400C94419 /* Stack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		58469FE01FC1BF6D00C94419 /* ScribbleThumbnailView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailView.h; sourceTree = "<group>"; };
+		58469FE11FC1BF6D00C94419 /* ScribbleThumbnailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailView.m; sourceTree = "<group>"; };
+		58469FE31FC1BFC800C94419 /* ScribbleThumbnailViewImageProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScribbleThumbnailViewImageProxy.h; sourceTree = "<group>"; };
+		58469FE41FC1BFC800C94419 /* ScribbleThumbnailViewImageProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScribbleThumbnailViewImageProxy.m; sourceTree = "<group>"; };
 		587C271C1FA4473400ABDEA6 /* TouchPainter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchPainter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		587C27201FA4473400ABDEA6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		587C27221FA4473400ABDEA6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -284,6 +290,26 @@
 			path = "Observer & Memento";
 			sourceTree = "<group>";
 		};
+		58469FDE1FC1BF1A00C94419 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				58469FDB1FC1B17400C94419 /* Stack.h */,
+				58469FDC1FC1B17400C94419 /* Stack.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		58469FDF1FC1BF4800C94419 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				58469FE01FC1BF6D00C94419 /* ScribbleThumbnailView.h */,
+				58469FE11FC1BF6D00C94419 /* ScribbleThumbnailView.m */,
+				58469FE31FC1BFC800C94419 /* ScribbleThumbnailViewImageProxy.h */,
+				58469FE41FC1BFC800C94419 /* ScribbleThumbnailViewImageProxy.m */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
 		587C27131FA4473400ABDEA6 = {
 			isa = PBXGroup;
 			children = (
@@ -309,8 +335,8 @@
 				587C27261FA4473400ABDEA6 /* CanvasViewController.m */,
 				5807480A1FB7F5A200D41F42 /* ThumbnailViewController.h */,
 				5807480B1FB7F5A200D41F42 /* ThumbnailViewController.m */,
-				58469FDB1FC1B17400C94419 /* Stack.h */,
-				58469FDC1FC1B17400C94419 /* Stack.m */,
+				58469FDF1FC1BF4800C94419 /* Proxy */,
+				58469FDE1FC1BF1A00C94419 /* Utils */,
 				58469F931FC13D1800C94419 /* Observer & Memento */,
 				58469F921FC1395600C94419 /* Visitor */,
 				58469F911FC1391D00C94419 /* Iterator */,
@@ -416,7 +442,9 @@
 				5826E74F1FA61CA3006A746C /* PaperCanvasView.m in Sources */,
 				5826E7451FA61C73006A746C /* SierraView.m in Sources */,
 				5826E6FE1FA5E3E1006A746C /* Dot.m in Sources */,
+				58469FE21FC1BF6D00C94419 /* ScribbleThumbnailView.m in Sources */,
 				580748071FB7F52200D41F42 /* PaletteViewController.m in Sources */,
+				58469FE51FC1BFC800C94419 /* ScribbleThumbnailViewImageProxy.m in Sources */,
 				5826E70F1FA5E44A006A746C /* SierraBrandingFactory.m in Sources */,
 				587C27241FA4473400ABDEA6 /* AppDelegate.m in Sources */,
 				5826E7441FA61C73006A746C /* SierraToolBar.m in Sources */,

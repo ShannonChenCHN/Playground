@@ -16,9 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.navigationItem.title = @"Files";
+     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(done)];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
-
+- (void)done {
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end
