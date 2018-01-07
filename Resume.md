@@ -27,6 +27,7 @@
 ##### 项目：YHOUSE （4人团队、美食玩乐预订+社交）
 
 ###### 职责：负责 YHOUSE 业务的开发和基础类库、框架的优化、维护
+- 基础类库的开发和维护
 
 - 图文快照
   - 设计了一个快照生成系统，通过模块化和 POP 的方式实现解耦，从而达到强弱业务逻辑分离的目的，同时提高了代码的可重用性。因此，在从首版的帖子快照，发展到后续版本的商户快照、足迹快照、个人名片，再到快照预览功能的过程中，核心逻辑基本上没有做太多改动，提高了开发效率，节省了维护成本
@@ -42,8 +43,7 @@
      - 负责编写了相关文档，力求减低沟通成本，同时保证项目后续的生命力
 - 会员页
   - 自定义 `UICollectionViewFlowLayout` 来实现可定义吸顶偏移量的 `section header` 
-  - 借鉴 MVVM 架构的设计，采用 POP 的方式，抽象了一套可复用的列表框架
-  - 拆分 controller 中的逻辑，将一些与业务逻辑不相关的代码分离出来，比如 `UICollectionView` 的代理方法
+  - 借鉴 MVVM 架构的设计，采用 POP 的方式，并结合 Adapter 模式，抽象了一套轻量级的数据驱动列表框架，减少了实现列表时的大量的重复工作，使用起来更贴近人脑的思维习惯
   - 针对会员页的特殊情况，对现有的网络层的调用进行针对性优化，采用离散型的调用和 delegate 形式的回调，以达到简化逻辑，提高程序稳定性和减低维护成本的目的
 
 ##### 项目：OnlyU （独立开发、视频聊天+社区）
@@ -97,8 +97,6 @@
 - 个人作品
   - [SCKit](https://github.com/ShannonChenCHN/SCKit)：自己在平时工作中总结出来的代码库合辑，包括一些常用的可复用的 UI 控件、业务开发中抽象出来的框架、调试工具等                
   - [SCGoJD](https://github.com/ShannonChenCHN/SCGoJD)（Star 71）：模仿京东客户端，iOS 入门时做的原创作品，正是通过这个项目开始对架构思想、封装思想、模块化设计思想和可维护性有了真正的了解
-- 演讲讲义
-  - [iOS In-App Purchase](https://github.com/ShannonChenCHN/iOSLevelingUp/blob/master/TechNotes/InAppPurchaseGuide/iOS%20In-App%20Purchase.key)（keynote）：在公司内部给同事们分享的 iOS 内购相关知识
 
 -----
 
