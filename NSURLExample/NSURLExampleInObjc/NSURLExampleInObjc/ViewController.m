@@ -20,6 +20,7 @@
     
     // Absolute URL and relative URL
     NSURL *baseURL = [NSURL URLWithString:@"file:///user/Documents"];
+    //    NSURL *baseURL = [NSURL URLWithString:@"file:///user/Documents/"];  // 最后的斜杠“/”会影响后面使用 -URLWithString:relativeToURL: 方法拼接时的结果
     NSURL *anURL = [NSURL URLWithString:@"./Library/Cache" relativeToURL:baseURL];
     
     NSLog(@"%@", anURL.absoluteString);  // file:///user/Library/Cache
