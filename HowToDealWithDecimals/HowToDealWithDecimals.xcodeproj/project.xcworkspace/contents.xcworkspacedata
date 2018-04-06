@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:BlockIntro.xcodeproj">
+      location = "self:HowToDealWithDecimals.xcodeproj">
    </FileRef>
 </Workspace>

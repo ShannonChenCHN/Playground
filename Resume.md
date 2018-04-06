@@ -34,15 +34,15 @@
 - 项目整体架构的设计和搭建
 - 网络层的搭建
 - 路由系统设计
-- 引入 OHHTTPStubs 工具，以提高开发效率
+- 引入 OHHTTPStubs 工具进行 API mock 调试，以提高开发效率
 
 #### YHOUSE（美食玩乐预定）
 
 - gif-like 视频播放控件
-- 为了更方便地实现常见的列表，抽象了一个轻量级的数据驱动列表框架：YHListKit
-- 图文快照功能模块的设计
+- 为了更方便地实现常见的列表，抽象了一个轻量级的数据驱动列表框架：[YHListKit](https://github.com/ShannonChenCHN/YHListKit)，让实现 feeds 流列表的过程就像写配置文件一样简单
+- 图文快照功能模块设计
 - Hybrid 升级
-  - 升级 WKWebView
+  - 将 UIWebView 迁移到 WKWebView
   - 设计一个同时支持 UIWebView 和 WKWebView 的容器：SCWebBrowserView 
   - 架构上的优化：引入 WebViewJavaScriptBridge 框架，并对其进行封装，以改进 JS 端的调用方式和原生端的“插件化”设计
 
@@ -59,14 +59,14 @@
 
 ## 开源项目和作品
 #### 技术文章
-- [WebViewJavascriptBridge 详解](http://www.jianshu.com/p/6f34903be630) 
+- [WebViewJavascriptBridge 从原理到实战](http://www.jianshu.com/p/6f34903be630)
 - [SDWebImage 源码解析](http://www.jianshu.com/p/06f0265c22eb)
 - [图文快照分享框架的实现](http://www.jianshu.com/p/b3fcb449cb35)
 
 #### 开源项目
-- [YHListKit](https://github.com/ShannonChenCHN/YHListKit) （Star 14）：一个轻量级的数据驱动列表框架。
+- [YHListKit](https://github.com/ShannonChenCHN/YHListKit) （Star 66）：一个轻量级的数据驱动列表框架。
 - [SCWebBrowserView](https://github.com/ShannonChenCHN/SCWebBrowserView)：基于 UIWebView 和 WKWebView 的封装的 web view 容器。
-- [SCGoJD](https://github.com/ShannonChenCHN/SCGoJD)（Star 71）：一个非官方京东 iOS 客户端。
+- [SCGoJD](https://github.com/ShannonChenCHN/SCGoJD)（Star 72）：一个非官方京东 iOS 客户端。
 
 ## 技能清单
-除了公司项目中用到的 Objective-C 之外，还自学了 Swift 和前端相关知识技能（包括 JavaScript/HTML/CSS 和 React Native）。
+除了公司项目中用到的 Objective-C 之外，还利用业余时间学习了数据结构和算法、计算机网络、 Swift 和前端相关知识技能（包括 JavaScript/HTML/CSS 和 React Native）。

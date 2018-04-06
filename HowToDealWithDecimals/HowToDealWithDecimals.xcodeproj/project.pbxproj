@@ -3,15 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5849E7AA1E9276ED00685ECB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5849E7A91E9276ED00685ECB /* main.m */; };
+		5852DCC5206E52BE00613589 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5852DCC4206E52BE00613589 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5849E7A41E9276EC00685ECB /* CopyFiles */ = {
+		5852DCBF206E52BE00613589 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5849E7A61E9276ED00685ECB /* GCDAPIDemo1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GCDAPIDemo1; sourceTree = BUILT_PRODUCTS_DIR; };
-		5849E7A91E9276ED00685ECB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5852DCC1206E52BE00613589 /* HowToDealWithDecimals */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HowToDealWithDecimals; sourceTree = BUILT_PRODUCTS_DIR; };
+		5852DCC4206E52BE00613589 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5849E7A31E9276EC00685ECB /* Frameworks */ = {
+		5852DCBE206E52BE00613589 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,105 +38,107 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5849E79D1E9276EC00685ECB = {
+		5852DCB8206E52BE00613589 = {
 			isa = PBXGroup;
 			children = (
-				5849E7A81E9276ED00685ECB /* GCDAPIDemo1 */,
-				5849E7A71E9276ED00685ECB /* Products */,
+				5852DCC3206E52BE00613589 /* HowToDealWithDecimals */,
+				5852DCC2206E52BE00613589 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5849E7A71E9276ED00685ECB /* Products */ = {
+		5852DCC2206E52BE00613589 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5849E7A61E9276ED00685ECB /* GCDAPIDemo1 */,
+				5852DCC1206E52BE00613589 /* HowToDealWithDecimals */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5849E7A81E9276ED00685ECB /* GCDAPIDemo1 */ = {
+		5852DCC3206E52BE00613589 /* HowToDealWithDecimals */ = {
 			isa = PBXGroup;
 			children = (
-				5849E7A91E9276ED00685ECB /* main.m */,
+				5852DCC4206E52BE00613589 /* main.m */,
 			);
-			path = GCDAPIDemo1;
+			path = HowToDealWithDecimals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5849E7A51E9276EC00685ECB /* GCDAPIDemo1 */ = {
+		5852DCC0206E52BE00613589 /* HowToDealWithDecimals */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5849E7AD1E9276ED00685ECB /* Build configuration list for PBXNativeTarget "GCDAPIDemo1" */;
+			buildConfigurationList = 5852DCC8206E52BE00613589 /* Build configuration list for PBXNativeTarget "HowToDealWithDecimals" */;
 			buildPhases = (
-				5849E7A21E9276EC00685ECB /* Sources */,
-				5849E7A31E9276EC00685ECB /* Frameworks */,
-				5849E7A41E9276EC00685ECB /* CopyFiles */,
+				5852DCBD206E52BE00613589 /* Sources */,
+				5852DCBE206E52BE00613589 /* Frameworks */,
+				5852DCBF206E52BE00613589 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = GCDAPIDemo1;
-			productName = GCDAPIDemo1;
-			productReference = 5849E7A61E9276ED00685ECB /* GCDAPIDemo1 */;
+			name = HowToDealWithDecimals;
+			productName = HowToDealWithDecimals;
+			productReference = 5852DCC1206E52BE00613589 /* HowToDealWithDecimals */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5849E79E1E9276EC00685ECB /* Project object */ = {
+		5852DCB9206E52BE00613589 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = ShannonChen;
 				TargetAttributes = {
-					5849E7A51E9276EC00685ECB = {
-						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = L32PN8QKLZ;
+					5852DCC0206E52BE00613589 = {
+						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 5849E7A11E9276EC00685ECB /* Build configuration list for PBXProject "GCDAPIDemo1" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			buildConfigurationList = 5852DCBC206E52BE00613589 /* Build configuration list for PBXProject "HowToDealWithDecimals" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 5849E79D1E9276EC00685ECB;
-			productRefGroup = 5849E7A71E9276ED00685ECB /* Products */;
+			mainGroup = 5852DCB8206E52BE00613589;
+			productRefGroup = 5852DCC2206E52BE00613589 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5849E7A51E9276EC00685ECB /* GCDAPIDemo1 */,
+				5852DCC0206E52BE00613589 /* HowToDealWithDecimals */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5849E7A21E9276EC00685ECB /* Sources */ = {
+		5852DCBD206E52BE00613589 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5849E7AA1E9276ED00685ECB /* main.m in Sources */,
+				5852DCC5206E52BE00613589 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		5849E7AB1E9276ED00685ECB /* Debug */ = {
+		5852DCC6206E52BE00613589 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -144,8 +146,13 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -153,7 +160,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -174,16 +181,19 @@
 			};
 			name = Debug;
 		};
-		5849E7AC1E9276ED00685ECB /* Release */ = {
+		5852DCC7206E52BE00613589 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -191,8 +201,13 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -200,7 +215,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -214,18 +229,18 @@
 			};
 			name = Release;
 		};
-		5849E7AE1E9276ED00685ECB /* Debug */ = {
+		5852DCC9206E52BE00613589 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = L32PN8QKLZ;
+				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		5849E7AF1E9276ED00685ECB /* Release */ = {
+		5852DCCA206E52BE00613589 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = L32PN8QKLZ;
+				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -233,24 +248,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5849E7A11E9276EC00685ECB /* Build configuration list for PBXProject "GCDAPIDemo1" */ = {
+		5852DCBC206E52BE00613589 /* Build configuration list for PBXProject "HowToDealWithDecimals" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5849E7AB1E9276ED00685ECB /* Debug */,
-				5849E7AC1E9276ED00685ECB /* Release */,
+				5852DCC6206E52BE00613589 /* Debug */,
+				5852DCC7206E52BE00613589 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5849E7AD1E9276ED00685ECB /* Build configuration list for PBXNativeTarget "GCDAPIDemo1" */ = {
+		5852DCC8206E52BE00613589 /* Build configuration list for PBXNativeTarget "HowToDealWithDecimals" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5849E7AE1E9276ED00685ECB /* Debug */,
-				5849E7AF1E9276ED00685ECB /* Release */,
+				5852DCC9206E52BE00613589 /* Debug */,
+				5852DCCA206E52BE00613589 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5849E79E1E9276EC00685ECB /* Project object */;
+	rootObject = 5852DCB9206E52BE00613589 /* Project object */;
 }
