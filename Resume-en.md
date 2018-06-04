@@ -20,7 +20,7 @@ technologies and look to ways to better myself in this rapidly changing industry
 
 **Dates Employed**: 08/2016 – Present      
 **Position**：iOS Developer   
-**Responsibility**：Developed and maintained multiple Apps including *YHOUSE*, *OnlyU*, etc. Wrote and maintained technical documentation.
+**Responsibility**：Developed and maintained multiple Apps including *YHOUSE*, *OnlyU*, etc. Wrote and maintained technical documentation.                
 **Projects**:
 
 - TalentCat (e-commerce)
