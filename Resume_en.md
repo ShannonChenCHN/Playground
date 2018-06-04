@@ -1,4 +1,4 @@
-## ShannonChenCHN（陈祥龙）
+## Shannon Chen（陈祥龙）
 - **Tel**: 13761223471
 - **Email**: shannonchenchn@foxmail.com
 - **GitHub**: [https://github.com/ShannonChenCHN](https://github.com/ShannonChenCHN)
