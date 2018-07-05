@@ -40,9 +40,16 @@ int main(int argc, const char * argv[]) {
         float b = 0.1;
         float num = a + b;
         
-        printf("%.2f", num);  // 204200.09
+        printf("%p, %p, %p", &a, &b, &num);
         
+        printf("\n\n");
+        
+        printf("%.2f", num);  // 这里应该是 204200.10，但是打印的却是 204200.09
+        
+        printf("\n\n");
 //        NSDecimalNumber
+        
+        printBinary(0.1);
         
         printf("\n\n");
     }
