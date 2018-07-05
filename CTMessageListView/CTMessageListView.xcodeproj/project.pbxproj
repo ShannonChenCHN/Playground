@@ -13,7 +13,7 @@
 		584E387F20E3357E00EA53AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 584E387E20E3357E00EA53AA /* Assets.xcassets */; };
 		584E388220E3357E00EA53AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 584E388020E3357E00EA53AA /* LaunchScreen.storyboard */; };
 		584E388520E3357E00EA53AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 584E388420E3357E00EA53AA /* main.m */; };
-		584E388D20E336ED00EA53AA /* CTMessageListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 584E388C20E336ED00EA53AA /* CTMessageListView.m */; };
+		584E388D20E336ED00EA53AA /* CTHotelMessageListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 584E388C20E336ED00EA53AA /* CTHotelMessageListView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,8 @@
 		584E388120E3357E00EA53AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		584E388320E3357E00EA53AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		584E388420E3357E00EA53AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		584E388B20E336ED00EA53AA /* CTMessageListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTMessageListView.h; sourceTree = "<group>"; };
-		584E388C20E336ED00EA53AA /* CTMessageListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTMessageListView.m; sourceTree = "<group>"; };
+		584E388B20E336ED00EA53AA /* CTHotelMessageListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CTHotelMessageListView.h; sourceTree = "<group>"; };
+		584E388C20E336ED00EA53AA /* CTHotelMessageListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CTHotelMessageListView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +65,8 @@
 				584E387620E3357E00EA53AA /* AppDelegate.m */,
 				584E387820E3357E00EA53AA /* ViewController.h */,
 				584E387920E3357E00EA53AA /* ViewController.m */,
-				584E388B20E336ED00EA53AA /* CTMessageListView.h */,
-				584E388C20E336ED00EA53AA /* CTMessageListView.m */,
+				584E388B20E336ED00EA53AA /* CTHotelMessageListView.h */,
+				584E388C20E336ED00EA53AA /* CTHotelMessageListView.m */,
 				584E387B20E3357E00EA53AA /* Main.storyboard */,
 				584E387E20E3357E00EA53AA /* Assets.xcassets */,
 				584E388020E3357E00EA53AA /* LaunchScreen.storyboard */,
@@ -148,7 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				584E387A20E3357E00EA53AA /* ViewController.m in Sources */,
-				584E388D20E336ED00EA53AA /* CTMessageListView.m in Sources */,
+				584E388D20E336ED00EA53AA /* CTHotelMessageListView.m in Sources */,
 				584E388520E3357E00EA53AA /* main.m in Sources */,
 				584E387720E3357E00EA53AA /* AppDelegate.m in Sources */,
 			);
